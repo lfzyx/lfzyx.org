@@ -1,0 +1,1 @@
+让shadow文件和passwd文件保持同步

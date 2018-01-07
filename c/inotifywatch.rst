@@ -1,0 +1,4 @@
+inotifywatch
+=============
+
+inotifywatch [OPTION] FILE

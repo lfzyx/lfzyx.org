@@ -1,0 +1,33 @@
+language: python
+python:
+  - "3.6"
+cache:
+  pip: true
+  directories:
+    - _build/html
+install:
+  - pip install -r requirements.txt
+
+jobs:
+  include:
+    - stage: test
+      script: make doctest
+
+    - stage: test
+      script: make coverage
+
+    - stage: build
+      script: sphinx-build -q -b html . _build/html -d _build/doctrees
+      skip_cleanup: true
+
+    - stage: deploy
+      script: mkdir artifact && tar czvf artifact/lfzyx.org.tar.gz -C _build/html .
+      deploy:
+        provider: s3
+        access_key_id: $access_key_id
+        secret_access_key: $secret_access_key
+        bucket: "lfzyx.resources"
+        skip_cleanup: true
+        region: us-west-2
+        acl: public_read
+        local_dir: artifact
