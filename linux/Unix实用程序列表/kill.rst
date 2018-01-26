@@ -1,3 +1,6 @@
+kill
+=====
+
 kill [-signal] pid 默认signal为TERM
 -l 列出所有signal
 -TERM会被捕获，-KILL可以保证进程被杀死

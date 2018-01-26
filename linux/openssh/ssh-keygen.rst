@@ -87,30 +87,32 @@ RSA1的密钥文件中有一个"注释"字段，可以方便用户标识这个�
 示例
 -----
 
-``ssh-keygen``
+
 
 ::
 
-Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /root/.ssh/id_rsa.
-Your public key has been saved in /root/.ssh/id_rsa.pub.
-The key fingerprint is:
-83:9b:5d:fe:e7:1a:15:c1:4d:d2:c3:20:8b:45:92:a7 root@localhost.localdomain
-The key's randomart image is:
-+--[ RSA 2048]----+
-|         .o+ o=+.|
-|         .+.o .=o|
-|         .o.  . .|
-|       . E     . |
-|      . S .   .  |
-|       + +   .   |
-|      o . . .    |
-|           . ..  |
-|            o+.  |
-+-----------------+
+ makessh-keygen
+
+ Generating public/private rsa key pair.
+ Enter file in which to save the key (/root/.ssh/id_rsa):
+ Enter passphrase (empty for no passphrase):
+ Enter same passphrase again:
+ Your identification has been saved in /root/.ssh/id_rsa.
+ Your public key has been saved in /root/.ssh/id_rsa.pub.
+ The key fingerprint is:
+ 83:9b:5d:fe:e7:1a:15:c1:4d:d2:c3:20:8b:45:92:a7 root@localhost.localdomain
+ The key's randomart image is:
+ +--[ RSA 2048]----+
+ |         .o+ o=+.|
+ |         .+.o .=o|
+ |         .o.  . .|
+ |       . E     . |
+ |      . S .   .  |
+ |       + +   .   |
+ |      o . . .    |
+ |           . ..  |
+ |            o+.  |
+ +-----------------+
 
 ``chmod 400 id_rsa.pub`` 赋予公钥400权限
 

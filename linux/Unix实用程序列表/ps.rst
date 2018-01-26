@@ -1,3 +1,5 @@
+ps
+=====
 ps aux 查看所有进程
 ps axwef 以树状列出进程及子进程
 ps lax 显示父进程PPID和谦让值NI

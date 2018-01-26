@@ -9,6 +9,12 @@ Unix 实用程序列表
     awk
     sed
     uniq
+    find
+    fuser
+    kill
+    logger
+    mkdir
+    ps
 
 .. rubric:: 参考文献
 

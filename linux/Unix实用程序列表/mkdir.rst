@@ -1,3 +1,5 @@
+mkdir
+=======
 -p 在单个命令中创建目录树
 
 # mkdir -p tmp/a/b/c

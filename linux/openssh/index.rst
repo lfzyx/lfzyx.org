@@ -7,25 +7,24 @@ OpenSSH（OpenBSD Secure Shell\) [#]_ 是使用SSH通过计算机网络加密通
 安装
 ----
 
-apt-get install openssh-server openssh-client
+``apt-get install openssh-server openssh-client``
 
 组件
 -------
-:doc:`ssh` OpenSSH客户端
 
-:doc:`scp` 向服务器上传/下载文件
+.. toctree::
+    :maxdepth: 2
 
-:doc:`sftp` rcp的替代方案，将文件复制到其他电脑上
+    ssh
+    scp
+    sftp
+    sshd
+    ssh-keygen
+    ssh-agent
+    ssh-add
+    ssh-keyscan
 
-:doc:`sshd` OpenSSH服务端
 
-:doc:`ssh-keygen` 产生RSA或DSA密钥
-
-:doc:`ssh-agent` ssh代理程序
-
-:doc:`ssh-add` 帮助用户不需要每次都要输入密钥密码的工具
-
-:doc:`ssh-keyscan` 扫描一群机器，并纪录其公钥
 
 .. rubric:: 参考文献
 

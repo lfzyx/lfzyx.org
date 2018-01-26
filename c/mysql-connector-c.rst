@@ -1,3 +1,6 @@
+mysql-connector-c
+===================
+
 - xcode
 项目设置 - Build Settings - Search Paths - Header Search Paths 加上 /usr/local/mysql-connector-c/include
 项目设置 - Build Settings - Search Paths - Library Search Paths 加上 /usr/local/mysql-connector-c/lib
