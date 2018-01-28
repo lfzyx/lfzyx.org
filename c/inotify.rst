@@ -71,15 +71,15 @@ Inotify 工具库提供监控文件系统活动的命令行工具  [#]_
 
 该工具提供两个命令
 
-:doc:`inotifywait` 仅执行阻塞，等待 inotify
-事件。您可以监控任何一组文件和目录，或监控整个目录树（目录、子目录、子目录的子目录等等）。
+* inotifywait 仅执行阻塞，等待 inotify 事件。
+您可以监控任何一组文件和目录，或监控整个目录树（目录、子目录、子目录的子目录等等）。
 
-:doc:`inotifywatch` 收集关于被监视的文件系统的统计数据，包括每个 inotify 事件发生多少次。
+``inotifywait -rme modify,attrib,move,close_write,create,delete,delete_self path``
 
-incron
--------
+* inotifywatch 收集关于被监视的文件系统的统计数据，包括每个 inotify 事件发生多少次。
 
-incron 实用程序源自于 cron，但它响应 inotify 事件，而不是调度。
+``inotifywatch [OPTION] FILE``
+
 
 .. rubric:: 参考文献
 

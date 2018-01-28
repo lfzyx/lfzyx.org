@@ -1,4 +1,0 @@
-inotifywatch
-=============
-
-inotifywatch [OPTION] FILE

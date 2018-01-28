@@ -24,11 +24,11 @@ GoAccess 是一个开源的 web
 示例
 ----
 
-`` goaccess -f  FILE -a``
+``goaccess -f  FILE -a``
 
 分析指定的日志文件
 
-`` zcat -f  FILE | goaccess -a > report.html``
+``zcat -f  FILE | goaccess -a > report.html``
 
 使用管道处理所有的日志文件,并生成html报告
 
