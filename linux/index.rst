@@ -30,6 +30,6 @@ Linux
     ulimit
     iftop
     mongodb
-    Unix实用程序列表/index
+    Unix-commands/index
 
 
