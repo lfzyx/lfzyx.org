@@ -21,10 +21,10 @@ GoCD Server
 
 系统资源需求：
 
--  RAM - minimum 1GB, 2GB recommended
--  CPU - minimum 2 cores, 2GHz
--  Disk - minimum 1GB free space
--  env - Java Runtime Environment (JRE) version 8
+* RAM - minimum 1GB, 2GB recommended
+* CPU - minimum 2 cores, 2GHz
+* Disk - minimum 1GB free space
+* env - Java Runtime Environment (JRE) version 8
 
 ::
 
@@ -51,9 +51,9 @@ GoCD Agents
 
 系统资源需求：
 
--  RAM - minimum 128MB, 256MB recommended
--  CPU - minimum 2GHz
--  env - Java Runtime Environment (JRE) version 8
+* RAM - minimum 128MB, 256MB recommended
+* CPU - minimum 2GHz
+* env - Java Runtime Environment (JRE) version 8
 
 在安装 GoCD Server 的过程中已经处理了系统依赖，这里仅需要安装 GoCD Agents ``sudo apt install go-agent`` 安装后产生如下文件：
 
@@ -82,32 +82,21 @@ server 的 IP 地址
 
 .. image:: https://www.gocd.org/assets/images/go.cd_stage-jobs-tasks-a58d5b3b.svg
 
--  Task
+* Task : Pipelines 中的最小单元，用于执行一个 linux 命令
 
-Task 是 Pipelines 中的最小单元，用于执行一个 linux 命令
+* Job : tasks 的集合，其中的 tasks 按照指定的顺序运行。如果其中一个 task 运行失败了，那这个 job 也随之失败，剩下的 task 也不再执行。
 
--  Job
+* Stage : jobs 的集合，其中的 job 之间不存在顺序依赖，所以一个 Stage 内的
+  jobs 可以同时运行。如果其中一个 job 运行失败了，那这个 stage
+  也随之失败，但其他的 job 依然会执行完成。
 
-Job 是 tasks 的集合，其中的 tasks 按照指定的顺序运行。如果其中一个 task
-运行失败了，那这个 job 也随之失败，剩下的 task 也不再执行。
-
--  Stage
-
-Stage 是 jobs 的集合，其中的 job 之间不存在顺序依赖，所以一个 Stage 内的
-jobs 可以同时运行。如果其中一个 job 运行失败了，那这个 stage
-也随之失败，但其他的 job 依然会执行完成。
-
--  Pipeline
-
-Pipeline 是 stages 的集合，其中的 stage 按照指定的顺序运行。如果其中一个
-stages 失败了，那这个 pipeline 也随之失败，剩下的 stages 也不再执行。
+* Pipeline : stages 的集合，其中的 stage 按照指定的顺序运行。如果其中一个
+  stages 失败了，那这个 pipeline 也随之失败，剩下的 stages 也不再执行。
 
 .. image:: https://www.gocd.org/assets/images/go.cd_pipelines-materials-e64b8575.svg
 
--  Material
-
-material 可以引发 pipeline 运行，material通常是一个源码仓库。GoCD Server
-持续的访问 material ，当检测到变更时，pipeline 就开始运行了
+* Material : material 可以引发 pipeline 运行，material通常是一个源码仓库。GoCD Server
+  持续的访问 material ，当检测到变更时，pipeline 就开始运行了
 
 新建 Pipelines
 ^^^^^^^^^^^^^^^^
