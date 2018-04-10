@@ -15,9 +15,7 @@ OpenSSH（OpenBSD Secure Shell\) [#]_ 是使用SSH通过计算机网络加密通
 .. toctree::
     :maxdepth: 2
 
-    ssh
     scp
-    sftp
     sshd
     ssh-keygen
     ssh-agent
