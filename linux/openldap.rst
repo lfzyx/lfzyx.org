@@ -14,7 +14,7 @@ Entry
 条目，也叫记录项，是LDAP中最基本的单元，就像是数据库中的一行记录。通常对LDAP的添加、删除、更改、检索都是以条目为基本对象的。 [#]_
 
 每一个条目的开头都有一个唯一的标识名（distinguished Name ，DN），如
-dn：”cn=baby,ou=marketing,ou=people,dc=mydomain,dc=org”
+DN: cn=baby,ou=marketing,ou=people,dc=lfzyx,dc=org"
 。通过DN的层次型语法结构，可以方便地表示出条目在LDAP树中的位置，通常用于检索。rdn指dn逗号最左边的部分，如cn=baby.
 LDAP目录树的最顶部就是根，也就是所谓的“Base
 DN”，如”dc=mydomain,dc=org”。
@@ -27,17 +27,17 @@ Attribute
 LDAP为人员组织机构中常见的对象都设计了属性：
 
 +------------------------+------+------------------+------------------+---------------+
-| 属性                   | 别名 | 语法             | 描述             | 值(举例)      |
+| 属性                    | 别名 | 语法              | 描述             | 值(举例)       |
 +========================+======+==================+==================+===============+
-| commonName             | cn   | Directory String | 姓名             | lfzyx         |
+| commonName             | cn   | Directory String | 姓名              | lfzyx         |
 +------------------------+------+------------------+------------------+---------------+
 | surname                | sn   | Directory String | 姓               | zhou          |
 +------------------------+------+------------------+------------------+---------------+
-| organizationalUnitName | ou   | Directory String | 单位（部门）名称 | DevOps        |
+| organizationalUnitName | ou   | Directory String | 单位（部门）名称   | DevOps        |
 +------------------------+------+------------------+------------------+---------------+
-| telephoneNumber        |      | Telephone Number | 电话号码         | 911           |
+| telephoneNumber        |      | Telephone Number | 电话号码          | 911           |
 +------------------------+------+------------------+------------------+---------------+
-| objectClass            |      |                  | 内置属性         | inetOrgPerson |
+| objectClass            |      |                  | 内置属性          | inetOrgPerson |
 +------------------------+------+------------------+------------------+---------------+
 
 ObjectClass
@@ -66,33 +66,33 @@ Format，数据交换格式）是LDAP数据库信息的一种文本格式，用�
 
 OpenLDAP [#]_ 是 LDAP 的开源实现，由三个主要的部分：
 
--  slapd - LDAP服务守护进程
--  libraries - 实现LDAP协议的库
--  ldap-utils - ldapsearch, ldapadd, ldapdelete, etc.
+* slapd - LDAP服务守护进程
+* libraries - 实现LDAP协议的库
+* ldap-utils - ldapsearch, ldapadd, ldapdelete, ldapmodify, etc.
 
 OpenLDAP 将数据存储在后端数据库，默认使用 mdb 数据库。
 
-:literal:`apt-get install slapd ldap-utils`
+``apt-get install slapd ldap-utils``
 
 安装完成后需要对 slapd 重新配置
 
-:literal:`dpkg-reconfigure slapd`
+``dpkg-reconfigure slapd``
 
--  Omit OpenLDAP server configuration? **No**
+* Omit OpenLDAP server configuration? **No**
 
--  DNS domain name? **lfzyx.org**
+* DNS domain name? **lfzyx.org**
 
--  Organization name? **lfzyx**
+* Organization name? **lfzyx**
 
--  Administrator password? **admin的密码**
+* Administrator password? **admin的密码**
 
--  Database backend? **MDB**
+* Database backend? **MDB**
 
--  Remove the database when slapd is purged? **No**
+* Remove the database when slapd is purged? **No**
 
--  Move old database?\ *' Yes*'
+* Move old database? **Yes**
 
--  Allow LDAPv2 protocol? **No**
+* Allow LDAPv2 protocol? **No**
 
 配置
 ----
@@ -103,7 +103,7 @@ OpenLDAP 的配置文件是 /etc/ldap/slapd.d/cn=config
 LDIF
 ----
 
-LDIF文件用于操作或修改数据 [#]_
+LDIF 文件用于操作或修改数据 [#]_
 
 添加
 ^^^^^
@@ -124,7 +124,7 @@ LDIF文件用于操作或修改数据 [#]_
 修改
 ^^^^^
 
-添加mail属性，修改sn的值，删除一个description属性
+添加mail属性，修改sn的值，删除description属性
 
 ::
 
@@ -144,20 +144,8 @@ LDIF文件用于操作或修改数据 [#]_
 图形界面
 ---------
 
-尽管可以通过命令行管理 LDAP 数据，但使用图形界面更方便
+尽管可以通过命令行管理 LDAP 数据，但使用 `Apache Directory Studio <http://directory.apache.org/studio/>`_ 更方便
 
-:literal:`apt-get install phpldapadmin`
-
-安装后对编辑配置文件
-
-::
-
- vi /etc/phpldapadmin/config.php
-
- $servers->setValue('server','host','127.0.0.1');
- $servers->setValue('server','base',array('dc=lfzyx,dc=org'));
- $servers->setValue('login','auth_type','cookie');
- $servers->setValue('login','bind_id','cn=admin,dc=lfzyx,dc=com');
 
 .. rubric:: 参考文献
 
