@@ -32,5 +32,6 @@ Linux
     mongodb
     filters/index
     Unix-commands/index
+    hardware/index
 
 
