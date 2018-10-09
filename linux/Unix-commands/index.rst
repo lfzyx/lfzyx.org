@@ -7,8 +7,6 @@ Unix 实用程序列表
 
     alias
     awk
-    sed
-    uniq
     find
     fuser
     kill
