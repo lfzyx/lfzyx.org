@@ -10,7 +10,6 @@ Filter - 流过滤器
     cat
     comm
     cut
-    expand
     compress
     fold
     grep
@@ -20,7 +19,6 @@ Filter - 流过滤器
     nl
     perl
     paste
-    pr
     sed
     sh
     sort

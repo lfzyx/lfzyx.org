@@ -29,4 +29,12 @@ find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression]
 
 * find . -atime -2 -type d 过去两天内访问过的文件夹
 
-* find . -user root root 用户所拥有的文件
+* find . -user root 查找 root 用户所拥有的文件
+
+* find . -maxdepth 2 -type d ! -group root 查找不属于 root 组的文件夹，最大深度为2
+
+* find . -type f -perm -o=rwx  查找 other 权限为 rwx 的文件
+
+* find . -type f -perm -ug=rwx ! -perm -o=r 查找 user 和 group 拥有 rwx 权限，但 other 没有 r 权限的文件
+
+* find . -type f -perm 600 查找 600 权限的文件
