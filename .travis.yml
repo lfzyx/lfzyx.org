@@ -21,6 +21,7 @@ jobs:
       skip_cleanup: true
 
     - stage: deploy
+      script: mkdir artifact && tar czvf artifact/lfzyx.org.tar.gz -C _build/html .
       deploy:
         provider: pages
         skip-cleanup: true
