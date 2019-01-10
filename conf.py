@@ -62,7 +62,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'lfzyx'
-copyright = '2017-2018, lfzyx zhou'
+copyright = '2017-2019, lfzyx zhou'
 author = 'lfzyx zhou'
 
 
@@ -106,18 +106,16 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {
-    'vcs_pageview_mode': 'blob',
-}
+# html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_favicon = 'favicon.ico'
+# html_favicon = '_static/favicon.ico'
 
-html_extra_path = ['robots.txt', 'favicon.ico']
+html_extra_path = ['robots.txt']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
