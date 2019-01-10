@@ -27,7 +27,7 @@ jobs:
         skip-cleanup: true
         github-token: $GITHUB_TOKEN
         local-dir: _build/html
-        repo: lfzyx.github.io
+        repo: lfzyx/lfzyx.github.io
         fqdn: lfzyx.org
         target-branch: master
         on:
