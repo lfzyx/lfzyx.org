@@ -21,12 +21,15 @@ jobs:
       skip_cleanup: true
 
     - stage: deploy
+      script: mkdir artifact && tar czvf artifact/lfzyx.org.tar.gz -C _build/html .
       deploy:
         provider: pages
         skip-cleanup: true
         github-token: $GITHUB_TOKEN
         local-dir: _build/html
+        repo: lfzyx/lfzyx.github.io
         fqdn: lfzyx.org
+        target-branch: master
         on:
           branch: master
 
