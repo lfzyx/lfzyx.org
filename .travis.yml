@@ -28,6 +28,7 @@ jobs:
         github-token: $GITHUB_TOKEN
         local-dir: _build/html
         fqdn: lfzyx.org
+        target-branch: master
         on:
           branch: master
 
