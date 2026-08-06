@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/sysstat/index.rst:4
+msgid "Sysstat - 系统性能分析套件"
+msgstr "Sysstat - System Performance Analysis Suite"
+
+#: ../../linux/sysstat/index.rst:6
+msgid "Sysstat 软件包包含许多商业Unix通用的各种实用程序，用于监视系统性能和使用活动:"
+msgstr "The Sysstat package contains a variety of utilities common to commercial Unix systems, used to monitor system performance and usage activity:"
+
+#: ../../linux/sysstat/index.rst:17
+msgid "Sysstat 还包含可以通过 cron 或 systemd 安排的工具来收集和历史记录性能和活动数据："
+msgstr "Sysstat also includes tools that can be scheduled via cron or systemd to collect and keep a historical record of performance and activity data:"
+

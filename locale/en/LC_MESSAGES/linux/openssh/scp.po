@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/openssh/scp.rst:2
+msgid "scp"
+msgstr "scp"
+
+#: ../../linux/openssh/scp.rst:4
+msgid "scp(secure copy),用于主机间文件传输。scp基于ssh协议来传输及验证数据，提供与ssh相同的安全保护，会根据需要询问口令。 [#]_"
+msgstr "scp (secure copy) is used for transferring files between hosts. scp transfers and authenticates data based on the ssh protocol, providing the same security protections as ssh, and prompts for a password when needed. [#]_"
+
+#: ../../linux/openssh/scp.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/openssh/scp.rst:9
+msgid "``scp [OPTION] [[user@]host1:]file1 ... [[user@]host2:]file2``"
+msgstr "``scp [OPTION] [[user@]host1:]file1 ... [[user@]host2:]file2``"
+
+#: ../../linux/openssh/scp.rst:11
+msgid "-P port"
+msgstr "-P port"
+
+#: ../../linux/openssh/scp.rst:13
+msgid "-S program"
+msgstr "-S program"
+
+#: ../../linux/openssh/scp.rst:15
+msgid "-o ssh_option"
+msgstr "-o ssh_option"
+
+#: ../../linux/openssh/scp.rst:17
+msgid "-l limit"
+msgstr "-l limit"
+
+#: ../../linux/openssh/scp.rst:19
+msgid "-i identity_file"
+msgstr "-i identity_file"
+
+#: ../../linux/openssh/scp.rst:21
+msgid "-F ssh_config"
+msgstr "-F ssh_config"
+
+#: ../../linux/openssh/scp.rst:23
+msgid "-c cipher"
+msgstr "-c cipher"
+
+#: ../../linux/openssh/scp.rst:25
+msgid "-r 递归复制整个目录"
+msgstr "-r recursively copy an entire directory"
+
+#: ../../linux/openssh/scp.rst:27
+msgid "-v 显示进度"
+msgstr "-v show progress"
+
+#: ../../linux/openssh/scp.rst:29
+msgid "-C 允许压缩"
+msgstr "-C allow compression"
+
+#: ../../linux/openssh/scp.rst:32
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/openssh/scp.rst:34
+msgid "传输文件至远程主机"
+msgstr "Transfer a file to a remote host"
+
+#: ../../linux/openssh/scp.rst:36
+msgid "``scp com.dotgears.flappybird-1.apk root@192.168.1.1:/data/app/com.dotgears.flappybird-1.apk``"
+msgstr "``scp com.dotgears.flappybird-1.apk root@192.168.1.1:/data/app/com.dotgears.flappybird-1.apk``"
+
+#: ../../linux/openssh/scp.rst:38
+msgid "传输目录至ssh端口为2222的远程主机"
+msgstr "Transfer a directory to a remote host whose ssh port is 2222"
+
+#: ../../linux/openssh/scp.rst:40
+msgid "``scp -P 2222 -r /usr/local/app/ root@192.168.1.1:/data/app/``"
+msgstr "``scp -P 2222 -r /usr/local/app/ root@192.168.1.1:/data/app/``"
+
+#: ../../linux/openssh/scp.rst:42
+msgid "获取远程主机的目录"
+msgstr "Fetch a directory from a remote host"
+
+#: ../../linux/openssh/scp.rst:44
+msgid "``scp -r root@192.168.1.1:/data/app/ /usr/local/app/``"
+msgstr "``scp -r root@192.168.1.1:/data/app/ /usr/local/app/``"
+
+#: ../../linux/openssh/scp.rst:46
+msgid "获取ssh端口为2222的远程主机的文件"
+msgstr "Fetch a file from a remote host whose ssh port is 2222"
+
+#: ../../linux/openssh/scp.rst:48
+msgid "``scp -P 2222 root@192.168.1.1:/data/app/com.dotgears.flappybird-1.apk /usr/local/app/com.dotgears.flappybird-1.apk``"
+msgstr "``scp -P 2222 root@192.168.1.1:/data/app/com.dotgears.flappybird-1.apk /usr/local/app/com.dotgears.flappybird-1.apk``"
+
+#: ../../linux/openssh/scp.rst:52
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/openssh/scp.rst:53
+msgid "`Secure copy - Wikipedia <http://en.wikipedia.org/wiki/Secure_copy>`_"
+msgstr "`Secure copy - Wikipedia <http://en.wikipedia.org/wiki/Secure_copy>`_"
+

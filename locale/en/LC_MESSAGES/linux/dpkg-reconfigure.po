@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/dpkg-reconfigure.rst:2
+msgid "Dpkg-reconfigure"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:4
+msgid "重新配制一个已经安装的软件包."
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:7
+msgid "语法"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:9
+msgid "``dpkg-reconfigure ``\\ ***``[OPTION]``***"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:11
+msgid "-a, --all 重配置所有软件包"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:13
+msgid "-u, --unseen-only 仅显示未提过的问题"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:15
+msgid "--default-priority 使用默认优先级，而非“低”级"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:17
+msgid "--force 强迫重配置受损软件包"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:19
+msgid "--no-reload 不要轻易的重装模板(使用时请慎重考虑)"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:21
+msgid "-f, --frontend 指定 debconf 前端界面"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:23
+msgid "-p, --priority 指定要显示的问题的最优先级"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:25
+msgid "--terse 开启简要模式"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:28
+msgid "示例"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:30
+msgid "``# dpkg-reconfigure tzdata ``\\ *``更改系统时区``*"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:31
+msgid "``# dpkg-reconfigure locales ``\\ *``更改系统语言``*"
+msgstr ""
+
+#: ../../linux/dpkg-reconfigure.rst:32
+msgid "``# dpkg --add-architecture i386 ``\\ *``支持多架构``*"
+msgstr ""
+

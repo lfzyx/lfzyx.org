@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/lsof.rst:2
+msgid "Lsof - 列出打开的文件"
+msgstr "Lsof - List Open Files"
+
+#: ../../linux/lsof.rst:4
+msgid "lsof 是 LiSt Open Files 的缩写，以列表的形式显示文件被哪个进程打开，文件包括磁盘文件、网络套接字、管道、设备。 使用这条命令的主要情形之一就是在无法卸载磁盘和显示正在使用或者打开某个文件的错误信息的时候。 使用这条命令，你可以很容易地看到正在使用哪个文件。 [#]_"
+msgstr "lsof is short for LiSt Open Files; it displays, in list form, which process has a given file open — files include disk files, network sockets, pipes, and devices. One of the main situations for using this command is when you can't unmount a disk and it shows an error saying some file is in use or open. With this command, you can easily see which file is being used. [#]_"
+
+#: ../../linux/lsof.rst:10
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/lsof.rst:18
+msgid "示例"
+msgstr "Examples"
+
+#: ../../linux/lsof.rst:20
+msgid "列出所有打开的文件"
+msgstr "List all open files"
+
+#: ../../linux/lsof.rst:35
+msgid "列出指定进程打开的文件"
+msgstr "List files opened by a given process"
+
+#: ../../linux/lsof.rst:47
+msgid "列出指定用户打开的文件"
+msgstr "List files opened by a given user"
+
+#: ../../linux/lsof.rst:59
+msgid "列出所有网络连接"
+msgstr "List all network connections"
+
+#: ../../linux/lsof.rst:61
+msgid "``lsof -i``"
+msgstr ""
+
+#: ../../linux/lsof.rst:63
+msgid "仅列出IPv4网络连接"
+msgstr "List only IPv4 network connections"
+
+#: ../../linux/lsof.rst:65
+msgid "``lsof -i 4``"
+msgstr ""
+
+#: ../../linux/lsof.rst:67
+msgid "仅列出TCP连接"
+msgstr "List only TCP connections"
+
+#: ../../linux/lsof.rst:69
+msgid "``lsof -i TCP``"
+msgstr ""
+
+#: ../../linux/lsof.rst:71
+msgid "列出正在监听的网络连接"
+msgstr "List network connections currently listening"
+
+#: ../../linux/lsof.rst:73
+msgid "``lsof -i -s TCP:LISTEN``"
+msgstr ""
+
+#: ../../linux/lsof.rst:75
+msgid "列出已建立的网络连接"
+msgstr "List established network connections"
+
+#: ../../linux/lsof.rst:77
+msgid "``lsof -i -s TCP:ESTABLISHED``"
+msgstr ""
+
+#: ../../linux/lsof.rst:79
+msgid "列出运行在指定端口上的进程"
+msgstr "List processes running on a given port"
+
+#: ../../linux/lsof.rst:92
+msgid "列出运行在指定端口范围上的进程"
+msgstr "List processes running on a given port range"
+
+#: ../../linux/lsof.rst:104
+msgid "列出到指定主机的连接"
+msgstr "List connections to a given host"
+
+#: ../../linux/lsof.rst:106
+msgid "``lsof -i @10.10.10.118[:8080]``"
+msgstr ""
+
+#: ../../linux/lsof.rst:108
+msgid "列出除root用户打开的文件"
+msgstr "List files opened by users other than root"
+
+#: ../../linux/lsof.rst:110
+msgid "``lsof -u ^root``"
+msgstr ""
+
+#: ../../linux/lsof.rst:113
+msgid "参考文献"
+msgstr ""
+
+#: ../../linux/lsof.rst:114
+msgid "`10 lsof Command Examples in Linux <http://www.tecmint.com/10-lsof-command-examples-in-linux/>`_"
+msgstr ""
+

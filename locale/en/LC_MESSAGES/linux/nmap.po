@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/nmap.rst:1
+msgid ""
+"Nmap (Network Mapper) "
+"是一款开放源代码的网络探测和安全审核的工具。它的设计目标是快速地扫描大型网络，当然用它扫描单个主机也没有问题。Nmap以新颖的方式使用原始IP报文来发现网络上有哪些主机，那些主机提供什么服务(应用程序名和版本)，那些服务运行在什么操作系统(包括版本信息)，它们使用什么类型的报文过滤器/防火墙，以及一堆其它功能。Nmap通常用于安全审核，许多系统管理员和网络管理员也用它来做一些日常的工作，比如查看整个网络的信息，"
+" 管理服务升级计划，以及监视主机和服务的运行。 [1]_"
+msgstr ""
+
+#: ../../linux/nmap.rst:6
+msgid "安装"
+msgstr ""
+
+#: ../../linux/nmap.rst:8
+msgid "`debian <debian>`__:"
+msgstr ""
+
+#: ../../linux/nmap.rst:10
+msgid "``# apt-get install nmap``"
+msgstr ""
+
+#: ../../linux/nmap.rst:12
+msgid "`centos <centos>`__:"
+msgstr ""
+
+#: ../../linux/nmap.rst:14
+msgid "``# yum install nmap``"
+msgstr ""
+
+#: ../../linux/nmap.rst:17
+msgid "语法"
+msgstr ""
+
+#: ../../linux/nmap.rst:19
+#, python-brace-format
+msgid ""
+"``nmap [Scan Type(s)] ``\\ ***``[Options]``***\\ `` {target "
+"specification}``"
+msgstr ""
+
+#: ../../linux/nmap.rst:21
+msgid "-v 显示更多信息"
+msgstr ""
+
+#: ../../linux/nmap.rst:23
+msgid "-A 启用操作系统和版本检测，脚本扫描和路由跟踪"
+msgstr ""
+
+#: ../../linux/nmap.rst:25
+msgid "-p 指定要扫描的端口"
+msgstr ""
+
+#: ../../linux/nmap.rst:27
+msgid "-sV 探测开放的端口，以确定服务/版本信息"
+msgstr ""
+
+#: ../../linux/nmap.rst:30
+msgid "示例"
+msgstr ""
+
+#: ../../linux/nmap.rst:32
+msgid "``# nmap -v -A -sV -p 1-100 google.com``"
+msgstr ""
+
+#: ../../linux/nmap.rst:33
+msgid "``Starting Nmap 6.00  at 2014-01-21 17:40 CST``"
+msgstr ""
+
+#: ../../linux/nmap.rst:34
+msgid "``Nmap scan report for google.com (173.194.127.40)``"
+msgstr ""
+
+#: ../../linux/nmap.rst:35
+msgid "``Host is up (0.31s latency).``"
+msgstr ""
+
+#: ../../linux/nmap.rst:36
+msgid ""
+"``Other addresses for google.com (not scanned): 173.194.127.39 "
+"173.194.127.37 173.194.127.32 173.194.127.33 173.194.127.41 "
+"173.194.127.36 173.194.127.38 173.194.127.35 173.194.127.46 "
+"173.194.127.34``"
+msgstr ""
+
+#: ../../linux/nmap.rst:37
+msgid "``rDNS record for 173.194.127.40: hkg03s10-in-f8.1e100.net``"
+msgstr ""
+
+#: ../../linux/nmap.rst:38
+msgid "``Not shown: 99 filtered ports``"
+msgstr ""
+
+#: ../../linux/nmap.rst:39
+msgid "``PORT   STATE SERVICE VERSION``"
+msgstr ""
+
+#: ../../linux/nmap.rst:40
+msgid "``80/tcp open  http    Google httpd 2.0 (GFE)``"
+msgstr ""
+
+#: ../../linux/nmap.rst:41
+msgid ""
+"``|_http-methods: No Allow or Public header in OPTIONS response (status "
+"code 405)``"
+msgstr ""
+
+#: ../../linux/nmap.rst:42
+msgid "``| http-robots.txt: 248 disallowed entries (15 shown)``"
+msgstr ""
+
+#: ../../linux/nmap.rst:43
+msgid "``| /search /sdch /groups /images /catalogs /catalogues ``"
+msgstr ""
+
+#: ../../linux/nmap.rst:44
+msgid "``| /news /nwshp /setnewsprefs? /index.html? /? /?hl=*& ``"
+msgstr ""
+
+#: ../../linux/nmap.rst:45
+msgid "``|_/addurl/image? /pagead/ /relpage/``"
+msgstr ""
+
+#: ../../linux/nmap.rst:46
+msgid "``|_http-title: 302 Moved``"
+msgstr ""
+
+#: ../../linux/nmap.rst:47
+msgid ""
+"``Warning: OSScan results may be unreliable because we could not find at "
+"least 1 open and 1 closed port``"
+msgstr ""
+
+#: ../../linux/nmap.rst:48
+msgid "``Device type: specialized|WAP|media device``"
+msgstr ""
+
+#: ../../linux/nmap.rst:49
+msgid ""
+"``Running (JUST GUESSING): Crestron 2-Series (86%), Netgear embedded "
+"(86%), Western Digital embedded (86%)``"
+msgstr ""
+
+#: ../../linux/nmap.rst:50
+msgid "``OS CPE: cpe:/o:crestron:2_series``"
+msgstr ""
+
+#: ../../linux/nmap.rst:51
+msgid ""
+"``Aggressive OS guesses: Crestron XPanel control system (86%), Netgear "
+"DG834G WAP or Western Digital WD TV media player (86%)``"
+msgstr ""
+
+#: ../../linux/nmap.rst:52
+msgid "``No exact OS matches for host (test conditions non-ideal).``"
+msgstr ""
+
+#: ../../linux/nmap.rst:53
+msgid "``Network Distance: 12 hops``"
+msgstr ""
+
+#: ../../linux/nmap.rst:54
+msgid "``Service Info: OS: Linux; CPE: cpe:/o:linux:kernel``"
+msgstr ""
+
+#: ../../linux/nmap.rst:55
+msgid "``OS and Service detection performed. ``"
+msgstr ""
+
+#: ../../linux/nmap.rst:56
+msgid "``Nmap done: 1 IP address (1 host up) scanned in 45.90 seconds``"
+msgstr ""
+
+#: ../../linux/nmap.rst:59
+msgid "参考文献"
+msgstr ""
+
+#: ../../linux/nmap.rst:66
+msgid ""
+"`29 Practical Examples of Nmap Commands for Linux System/Network "
+"Administrators <http://www.tecmint.com/nmap-command-examples/>`__"
+msgstr ""
+

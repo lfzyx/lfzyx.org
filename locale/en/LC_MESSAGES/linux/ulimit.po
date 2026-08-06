@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/ulimit.rst:2
+msgid "Ulimit - 用户资源控制"
+msgstr "Ulimit - User Resource Control"
+
+#: ../../linux/ulimit.rst:4
+msgid "在支持它的系统上，对 shell 和它启动的进程，提供对可用资源的控制。选项 -H 和 -S 指定为所给资源设定的硬性和柔性限额。软限制是指在当前系统能够承受的范围内进一步限制用户同时打开的文件数；硬限制则是根据系统硬件资源状况(主要是系统内存)计算出来的系统最多可同时打开的文件数量。如果没有给出 -H 或 -S 选项，将同时设置硬性和柔性限额。limit 的值可以是一个数字，单位是指定资源的单元值，或者是特殊值 hard, soft, 或 unlimited 之一，意思分别是当前硬性限额，当前柔性限额和没有限额。如果忽略了 limit，将打印出当前对资源的柔性限额值， -H 选项打印出当前的硬性限制。当指定多于一个资源时，限额名称和单位将在值之前打印出来。"
+msgstr "On systems that support it, provides control over the resources available to a shell and the processes it starts. The -H and -S options specify hard and soft limits set for a given resource. A soft limit further restricts, within what the current system can bear, how many files a user can have open at once; a hard limit is the maximum number of files the system can have open at once, computed from the system's hardware resource status (mainly system memory). If neither -H nor -S is given, both the hard and soft limits are set at once. The value of limit can be a number, in the unit appropriate for the given resource, or one of the special values hard, soft, or unlimited, meaning respectively the current hard limit, the current soft limit, and no limit. If limit is omitted, the current soft limit for the resource is printed; the -H option prints the current hard limit. When more than one resource is specified, the limit name and unit are printed before the value."
+
+#: ../../linux/ulimit.rst:15
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/ulimit.rst:17
+msgid "-H 硬限制"
+msgstr "-H hard limit"
+
+#: ../../linux/ulimit.rst:19
+msgid "-S 软限制"
+msgstr "-S soft limit"
+
+#: ../../linux/ulimit.rst:21
+msgid "-a 显示所有限额"
+msgstr "-a show all limits"
+
+#: ../../linux/ulimit.rst:23
+msgid "-c core文件上限"
+msgstr "-c core file size limit"
+
+#: ../../linux/ulimit.rst:25
+msgid "-d 进程数据段上限"
+msgstr "-d process data segment size limit"
+
+#: ../../linux/ulimit.rst:27
+msgid "-e scheduling priority上限"
+msgstr "-e scheduling priority limit"
+
+#: ../../linux/ulimit.rst:29
+msgid "-f shell所能创建的文件大小的上限"
+msgstr "-f maximum file size the shell can create"
+
+#: ../../linux/ulimit.rst:31
+msgid "-i 等待信号上限"
+msgstr "-i pending signals limit"
+
+#: ../../linux/ulimit.rst:33
+msgid "-l 锁定内存上限"
+msgstr "-l locked-memory limit"
+
+#: ../../linux/ulimit.rst:35
+msgid "-m 驻留内存大小的上限"
+msgstr "-m resident memory size limit"
+
+#: ../../linux/ulimit.rst:37
+msgid "-n 打开文件数的上限"
+msgstr "-n limit on the number of open files"
+
+#: ../../linux/ulimit.rst:39
+msgid "-p 管道大小上限"
+msgstr "-p pipe size limit"
+
+#: ../../linux/ulimit.rst:41
+msgid "-q POSIX消息上限"
+msgstr "-q POSIX message queue limit"
+
+#: ../../linux/ulimit.rst:43
+msgid "-r"
+msgstr "-r"
+
+#: ../../linux/ulimit.rst:45
+msgid "-s 堆栈大小的上限"
+msgstr "-s stack size limit"
+
+#: ../../linux/ulimit.rst:47
+msgid "-t 每秒可占用的CPU时间上限"
+msgstr "-t limit on CPU time usable per second"
+
+#: ../../linux/ulimit.rst:49
+msgid "-u 进程数的上限"
+msgstr "-u limit on the number of processes"
+
+#: ../../linux/ulimit.rst:51
+msgid "-v 虚拟内存的上限"
+msgstr "-v virtual memory limit"
+
+#: ../../linux/ulimit.rst:53
+msgid "-x 锁定文件上限"
+msgstr "-x file lock limit"
+
+#: ../../linux/ulimit.rst:56
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/ulimit.rst:58
+msgid "/etc/security/limits.conf"
+msgstr "/etc/security/limits.conf"
+
+#: ../../linux/ulimit.rst:60
+msgid "Linux系统用户级打开文件数的软限制和硬限制"
+msgstr "Soft and hard limits on the number of open files at the Linux system user level"
+
+#: ../../linux/ulimit.rst:62
+msgid "<domain> <type> <item> <value>"
+msgstr "<domain> <type> <item> <value>"
+
+#: ../../linux/ulimit.rst:64
+msgid "<domain> : 需要被限制的用户名，组名前面加@，用通配符*匹配所有用户，root用户需要单独指定"
+msgstr "<domain>: the username to be restricted; prefix group names with @; use the wildcard * to match all users; root must be specified separately"
+
+#: ../../linux/ulimit.rst:66
+msgid "<type> : soft 是软限制。hard 是硬限制，soft 的限制不能比 hard 限制高"
+msgstr "<type>: soft is the soft limit. hard is the hard limit; the soft limit cannot be set higher than the hard limit"
+
+#: ../../linux/ulimit.rst:68
+msgid "<item> :"
+msgstr "<item>:"
+
+#: ../../linux/ulimit.rst:70
+msgid "core - 限制内核文件的大小"
+msgstr "core - limits the size of core dump files"
+
+#: ../../linux/ulimit.rst:72
+msgid "date - 最大数据大小"
+msgstr "date - maximum data size"
+
+#: ../../linux/ulimit.rst:74
+msgid "fsize - 最大文件大小"
+msgstr "fsize - maximum file size"
+
+#: ../../linux/ulimit.rst:76
+msgid "memlock - 最大锁定内存地址空间"
+msgstr "memlock - maximum locked memory address space"
+
+#: ../../linux/ulimit.rst:78
+msgid "nofile - 打开文件的最大数目"
+msgstr "nofile - maximum number of open files"
+
+#: ../../linux/ulimit.rst:80
+msgid "rss - 最大持久设置大小"
+msgstr "rss - maximum resident set size"
+
+#: ../../linux/ulimit.rst:82
+msgid "stack - 最大栈大小"
+msgstr "stack - maximum stack size"
+
+#: ../../linux/ulimit.rst:84
+msgid "cpu - 以分钟为单位的最多 CPU 时间"
+msgstr "cpu - maximum CPU time, in minutes"
+
+#: ../../linux/ulimit.rst:86
+msgid "noproc - 进程的最大数目"
+msgstr "noproc - maximum number of processes"
+
+#: ../../linux/ulimit.rst:88
+msgid "as - 地址空间限制"
+msgstr "as - address space limit"
+
+#: ../../linux/ulimit.rst:90
+msgid "maxlogins - 此用户允许登录的最大数目"
+msgstr "maxlogins - maximum number of logins allowed for this user"
+
+#: ../../linux/ulimit.rst:94
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/ulimit.rst:96
+msgid "设置用户tomcat打开文件的最大数目限额"
+msgstr "Setting the maximum number of open files for user tomcat"
+

@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/audit.rst:4
+msgid "Audit - 安全审计"
+msgstr "Audit - Security Auditing"
+
+#: ../../linux/audit.rst:6
+msgid "Audit 是 linux 上的审计工具, 用于记录 linux 上的动作. 通过日志文件, 我们可以跟踪安全事件, 查明滥用和未授权的活动，包括："
+msgstr "Audit is an auditing tool on Linux, used to record actions taken on Linux. Through log files, we can track security events and identify abuse and unauthorized activity, including:"
+
+#: ../../linux/audit.rst:8
+msgid "跟踪文件访问"
+msgstr "Tracking file access"
+
+#: ../../linux/audit.rst:9
+msgid "监控系统调用"
+msgstr "Monitoring system calls"
+
+#: ../../linux/audit.rst:10
+msgid "记录命令执行"
+msgstr "Recording command execution"
+
+#: ../../linux/audit.rst:11
+msgid "记录安全事件"
+msgstr "Recording security events"
+
+#: ../../linux/audit.rst:12
+msgid "事件搜索"
+msgstr "Event search"
+
+#: ../../linux/audit.rst:13
+msgid "报告总结"
+msgstr "Report summaries"
+
+#: ../../linux/audit.rst:14
+msgid "监控网络访问"
+msgstr "Monitoring network access"
+
+#: ../../linux/audit.rst:17
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/audit.rst:19
+msgid ":literal:`apt install auditd`"
+msgstr ":literal:`apt install auditd`"
+
+#: ../../linux/audit.rst:21
+msgid ":literal:`systemctl start auditd`"
+msgstr ":literal:`systemctl start auditd`"
+
+#: ../../linux/audit.rst:23
+msgid "Audit 系统由两部分组成:"
+msgstr "The Audit system consists of two parts:"
+
+#: ../../linux/audit.rst:25
+msgid "audit 核心部件监听系统调用，记录事件，发送消息至 audit daemon"
+msgstr "The audit core component listens for system calls, records events, and sends messages to the audit daemon"
+
+#: ../../linux/audit.rst:26
+msgid "audit daemon 收集消息，输出条目至日志文件"
+msgstr "The audit daemon collects messages and writes entries out to the log file"
+
+#: ../../linux/audit.rst:30
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/audit.rst:32
+msgid "配置文件为 /etc/audit/auditd.conf [#]_"
+msgstr "The configuration file is /etc/audit/auditd.conf [#]_"
+
+#: ../../linux/audit.rst:34
+msgid "num_logs 日志轮循个数"
+msgstr "num_logs: number of log files kept in rotation"
+
+#: ../../linux/audit.rst:35
+msgid "max_log_file 单个日志文件大小"
+msgstr "max_log_file: size of a single log file"
+
+#: ../../linux/audit.rst:36
+msgid "max_log_file_action 到达日志大小限制触发的行为"
+msgstr "max_log_file_action: action triggered once the log size limit is reached"
+
+#: ../../linux/audit.rst:38
+msgid "规则文件为 /etc/audit/audit.rules"
+msgstr "The rules file is /etc/audit/audit.rules"
+
+#: ../../linux/audit.rst:42
+msgid "auditctl"
+msgstr "auditctl"
+
+#: ../../linux/audit.rst:43
+msgid "auditctl 控制审计系统的行为"
+msgstr "auditctl controls the behavior of the audit system"
+
+#: ../../linux/audit.rst:45
+msgid "查看审计规则"
+msgstr "view audit rules"
+
+#: ../../linux/audit.rst:46
+msgid "添加文件路径"
+msgstr "add a file path"
+
+#: ../../linux/audit.rst:47
+msgid "指定触发审计的权限，r=read, w=write, x=execute, a=attribute"
+msgstr "specify the permissions that trigger auditing: r=read, w=write, x=execute, a=attribute"
+
+#: ../../linux/audit.rst:48
+msgid "添加规则时设置关键字"
+msgstr "set a keyword when adding a rule"
+
+#: ../../linux/audit.rst:50 ../../linux/audit.rst:59 ../../linux/audit.rst:88
+msgid "**示例**"
+msgstr "**Example**"
+
+#: ../../linux/audit.rst:52
+msgid ":literal:`auditctl -w /etc/passwd -p rwxa`"
+msgstr ":literal:`auditctl -w /etc/passwd -p rwxa`"
+
+#: ../../linux/audit.rst:56
+msgid "aureport"
+msgstr "aureport"
+
+#: ../../linux/audit.rst:57
+msgid "aureport 通过日志生成一份总结性的报告"
+msgstr "aureport generates a summary report from the logs"
+
+#: ../../linux/audit.rst:80
+msgid "ausearch"
+msgstr "ausearch"
+
+#: ../../linux/audit.rst:81
+msgid "ausearch 查找审计事件"
+msgstr "ausearch looks up audit events"
+
+#: ../../linux/audit.rst:83
+msgid "基于文件路径查找事件"
+msgstr "look up events based on file path"
+
+#: ../../linux/audit.rst:84
+msgid "基于类型查找事件"
+msgstr "look up events based on type"
+
+#: ../../linux/audit.rst:85
+msgid "基于 audit message ID 查找时间"
+msgstr "look up events based on audit message ID"
+
+#: ../../linux/audit.rst:86
+msgid "基于关键字查找事件"
+msgstr "look up events based on keyword"
+
+#: ../../linux/audit.rst:90
+msgid ":literal:`ausearch -i -f /etc/passwd`"
+msgstr ":literal:`ausearch -i -f /etc/passwd`"
+
+#: ../../linux/audit.rst:102
+msgid "type : audit message 类型"
+msgstr "type: the audit message type"
+
+#: ../../linux/audit.rst:103
+msgid "name : 审计对象"
+msgstr "name: the audited object"
+
+#: ../../linux/audit.rst:104
+msgid "arch : CPU 架构"
+msgstr "arch: the CPU architecture"
+
+#: ../../linux/audit.rst:105
+msgid "syscall : 系统调用类型"
+msgstr "syscall: the system call type"
+
+#: ../../linux/audit.rst:106
+msgid "success : 系统调用是否成功"
+msgstr "success: whether the system call succeeded"
+
+#: ../../linux/audit.rst:107
+msgid "ppid : 父进程 ID"
+msgstr "ppid: the parent process ID"
+
+#: ../../linux/audit.rst:108
+msgid "pid : 进程 ID"
+msgstr "pid: the process ID"
+
+#: ../../linux/audit.rst:109
+msgid "auid : 原始 UID"
+msgstr "auid: the original UID"
+
+#: ../../linux/audit.rst:110
+msgid "uid 和 gid : 访问文件的用户ID和用户组ID"
+msgstr "uid and gid: the user ID and group ID accessing the file"
+
+#: ../../linux/audit.rst:111
+msgid "cwd : 当前路径"
+msgstr "cwd: the current working directory"
+
+#: ../../linux/audit.rst:112
+msgid "comm : 触发这条 audit message 的命令"
+msgstr "comm: the command that triggered this audit message"
+
+#: ../../linux/audit.rst:113
+msgid "exe : 命令的路径"
+msgstr "exe: the path of the command"
+
+#: ../../linux/audit.rst:114
+msgid "key : 规则定义的关键字 [#]_"
+msgstr "key: the keyword defined by the rule [#]_"
+
+#: ../../linux/audit.rst:117
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/audit.rst:118
+msgid "`Linux 用户空间审计工具 audit <https://www.ibm.com/developerworks/cn/linux/l-lo-use-space-audit-tool/index.html>`_"
+msgstr "`Linux userspace audit tool audit <https://www.ibm.com/developerworks/cn/linux/l-lo-use-space-audit-tool/index.html>`_"
+
+#: ../../linux/audit.rst:119
+msgid "`UNDERSTANDING AUDIT LOG FILES <https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security_guide/sec-understanding_audit_log_files>`_"
+msgstr "`UNDERSTANDING AUDIT LOG FILES <https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/security_guide/sec-understanding_audit_log_files>`_"
+

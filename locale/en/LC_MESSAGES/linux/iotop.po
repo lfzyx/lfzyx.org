@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/iotop.rst:2
+msgid "Iotop"
+msgstr ""
+
+#: ../../linux/iotop.rst:4
+msgid "iotop是磁盘I/O实时监控器 [1]_"
+msgstr ""
+
+#: ../../linux/iotop.rst:7
+msgid "安装"
+msgstr ""
+
+#: ../../linux/iotop.rst:9
+msgid "``# apt-get install iostop``"
+msgstr ""
+
+#: ../../linux/iotop.rst:12
+msgid "语法"
+msgstr ""
+
+#: ../../linux/iotop.rst:14
+msgid "``# iotop ``\\ ***``[OPTIONS]``***"
+msgstr ""
+
+#: ../../linux/iotop.rst:16
+msgid "←→改变排序"
+msgstr ""
+
+#: ../../linux/iotop.rst:18
+msgid "r 反向排序"
+msgstr ""
+
+#: ../../linux/iotop.rst:20
+msgid "-o 只显示正在执行I/O的进程和线程"
+msgstr ""
+
+#: ../../linux/iotop.rst:22
+msgid "-P 只显示进程"
+msgstr ""
+
+#: ../../linux/iotop.rst:24
+msgid "-p 只显示某个pid"
+msgstr ""
+
+#: ../../linux/iotop.rst:26
+msgid "-u 只显示某个用户"
+msgstr ""
+
+#: ../../linux/iotop.rst:29
+msgid "示例"
+msgstr ""
+
+#: ../../linux/iotop.rst:31
+msgid "只显示root用户的进程"
+msgstr ""
+
+#: ../../linux/iotop.rst:33
+msgid "``# iotop -u root -P``"
+msgstr ""
+
+#: ../../linux/iotop.rst:35
+msgid "`` Total DISK READ:       0.00 B/s | Total DISK WRITE:       0.00 B/s``"
+msgstr ""
+
+#: ../../linux/iotop.rst:36
+msgid ""
+"``   PID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN     IO>    COMMAND"
+"                                                                                                "
+"``"
+msgstr ""
+
+#: ../../linux/iotop.rst:37
+msgid "``     1 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % init [2]``"
+msgstr ""
+
+#: ../../linux/iotop.rst:38
+msgid ""
+"`` 27943 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % sshd: "
+"root@pts/1``"
+msgstr ""
+
+#: ../../linux/iotop.rst:39
+msgid "`` 27945 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % -bash``"
+msgstr ""
+
+#: ../../linux/iotop.rst:42
+msgid "参考文献"
+msgstr ""
+
+#: ../../linux/iotop.rst:49
+msgid ""
+"`Install Iotop (Monitor Linux Disk I/O) in RHEL, CentOS and Fedora "
+"<http://www.tecmint.com/install-iotop-monitor-linux-disk-io-in-rhel-"
+"centos-and-fedora/>`__"
+msgstr ""
+

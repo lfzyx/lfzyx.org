@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/keepalived.rst:4
+msgid "Keepalived - 高可用解决方案"
+msgstr "Keepalived - High Availability Solution"
+
+#: ../../linux/keepalived.rst:6
+msgid "Keepalived是一个基于VRRP [#]_ 协议来实现的服务高可用方案，主要有三个模块，分别是 core、check 和 VRRP。"
+msgstr "Keepalived is a service high-availability solution implemented based on the VRRP [#]_ protocol. It has three main modules: core, check, and VRRP."
+
+#: ../../linux/keepalived.rst:8
+msgid "core 模块为 keepalived 的核心，负责主进程的启动、维护以及全局配置文件的加载和解析，check 负责健康检查，包括常见的各种检查方式，VRRP 模块是来实现 VRRP 协议的。"
+msgstr "The core module is keepalived's core, responsible for starting and maintaining the main process and loading and parsing the global configuration file. check is responsible for health checks, including various common check methods. The VRRP module implements the VRRP protocol."
+
+#: ../../linux/keepalived.rst:10
+msgid "基于这些模块，keepalived 采用了多进程的设计模式，每个进程对应一个模块。"
+msgstr "Based on these modules, keepalived uses a multi-process design, with each process corresponding to one module."
+
+#: ../../linux/keepalived.rst:13
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/keepalived.rst:15
+msgid ":literal:`apt-get install keepalived`"
+msgstr ":literal:`apt-get install keepalived`"
+
+#: ../../linux/keepalived.rst:18
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/keepalived.rst:20
+msgid "keepalived只有一个配置文件keepalived.conf，里面主要包括以下几个配置区域，分别是global_defs、static_ipaddress、static_routes、vrrp_script、vrrp_instance和virtual_server。 [#]_"
+msgstr "keepalived has only one configuration file, keepalived.conf, which mainly contains the following configuration sections: global_defs, static_ipaddress, static_routes, vrrp_script, vrrp_instance, and virtual_server. [#]_"
+
+#: ../../linux/keepalived.rst:23
+msgid "global_defs"
+msgstr "global_defs"
+
+#: ../../linux/keepalived.rst:25
+msgid "global_defs用于设置 keepalived 的通知机制和标识"
+msgstr "global_defs is used to set keepalived's notification mechanism and identity"
+
+#: ../../linux/keepalived.rst:41
+msgid "notification_email 指定 keepalived 发生事件时，用邮件通知的email地址"
+msgstr "notification_email specifies the email address used to notify you when keepalived events occur"
+
+#: ../../linux/keepalived.rst:43
+msgid "router_id 设置机器的标识"
+msgstr "router_id sets the machine's identifier"
+
+#: ../../linux/keepalived.rst:46
+msgid "vrrp_script"
+msgstr "vrrp_script"
+
+#: ../../linux/keepalived.rst:48
+msgid "告诉 keepalived 在什么情况下降低优先级，可以有多个 vrrp_script"
+msgstr "Tells keepalived under what conditions to lower priority; there can be multiple vrrp_script blocks"
+
+#: ../../linux/keepalived.rst:61
+msgid "script : 自己写的检测脚本。也可以是一行命令如 pidof nginx"
+msgstr "script: a check script you write yourself. It can also be a one-line command such as pidof nginx"
+
+#: ../../linux/keepalived.rst:62
+msgid "interval 2 : 每2s检测一次"
+msgstr "interval 2: check once every 2 seconds"
+
+#: ../../linux/keepalived.rst:63
+msgid "weight -5 : 检测失败（脚本返回非0）则优先级 -5"
+msgstr "weight -5: if the check fails (script returns non-zero), priority is reduced by -5"
+
+#: ../../linux/keepalived.rst:64
+msgid "fall 2 : 检测连续 2 次失败才算确定是真失败。会用weight减少优先级（1-255之间）"
+msgstr "fall 2: only after 2 consecutive failed checks is it considered a real failure. weight is used to reduce priority (between 1-255)"
+
+#: ../../linux/keepalived.rst:65
+msgid "rise 2 : 检测 2 次成功就算成功。但不修改优先级"
+msgstr "rise 2: 2 consecutive successful checks are considered success. But priority is not modified"
+
+#: ../../linux/keepalived.rst:68
+msgid "vrrp_instance"
+msgstr "vrrp_instance"
+
+#: ../../linux/keepalived.rst:70
+msgid "vrrp_instance用来定义对外提供服务的VIP区域及其相关属性 [#]_"
+msgstr "vrrp_instance is used to define the VIP area exposed externally and its related attributes [#]_"
+
+#: ../../linux/keepalived.rst:97
+msgid "state : 指定instance(Initial)的初始状态，但启动后会发生竞选，高优先级的会抢占为MASTER"
+msgstr "state: specifies the instance's initial state (Initial), but after startup an election occurs, and the higher-priority node will take over as MASTER"
+
+#: ../../linux/keepalived.rst:98
+msgid "interface : 实例绑定的网卡，因为在配置虚拟IP的时候必须是在已有的网卡上添加的"
+msgstr "interface: the network interface the instance is bound to, since the virtual IP must be added on an existing network interface"
+
+#: ../../linux/keepalived.rst:99
+msgid "mcast_src_ip :发送多播数据包时的源IP地址，如果没有设置那么就用绑定的网卡的 primary IP"
+msgstr "mcast_src_ip: the source IP address used when sending multicast packets; if not set, the primary IP of the bound network interface is used"
+
+#: ../../linux/keepalived.rst:100
+msgid "virtual_router_id : 这里设置VRID，这里非常重要，相同的VRID为一个组，他将决定多播的MAC地址"
+msgstr "virtual_router_id: this sets the VRID, which is very important — the same VRID forms one group, and it determines the multicast MAC address"
+
+#: ../../linux/keepalived.rst:101
+msgid "priority : 设置本节点的优先级，优先级高的为master"
+msgstr "priority: sets this node's priority; the higher priority node becomes master"
+
+#: ../../linux/keepalived.rst:102
+msgid "advert_int : 检查间隔，默认为1秒。这就是VRRP的定时器，MASTER每隔这样一个时间间隔，就会发送一个advertisement报文以通知组内其他路由器自己工作正常"
+msgstr "advert_int: the check interval, default 1 second. This is VRRP's timer — at each such interval, MASTER sends an advertisement packet to notify other routers in the group that it's working normally"
+
+#: ../../linux/keepalived.rst:103
+msgid "authentication : 定义认证方式和密码，主从必须一样"
+msgstr "authentication: defines the authentication method and password, which must be the same on master and backup"
+
+#: ../../linux/keepalived.rst:104
+msgid "virtual_ipaddress : 这里设置的就是VIP，也就是虚拟IP地址，他随着state的变化而增加删除，当state为master的时候就添加，当state为backup的时候删除"
+msgstr "virtual_ipaddress: this sets the VIP, i.e. the virtual IP address; it's added or removed as state changes — added when state is master, removed when state is backup"
+
+#: ../../linux/keepalived.rst:105
+msgid "track_script : 引用VRRP脚本，即在 vrrp_script 部分指定的名字。定期运行它们来改变优先级，并最终引发主备切换。"
+msgstr "track_script: references a VRRP script, i.e. the name specified in the vrrp_script section. It's run periodically to change priority, which can ultimately trigger a master/backup switch."
+
+#: ../../linux/keepalived.rst:108
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/keepalived.rst:109
+msgid "VRRP全称 Virtual Router Redundancy Protocol，即 虚拟路由冗余协议。可以认为它是实现路由器高可用的容错协议，即将N台提供相同功能的路由器组成一个路由器组(Router Group)，这个组里面有一个master和多个backup，但在外界看来就像一台一样，构成虚拟路由器，拥有一个虚拟IP（vip，也就是路由器所在局域网内其他机器的默认路由），占有这个IP的master实际负责ARP相应和转发IP数据包，组中的其它路由器作为备份的角色处于待命状态。master会发组播消息，当backup在超时时间内收不到vrrp包时就认为master宕掉了，这时就需要根据VRRP的优先级来选举一个backup当master，保证路由器的高可用。"
+msgstr "VRRP stands for Virtual Router Redundancy Protocol. It can be thought of as a fault-tolerance protocol for achieving router high availability: N routers providing the same functionality form a Router Group, which has one master and multiple backups, but from the outside it looks like a single router — a virtual router with a virtual IP (VIP, i.e. the default route for other machines on the router's LAN). The master holding this IP is actually responsible for ARP responses and forwarding IP packets, while the other routers in the group act as backups on standby. The master sends multicast messages; when a backup fails to receive a VRRP packet within the timeout period, it considers the master to be down, at which point a backup is elected as the new master based on VRRP priority, ensuring router high availability."
+
+#: ../../linux/keepalived.rst:110
+msgid "`linux/keepalived at master · chenzhiwei/linux <https://github.com/chenzhiwei/linux/tree/master/keepalived>`_"
+msgstr "`linux/keepalived at master · chenzhiwei/linux <https://github.com/chenzhiwei/linux/tree/master/keepalived>`_"
+
+#: ../../linux/keepalived.rst:111
+msgid "`Nginx+Keepalived实现站点高可用 | Sean's Notes <http://seanlook.com/2015/05/18/nginx-keepalived-ha/>`_"
+msgstr "`Achieving Site High Availability with Nginx+Keepalived | Sean's Notes <http://seanlook.com/2015/05/18/nginx-keepalived-ha/>`_"
+

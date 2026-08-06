@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/mysql.rst:2
+msgid "MySQL"
+msgstr ""
+
+#: ../../linux/mysql.rst:5
+msgid "MySQL在过去由于性能高、成本低、可靠性好，已经成为最流行的开源数据库，因此被广泛地应用在Internet上的中小型网站中。"
+msgstr ""
+
+#: ../../linux/mysql.rst:8
+msgid "数据类型"
+msgstr ""
+
+#: ../../linux/mysql.rst:10
+msgid "MySQL有三大类数据类型, 分别为数字、日期\\时间、字符串, 这三大类中又更细致的划分了许多子类型 [1]_"
+msgstr ""
+
+#: ../../linux/mysql.rst:14
+msgid "数字类型"
+msgstr ""
+
+#: ../../linux/mysql.rst:16
+msgid "整数: tinyint、smallint、mediumint、int、bigint"
+msgstr ""
+
+#: ../../linux/mysql.rst:18
+msgid "浮点数: float、double、real、decimal"
+msgstr ""
+
+#: ../../linux/mysql.rst:21
+msgid "日期\\时间"
+msgstr ""
+
+#: ../../linux/mysql.rst:23
+msgid "date、time、datetime、timestamp、year"
+msgstr ""
+
+#: ../../linux/mysql.rst:26
+msgid "字符串类型"
+msgstr ""
+
+#: ../../linux/mysql.rst:28
+msgid "字符串: char、varchar"
+msgstr ""
+
+#: ../../linux/mysql.rst:30
+msgid "文本: tinytext、text、mediumtext、longtext"
+msgstr ""
+
+#: ../../linux/mysql.rst:32
+msgid "二进制(可用来存储图片、音乐等): tinyblob、blob、mediumblob、longblob"
+msgstr ""
+
+#: ../../linux/mysql.rst:35
+msgid "语法"
+msgstr ""
+
+#: ../../linux/mysql.rst:37
+msgid "create"
+msgstr ""
+
+#: ../../linux/mysql.rst:53
+msgid "show"
+msgstr ""
+
+#: ../../linux/mysql.rst:65
+msgid "insert"
+msgstr ""
+
+#: ../../linux/mysql.rst:71
+msgid "select"
+msgstr ""
+
+#: ../../linux/mysql.rst:73
+msgid ""
+"select column1 from table_name  [where column2 = | > | < | > = | < | != |"
+" is [not] null | in | like | or | and] ; 查询数据 select count(*) from "
+"table_name; 计算表内行数 select * from table_name;  列出表内所有内容 select "
+"sum(DATA_LENGTH)/1024/1024  from TABlES ;  计算数据库大小 select field0, field1 "
+"from table where field0=\"content\"; "
+"列出表中field0,field1这两列，并且field0的值是\"content\" select * from table where "
+"field0 !=\"content\"; 列出表中所有记录，并且field0的值不是\"content\" select * from "
+"table where field0 = \"content0\" and field1 = "
+"“content1”;列出表中field0值为content0，field1值为content1的所有数据 select * from table"
+" where field0 != \"content0\" and field1 = "
+"\"content1\";列出表中field0值不为content0，field1值为content1的所有数据 select "
+"version(), database() ;  显示服务器的版本和当前的数据库名称 select current_date() ;  "
+"获取当前日期"
+msgstr ""
+
+#: ../../linux/mysql.rst:84
+msgid "update"
+msgstr ""
+
+#: ../../linux/mysql.rst:90
+msgid "delete"
+msgstr ""
+
+#: ../../linux/mysql.rst:96
+msgid "drop"
+msgstr ""
+
+#: ../../linux/mysql.rst:103
+msgid "alter"
+msgstr ""
+
+#: ../../linux/mysql.rst:113
+msgid "mysqlshow -u -p -i *显示特定的数据库信息*"
+msgstr ""
+
+#: ../../linux/mysql.rst:115
+msgid "mysqldump"
+msgstr ""
+
+#: ../../linux/mysql.rst:122
+msgid "describe"
+msgstr ""
+
+#: ../../linux/mysql.rst:128
+msgid "use database_name; 进入数据库"
+msgstr ""
+
+#: ../../linux/mysql.rst:136
+msgid "参考文献"
+msgstr ""
+
+#: ../../linux/mysql.rst:137
+msgid ""
+"`mysql数据类型 "
+"<http://www.cnblogs.com/zbseoag/archive/2013/03/19/2970004.html>`_"
+msgstr ""
+

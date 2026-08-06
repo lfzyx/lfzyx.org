@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/pxe.rst:2
+msgid "PXE - 预启动执行环境"
+msgstr "PXE - Preboot Execution Environment"
+
+#: ../../linux/pxe.rst:4
+msgid "PXE(Preboot eXecution Environment)预启动执行环境,提供了一种使用网络接口（Network Interface）启动计算机的机制。这种机制让计算机的启动可以不依赖本地数据存储设备（如硬盘）或本地已安装的操作系统。 [#]_"
+msgstr "PXE (Preboot eXecution Environment) provides a mechanism for booting a computer using a network interface. This mechanism allows a computer to boot without depending on local data storage devices (such as a hard disk) or a locally installed operating system. [#]_"
+
+#: ../../linux/pxe.rst:9
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/pxe.rst:11
+msgid "dnsmasq是一个轻量级网络基础架构服务器，它可以通过内部集成的DNS、DHCP和TFTP服务器提供网络启动服务。"
+msgstr "dnsmasq is a lightweight network infrastructure server; it can provide network boot services through its built-in DNS, DHCP, and TFTP servers."
+
+#: ../../linux/pxe.rst:24
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/pxe.rst:37
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/pxe.rst:38
+msgid "`Preboot Execution Environment - Wikipedia <http://en.wikipedia.org/wiki/Preboot_Execution_Environment>`_"
+msgstr "`Preboot Execution Environment - Wikipedia <http://en.wikipedia.org/wiki/Preboot_Execution_Environment>`_"
+

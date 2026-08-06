@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/index.rst:2
+msgid "Linux"
+msgstr "Linux"
+
+#: ../../linux/index.rst:3
+msgid "本章主要介绍 Linux 常用工具，比如系统管理、文本处理"
+msgstr "This chapter introduces common Linux tools, such as system administration and text processing"
+
+#: ../../linux/index.rst:7
+msgid "本书并非讲解 Linux 各种工具的完整用法，并且假设读者已经熟悉 Linux 命令行下的基本操作。"
+msgstr "This book does not cover the complete usage of every Linux tool, and assumes the reader is already familiar with basic Linux command-line operations."
+

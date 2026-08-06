@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../devops/elasticstack.rst:2
+msgid "Elastic Stack"
+msgstr "Elastic Stack"
+
+#: ../../devops/elasticstack.rst:4
+msgid "Elastic Stack 能够安全可靠地获取任何来源、任何格式的数据，并且能够实时地对数据进行搜索、分析和可视化。"
+msgstr "Elastic Stack can securely and reliably ingest data from any source and in any format, and can search, analyze, and visualize that data in real time."
+
+#: ../../devops/elasticstack.rst:6
+msgid "我们主要用到 Elastic Stack 中的以下组件："
+msgstr "We mainly use the following components of Elastic Stack:"
+
+#: ../../devops/elasticstack.rst:8
+msgid "Elasticsearch, 分布式的 RESTful 风格的搜索和数据分析引擎，集中存储数据"
+msgstr "Elasticsearch, a distributed RESTful-style search and data analytics engine, for centralized data storage"
+
+#: ../../devops/elasticstack.rst:9
+msgid "Filebeat, 轻量型采集器，用于汇总日志数据转发到 Elasticsearch"
+msgstr "Filebeat, a lightweight shipper for aggregating log data and forwarding it to Elasticsearch"
+
+#: ../../devops/elasticstack.rst:10
+msgid "Kibana, 以图表的形式呈现数据，并且具有可扩展的用户界面"
+msgstr "Kibana, presents data as charts, with an extensible user interface"
+
+#: ../../devops/elasticstack.rst:11
+msgid "X-Pack, 使传输和存储的数据始终享有可靠的安全保障"
+msgstr "X-Pack, keeps data secure at all times, both in transit and at rest"
+
+#: ../../devops/elasticstack.rst:14
+msgid "Elasticsearch"
+msgstr "Elasticsearch"
+
+#: ../../devops/elasticstack.rst:15
+msgid "Elasticsearch 是一个高性能的开源的分布式全文检索和分析工具，用于实时存储、检索、分析大数据。"
+msgstr "Elasticsearch is a high-performance, open source, distributed full-text search and analytics tool for real-time storage, retrieval, and analysis of big data."
+

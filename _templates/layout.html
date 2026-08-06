@@ -9,6 +9,10 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="_static/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+  {% set relpath = '' if pagename == (root_doc if root_doc is defined else master_doc) else pagename + '.html' %}
+  <link rel="alternate" hreflang="en" href="https://lfzyx.org/{{ relpath }}">
+  <link rel="alternate" hreflang="zh" href="https://lfzyx.org/zh/{{ relpath }}">
+  <link rel="alternate" hreflang="x-default" href="https://lfzyx.org/{{ relpath }}">
 {{ super() }}
 {% if theme_analytics_id %}
   <!-- Global site tag (gtag.js) - Google Analytics -->

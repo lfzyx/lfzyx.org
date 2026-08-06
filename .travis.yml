@@ -17,7 +17,9 @@ jobs:
       script: make coverage
 
     - stage: build
-      script: sphinx-build -q -b html . _build/html -d _build/doctrees
+      script:
+        - sphinx-build -q -b html -D language=en . _build/html -d _build/doctrees
+        - sphinx-build -q -b html . _build/html/zh -d _build/doctrees-zh
       skip_cleanup: true
 
     - stage: deploy

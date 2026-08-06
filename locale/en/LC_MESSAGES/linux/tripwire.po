@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/tripwire.rst:4
+msgid "Tripwire - 文件完整性检查"
+msgstr "Tripwire - File Integrity Checking"
+
+#: ../../linux/tripwire.rst:6
+msgid "Tripwire 是一个文件完整性检查程序，用于监控指定文件是否变更，这些变更包含（但不限于）:"
+msgstr "Tripwire is a file integrity checker used to monitor whether specified files have changed; these changes include (but are not limited to):"
+
+#: ../../linux/tripwire.rst:8
+msgid "inode"
+msgstr "inode"
+
+#: ../../linux/tripwire.rst:9
+msgid "时间戳"
+msgstr "timestamp"
+
+#: ../../linux/tripwire.rst:10
+msgid "文件大小"
+msgstr "file size"
+
+#: ../../linux/tripwire.rst:11
+msgid "文件权限和所有权属性"
+msgstr "file permissions and ownership attributes"
+
+#: ../../linux/tripwire.rst:12
+msgid "哈希值"
+msgstr "hash value"
+
+#: ../../linux/tripwire.rst:13
+msgid "文件类型"
+msgstr "file type"
+
+#: ../../linux/tripwire.rst:15
+msgid "初始化时，Tripwire 扫描文件系统，把每个文件的校验值存储到数据库中，建立正常文件的基线，下一次扫描时，将文件的校验值和数据库中的校验值进行对比，如果校验值不一样，它会通过电子邮件警报或日志报告任何异常情况。"
+msgstr "During initialization, Tripwire scans the filesystem and stores each file's checksum in a database, establishing a baseline of normal files. On the next scan, it compares each file's checksum against the one in the database; if the checksums differ, it reports any anomaly via an email alert or the log."
+
+#: ../../linux/tripwire.rst:19
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/tripwire.rst:21
+msgid "``apt-get install tripwire``"
+msgstr "``apt-get install tripwire``"
+
+#: ../../linux/tripwire.rst:23
+msgid "安装期间需要配置密码，Site passphrase 用于加密 tw.cfg 和 tw.pol ，Local passphrase 用于加密数据库和 report 文件"
+msgstr "During installation you need to set passwords: the Site passphrase is used to encrypt tw.cfg and tw.pol, and the Local passphrase is used to encrypt the database and report files"
+
+#: ../../linux/tripwire.rst:27
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/tripwire.rst:29
+msgid "tw.cfg 是 Tripwire 的加密配置文件，twcfg.txt 则是该文件未加密的状态"
+msgstr "tw.cfg is Tripwire's encrypted configuration file; twcfg.txt is that file's unencrypted form"
+
+#: ../../linux/tripwire.rst:30
+msgid "tw.pol 是 Tripwire 的加密策略文件，twpol.txt 则是该文件未加密的状态"
+msgstr "tw.pol is Tripwire's encrypted policy file; twpol.txt is that file's unencrypted form"
+
+#: ../../linux/tripwire.rst:31
+msgid "local.key 是本地密钥，用于保护数据库"
+msgstr "local.key is the local key, used to protect the database"
+
+#: ../../linux/tripwire.rst:32
+msgid "site.key 是站点密钥，用于保护tw.cfg 和 tw.pol"
+msgstr "site.key is the site key, used to protect tw.cfg and tw.pol"
+
+#: ../../linux/tripwire.rst:35
+msgid "使用"
+msgstr "Usage"
+
+#: ../../linux/tripwire.rst:38
+msgid "调整策略文件tw.pol"
+msgstr "Adjusting the policy file tw.pol"
+
+#: ../../linux/tripwire.rst:44
+msgid "显示策略文件"
+msgstr "Show the policy file"
+
+#: ../../linux/tripwire.rst:46
+msgid "``twadmin --print-polfile``"
+msgstr "``twadmin --print-polfile``"
+
+#: ../../linux/tripwire.rst:49
+msgid "调整配置文件tw.cfg"
+msgstr "Adjusting the configuration file tw.cfg"
+
+#: ../../linux/tripwire.rst:56
+msgid "显示配置文件"
+msgstr "Show the configuration file"
+
+#: ../../linux/tripwire.rst:58
+msgid "``twadmin --print-cfgfile``"
+msgstr "``twadmin --print-cfgfile``"
+
+#: ../../linux/tripwire.rst:61
+msgid "初始化数据库"
+msgstr "Initializing the database"
+
+#: ../../linux/tripwire.rst:63
+msgid "``tripwire --init``"
+msgstr "``tripwire --init``"
+
+#: ../../linux/tripwire.rst:65
+msgid "初始化结束后，会在 /var/lib/tripwire/ 生成数据库"
+msgstr "Once initialization finishes, a database is generated under /var/lib/tripwire/"
+
+#: ../../linux/tripwire.rst:68
+msgid "进行检测"
+msgstr "Running a check"
+
+#: ../../linux/tripwire.rst:70
+msgid "``tripwire --check``"
+msgstr "``tripwire --check``"
+
+#: ../../linux/tripwire.rst:72
+msgid "检测结束后，会在/var/lib/tripwire/report/ 生成检测报告"
+msgstr "Once the check finishes, a detection report is generated under /var/lib/tripwire/report/"
+
+#: ../../linux/tripwire.rst:75
+msgid "读取检测结果"
+msgstr "Reading the detection results"
+
+#: ../../linux/tripwire.rst:77
+msgid "``twprint --print-report -r /var/lib/tripwire/report/*.twr``"
+msgstr "``twprint --print-report -r /var/lib/tripwire/report/*.twr``"
+
+#: ../../linux/tripwire.rst:80
+msgid "更新数据库"
+msgstr "Updating the database"
+
+#: ../../linux/tripwire.rst:82
+msgid "如果文件的变更是正常的，那么应该更新数据库来忽略这次变更"
+msgstr "If a file's change is legitimate, the database should be updated to ignore that change"
+
+#: ../../linux/tripwire.rst:84
+msgid "``tripwire --update -r /var/lib/tripwire/report/*.twr``"
+msgstr "``tripwire --update -r /var/lib/tripwire/report/*.twr``"
+
+#: ../../linux/tripwire.rst:86
+msgid "执行该命令之后，您就进入了一个编辑器。搜索所报告的文件名。所有侵害或更新都在文件名前面有一个 [x]。"
+msgstr "After running this command, you're taken into an editor. Search for the reported file names. All violations or updates have an [x] in front of the file name."
+
+#: ../../linux/tripwire.rst:89
+msgid "如果您希望接受这些更改为正当的，则只需保存退出文件即可。Tripwire 不再报告此文件。如果您想要这个文件不被添加到数据库，那么请删除 'x'。"
+msgstr "If you want to accept these changes as legitimate, simply save and quit the file. Tripwire will no longer report on this file. If you don't want this file added to the database, delete the 'x'."
+
+#: ../../linux/tripwire.rst:92
+msgid "保存文件并退出编辑器时，若有数据库更新发生，会提示您输入密码以完成该过程。如果没有更新发生，那么 Tripwire 会通知您的，并且不需要输入密码。"
+msgstr "When you save the file and exit the editor, if a database update is pending you'll be prompted for a password to complete the process. If no update is pending, Tripwire will notify you, and no password is required."
+
+#: ../../linux/tripwire.rst:96
+msgid "更新策略文件tw.pol"
+msgstr "Updating the policy file tw.pol"
+
+#: ../../linux/tripwire.rst:98
+msgid "策略文件的后续更新应该采取如下形式"
+msgstr "Subsequent updates to the policy file should take the following form"
+
+#: ../../linux/tripwire.rst:100
+msgid "``tripwire --update-policy --secure-mode low twpol.txt``"
+msgstr "``tripwire --update-policy --secure-mode low twpol.txt``"
+

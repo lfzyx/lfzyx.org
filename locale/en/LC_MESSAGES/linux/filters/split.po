@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/filters/split.rst:2
+msgid "split"
+msgstr "split"
+
+#: ../../linux/filters/split.rst:4
+msgid "按行或者字节分割文件"
+msgstr "Split a file by lines or by bytes"
+
+#: ../../linux/filters/split.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/filters/split.rst:9
+msgid "split [OPTION]... [FILE [PREFIX]]"
+msgstr "split [OPTION]... [FILE [PREFIX]]"
+
+#: ../../linux/filters/split.rst:12
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/filters/split.rst:14
+msgid "split -b 60 tmpfile  按字节数分割"
+msgstr "split -b 60 tmpfile  split by number of bytes"
+
+#: ../../linux/filters/split.rst:16
+msgid "split -l 20 tmpfile  按行数分割"
+msgstr "split -l 20 tmpfile  split by number of lines"
+

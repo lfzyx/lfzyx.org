@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/restorecon.rst:2
+msgid "Restorecon"
+msgstr ""
+
+#: ../../linux/restorecon.rst:5
+msgid "恢复 SELinux 文件属性文件属性即恢复文件的安全上下文 用法："
+msgstr ""
+
+#: ../../linux/restorecon.rst:7
+msgid ""
+"restorecon [-iFnrRv] [-e excludedir ] [-o filename ] [-f filename | "
+"pathname...]"
+msgstr ""
+
+#: ../../linux/restorecon.rst:8
+msgid ""
+"参数： -i：忽略不存在的文件。 -f：infilename 文件 infilename 中记录要处理的文件。 -e：directory "
+"排除目录。 -R -r：递归处理目录。 -n：不改变文件标签。 -o outfilename：保存文件列表到 "
+"outfilename，在文件不正确情况下。 -v：将过程显示到屏幕上。 -F：强制恢复文件安全语境"
+msgstr ""
+

@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/httpry.rst:2
+msgid "Httpry"
+msgstr ""
+
+#: ../../linux/httpry.rst:4
+msgid "捕获HTTP流量，并且将HTTP协议层的数据内容以可读形式列举出来。"
+msgstr ""
+
+#: ../../linux/httpry.rst:7
+msgid "安装"
+msgstr ""
+
+#: ../../linux/httpry.rst:9
+msgid "`` # apt-get install httpry``"
+msgstr ""
+
+#: ../../linux/httpry.rst:12
+msgid "语法"
+msgstr ""
+
+#: ../../linux/httpry.rst:14
+msgid "-b file 将数据包以二进制文件的形式保存下来"
+msgstr ""
+
+#: ../../linux/httpry.rst:16
+msgid "-d 后台守护"
+msgstr ""
+
+#: ../../linux/httpry.rst:18
+msgid "-f format 指定输出格式"
+msgstr ""
+
+#: ../../linux/httpry.rst:20
+msgid "-F force output flush"
+msgstr ""
+
+#: ../../linux/httpry.rst:22
+msgid "-i device 指定监听网卡"
+msgstr ""
+
+#: ../../linux/httpry.rst:24
+msgid "-l threshold specify a rps threshold for rate statistics"
+msgstr ""
+
+#: ../../linux/httpry.rst:26
+msgid "-m methods 监视指定的HTTP方法（如：GET，POST，PUT，HEAD，CONNECT）"
+msgstr ""
+
+#: ../../linux/httpry.rst:28
+msgid "-n count set number of HTTP packets to parse"
+msgstr ""
+
+#: ../../linux/httpry.rst:30
+msgid "-o file 将数据以可读的字符文件形式保存下来"
+msgstr ""
+
+#: ../../linux/httpry.rst:32
+msgid "-p disable promiscuous mode"
+msgstr ""
+
+#: ../../linux/httpry.rst:34
+msgid "-P file use custom PID filename when running in daemon mode"
+msgstr ""
+
+#: ../../linux/httpry.rst:36
+msgid "-q suppress non-critical output"
+msgstr ""
+
+#: ../../linux/httpry.rst:38
+msgid "-r file 读取所保存的HTTP数据包文件"
+msgstr ""
+
+#: ../../linux/httpry.rst:40
+msgid "-s run in HTTP requests per second mode"
+msgstr ""
+
+#: ../../linux/httpry.rst:42
+msgid "-t seconds specify the display interval for rate statistics"
+msgstr ""
+
+#: ../../linux/httpry.rst:44
+msgid "-u user 设置进程属主"
+msgstr ""
+

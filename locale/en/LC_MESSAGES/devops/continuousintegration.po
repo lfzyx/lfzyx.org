@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../devops/continuousintegration.rst:2
+msgid "Continuous Integration - 持续集成方法"
+msgstr "Continuous Integration - Continuous Integration Practices"
+
+#: ../../devops/continuousintegration.rst:3
+msgid "持续集成(continuous integration)是软件工程中的一种实践，用于每天多次合并所有开发工作副本至一个共享的主线。 这个术语源自极限编程(extreme programming)的一个最佳实践，主要目的是防止积累问题。 持续集成可以看作是早期迭代增量式开发所主张的定期集成实践。 [#]_"
+msgstr "Continuous integration is a software engineering practice of merging all developers' working copies to a shared mainline several times a day. The term originates from a best practice of extreme programming, whose main purpose is to prevent the accumulation of integration problems. Continuous integration can be seen as the regular-integration practice advocated by early iterative, incremental development. [#]_"
+
+#: ../../devops/continuousintegration.rst:8
+msgid "原则"
+msgstr "Principles"
+
+#: ../../devops/continuousintegration.rst:10
+msgid "单一代码库：项目源代码存放于一个版本控制系统， 让所有人都能从这里获取最新的源代码.持续集成提倡开发人员频繁提交修改过的源代码。 可以用最新的检出构建系统，并且不需要额外的依赖，减少分支，使用集成代替维持多个软件版本。"
+msgstr "Single source repository: project source code is stored in a single version control system, so everyone can get the latest source code from there. Continuous integration encourages developers to commit modified source code frequently. The system can always be built from the latest checkout, with no extra dependencies needed, fewer branches, and integration used instead of maintaining multiple software versions."
+
+#: ../../devops/continuousintegration.rst:13
+msgid "自动构建：一个简单的命令就可以构建系统。自动化构建包括自动化集成，自动部署。 在许多情况下，构建脚本不仅仅编译二进制文件，同时还生成文档、网页、统计和分发介质。"
+msgstr "Automated build: a single command can build the system. Automated builds include automated integration and automated deployment. In many cases, the build script not only compiles binaries but also generates documentation, web pages, statistics, and distribution media."
+
+#: ../../devops/continuousintegration.rst:15
+msgid "自动测试：一旦代码构建完成，自动运行所有测试以确定符合期望。"
+msgstr "Automated testing: once the code builds, all tests run automatically to confirm expectations are met."
+
+#: ../../devops/continuousintegration.rst:16
+msgid "每人每天提交代码至主线：通过定期提交，每个提交者可以减少修改代码带来的冲突。 传统开发模式中，开发进行到特定阶段后再集成到一起进行测试，但很多Bug在项目早期就存在了， 如果在最后集成的时候才发现问题，开发者需要在集成阶段花费大量的时间来定位Bug。 但如果尽早检查，系统中的一小部分冲突可以使团队成员尽早沟通。 建议至少一天一次提交所有更改，进行自动构建与自动测试的检验，以尽快发现集成错误。 对于持续集成来说，集成越频繁，效果越好。"
+msgstr "Everyone commits to the mainline every day: through regular commits, each committer can reduce conflicts caused by code changes. In the traditional development model, integration and testing only happen after development reaches a certain stage, but many bugs already exist early in the project; if they're only discovered at final integration, developers need to spend a lot of time during integration locating the bug. But if checked early, a small subset of conflicts in the system lets team members communicate sooner. It's recommended to commit all changes at least once a day and run automated build and test verification, to catch integration errors as early as possible. For continuous integration, the more frequent the integration, the better the results."
+
+#: ../../devops/continuousintegration.rst:22
+msgid "每次提交的代码可以被构建：为了验证是否正确集成，每次提交至当前工作版本的代码应该可以被构建。 持续集成服务器监控版本控制系统，一旦有变化，构建会自动进行。"
+msgstr "Every commit should be buildable: to verify correct integration, every commit to the current working version should be buildable. The continuous integration server monitors the version control system, and a build runs automatically whenever there's a change."
+
+#: ../../devops/continuousintegration.rst:24
+msgid "保持快速构建"
+msgstr "Keep the build fast"
+
+#: ../../devops/continuousintegration.rst:25
+msgid "复制生产环境进行测试：有测试环境可能会导致系统部署到生产环境时失败，因为生产环境和测试环境有很多不同。"
+msgstr "Test in a copy of the production environment: deploying to production can fail even after passing a test environment, because production and test environments often differ in many ways."
+
+#: ../../devops/continuousintegration.rst:26
+msgid "简单的获取最新成果"
+msgstr "Make it easy to get the latest deliverable"
+
+#: ../../devops/continuousintegration.rst:27
+msgid "每个人都可以看到最新版本的结果"
+msgstr "Everyone can see the results of the latest version"
+
+#: ../../devops/continuousintegration.rst:28
+msgid "自动部署：许多持续集成系统允许构建完成后运行脚本，脚本用于发布系统到测试环境，使每个人可以看到成果。进一步可以在生产环境中自动化部署。"
+msgstr "Automated deployment: many continuous integration systems allow scripts to run after a build completes, releasing the system to a test environment so everyone can see the results. This can be extended further to automate deployment to production."
+
+#: ../../devops/continuousintegration.rst:31
+msgid "集成过程"
+msgstr "Integration Process"
+
+#: ../../devops/continuousintegration.rst:33
+msgid "开发人员从源代码仓库检出最新程序"
+msgstr "Developer checks out the latest code from the source repository"
+
+#: ../../devops/continuousintegration.rst:34
+msgid "开发人员编写代码、测试用例，并提交更新结果给版本控制仓库"
+msgstr "Developer writes code and test cases, then commits the updated results to the version control repository"
+
+#: ../../devops/continuousintegration.rst:35
+msgid "持续集成服务器根据触发条件，从版本控制仓库检出最新代码，进行编译、测试，并进行打包，如有必要，实现产品部署、发布"
+msgstr "Based on trigger conditions, the continuous integration server checks out the latest code from the version control repository, compiles it, runs tests, packages it, and if necessary deploys and releases the product"
+
+#: ../../devops/continuousintegration.rst:36
+msgid "开发人员检查集成过程中出现的问题"
+msgstr "Developer reviews any problems that occurred during integration"
+
+#: ../../devops/continuousintegration.rst:39
+msgid "优点"
+msgstr "Benefits"
+
+#: ../../devops/continuousintegration.rst:41
+msgid "易于定位错误。也就是当你的持续集成失败了，说明你新加的代码或者修改的代码引起了错误，这样你很容易的就可以知道到底是谁犯了错误"
+msgstr "Easy to pinpoint errors. That is, when your continuous integration fails, it means the code you just added or modified caused the error, so you can easily tell who made the mistake"
+
+#: ../../devops/continuousintegration.rst:42
+msgid "及早在项目里取得系统级的成果。因为代码已经被集成起来了，所以即使整个系统还不是那么可用，但至少你和你的团队都已经可以看到它已经在那了"
+msgstr "Achieve system-level results early in the project. Because the code has already been integrated, even if the whole system isn't fully usable yet, at least you and your team can already see that it's there"
+
+#: ../../devops/continuousintegration.rst:43
+msgid "改善对进度的控制。这点非常明显，每天都可以看到哪些功能可以使用，哪些功能还没有实现"
+msgstr "Improved control over progress. This is quite obvious — every day you can see which features are usable and which are not yet implemented"
+
+#: ../../devops/continuousintegration.rst:44
+msgid "更加充分地测试系统中的各个单元"
+msgstr "More thoroughly test each unit within the system"
+
+#: ../../devops/continuousintegration.rst:45
+msgid "能在更短的时间里建造整个系统"
+msgstr "Build the whole system in less time"
+
+#: ../../devops/continuousintegration.rst:46
+msgid "有助于项目的开发数据的收集"
+msgstr "Helps with collecting project development data"
+
+#: ../../devops/continuousintegration.rst:47
+msgid "与其它工具结合的持续代码质量改进"
+msgstr "Continuous code quality improvement combined with other tools"
+
+#: ../../devops/continuousintegration.rst:48
+msgid "与测试工具或者框架结合的持续测试"
+msgstr "Continuous testing combined with test tools or frameworks"
+
+#: ../../devops/continuousintegration.rst:49
+msgid "便于Code Review"
+msgstr "Facilitates code review"
+
+#: ../../devops/continuousintegration.rst:50
+msgid "便于开发流程的管理"
+msgstr "Facilitates management of the development process"
+
+#: ../../devops/continuousintegration.rst:54
+msgid "参考文献"
+msgstr "References"
+
+#: ../../devops/continuousintegration.rst:55
+msgid "`Continuous integration <http://en.wikipedia.org/wiki/Continuous_integration>`_"
+msgstr "`Continuous integration <http://en.wikipedia.org/wiki/Continuous_integration>`_"
+

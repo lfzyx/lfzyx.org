@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/Unix-commands/ps.rst:2
+msgid "ps"
+msgstr "ps"
+
+#: ../../linux/Unix-commands/ps.rst:3
+msgid "ps aux 查看所有进程 ps axwef 以树状列出进程及子进程 ps lax 显示父进程PPID和谦让值NI ps -fp [pid pid] 查看多个进程信息 pstree 以树状格式显示当前运行的所有进程及其相关的子进程 pgrep -f 通过进程名过滤进程 ps -LF -u root 输出用户的进程和线程。选项“L”（列出线程），选项“-F”（完整格式化） ps aux --sort=-%mem 按内存使用率排序"
+msgstr "ps aux view all processes ps axwef list processes and child processes in a tree ps lax show parent PID (PPID) and nice value (NI) ps -fp [pid pid] view information for multiple processes pstree show all currently running processes and their related child processes in tree format pgrep -f filter processes by process name ps -LF -u root show a user's processes and threads. Option \"L\" (list threads), option \"-F\" (full format) ps aux --sort=-%mem sort by memory usage"
+

@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/tomcat.rst:2
+msgid "Tomcat - java 容器"
+msgstr "Tomcat - Java Container"
+
+#: ../../linux/tomcat.rst:4
+msgid "Tomcat即是一个Http服务器也是一个Servlet容器"
+msgstr "Tomcat is both an HTTP server and a Servlet container"
+
+#: ../../linux/tomcat.rst:7
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/tomcat.rst:18
+msgid "结构 [#]_"
+msgstr "Structure"
+
+#: ../../linux/tomcat.rst:21
+msgid "bin"
+msgstr "bin"
+
+#: ../../linux/tomcat.rst:23
+msgid "存放启动和关闭tomcat脚本"
+msgstr "Holds the scripts for starting and stopping tomcat"
+
+#: ../../linux/tomcat.rst:26
+msgid "daemon.sh"
+msgstr "daemon.sh"
+
+#: ../../linux/tomcat.rst:29
+msgid "setenv.sh"
+msgstr "setenv.sh"
+
+#: ../../linux/tomcat.rst:31
+msgid "CATALINA_OPTS=\"$CATALINA_OPTS -server -Xms600m -Xmx600m -Xmn200m -XX:userParNewGC -XX:ParallelGCThreads -XX:UseParallelGC -Djava.awt.headless=true -Xloggc:/tmp/gc.logs\""
+msgstr ""
+
+#: ../../linux/tomcat.rst:35
+msgid "CATALINA_OPTS=\"$CATALINA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=20002\""
+msgstr ""
+
+#: ../../linux/tomcat.rst:39
+msgid "conf"
+msgstr "conf"
+
+#: ../../linux/tomcat.rst:41
+msgid "包含不同的配置文件"
+msgstr "Contains various configuration files"
+
+#: ../../linux/tomcat.rst:44
+msgid "server.xml"
+msgstr "server.xml"
+
+#: ../../linux/tomcat.rst:46
+msgid "tomcat的主配置文件，包含service,connectors,engine,realm,valve,hosts等组件"
+msgstr "tomcat's main configuration file, containing components such as service, connectors, engine, realm, valve, hosts, etc."
+
+#: ../../linux/tomcat.rst:52
+msgid "Server是Tomcat中最顶层的组件，它可以包含多个Service组件，port指定一个端口，这个端口负责监听关闭tomcat的请求，shutdown指定向端口发送的命令字符串"
+msgstr "Server is the top-level component in Tomcat; it can contain multiple Service components. port specifies a port responsible for listening for requests to shut down tomcat; shutdown specifies the command string sent to that port."
+
+#: ../../linux/tomcat.rst:58
+msgid "默认支持Apr模式"
+msgstr "Apr mode is supported by default"
+
+#: ../../linux/tomcat.rst:64
+msgid "Service组件相当于Connetor和Engine组件的包装器，它将一个或者多个Connector组件和一个Engine建立关联，name指定service的名字"
+msgstr "The Service component is essentially a wrapper around Connector and Engine components; it associates one or more Connector components with an Engine. name specifies the service's name"
+
+#: ../../linux/tomcat.rst:70
+msgid "Connector [#]_ 是Tomcat中监听TCP网络连接的组件，一个Connector会监听一个独立的端口来处理来自客户端的连接，port指定服务器端要创建的端口号，并在这个断口监听来自客户端的请求，protocol 启动协议，maxThreads:设定在监听端口的线程的最大数目,这个值也决定了服务器可以同时响应客户请求的最大数目.默认值为200，acceptCount指定当所有可以使用的处理请求的线程数都被使用时，可以放到等待队列中的请求数，超过这个数的请求将不予处理.默认值为100，minProcessors服务器启动时创建的处理请求的线程数，maxProcessors最大可以创建的处理请求的线程数，minSpareThreads最小备用线程，maxSpareThreads最大备用线程，connectionTimeout指定超时的时间数(以毫秒为单位)，redirectPort指定服务器正在处理http请求时收到了一个SSL传输请求后重定向的端口号，enableLookups如果为true，则可以通过调用request.getRemoteHost()进行DNS查询来得到远程客户端的实际主机名；若为false则不进行DNS查询，而是返回其ip地址，address如果服务器有两个以上IP地址,该属性可以设定端口监听的IP地址,默认情况下,端口会监听服务器上所有IP地址，debug日志等级 ，disableUploadTimeout禁用上传超时，主要用于大数据上传时"
+msgstr "Connector [#]_ is the component in Tomcat that listens for TCP network connections; each Connector listens on a separate port to handle connections from clients. port specifies the port number the server should create and listen on for client requests. protocol is the startup protocol. maxThreads sets the maximum number of threads listening on the port, which also determines the maximum number of client requests the server can respond to concurrently (default 200). acceptCount specifies how many requests can be queued once all available request-handling threads are in use; requests beyond this count are not handled (default 100). minProcessors is the number of request-handling threads created at server startup. maxProcessors is the maximum number of request-handling threads that can be created. minSpareThreads is the minimum number of spare threads. maxSpareThreads is the maximum number of spare threads. connectionTimeout specifies the timeout duration (in milliseconds). redirectPort specifies the port to redirect to if the server, while handling an HTTP request, receives an SSL transport request. enableLookups: if true, the actual hostname of the remote client can be obtained via a DNS lookup by calling request.getRemoteHost(); if false, no DNS lookup is performed and the IP address is returned instead. address: if the server has more than one IP address, this attribute can set which IP address the port listens on — by default the port listens on all of the server's IP addresses. debug is the log level. disableUploadTimeout disables the upload timeout, mainly used when uploading large amounts of data"
+
+#: ../../linux/tomcat.rst:78
+msgid "AJP表示Apache Jserv Protocol,此连接器将处理Tomcat和Aapache http服务器之间的交互，这个连机器是用来处理我们将Tomcat和Apache http服务器结合使用的情况。假如在同样的一台物理Server上面部署了一台Apache http服务器和多台Tomcat服务器，通过Apache服务器来处理静态资源以及负载均衡的时候，针对不同的Tomcat实例需要AJP监听不同的端口"
+msgstr "AJP stands for Apache Jserv Protocol; this connector handles interaction between Tomcat and an Apache HTTP server. It's used when combining Tomcat with an Apache HTTP server — for example, if an Apache HTTP server and multiple Tomcat servers are deployed on the same physical server, and Apache handles static resources and load balancing, each Tomcat instance needs AJP to listen on a different port"
+
+#: ../../linux/tomcat.rst:87
+msgid "一个Engine可以包含一个或者多个Host,也就是说我们一个Tomcat的实例可以配置多个虚拟主机，name定义Engine容器的名称, 对应$CATALINA_HOME/config/Catalina中的Catalina，defaultHost指定缺省的处理请求的主机名，它至少与其中的一个host元素的name属性值是一样的，debug日志等级"
+msgstr "An Engine can contain one or more Hosts, meaning a single Tomcat instance can be configured with multiple virtual hosts. name defines the Engine container's name, corresponding to Catalina in $CATALINA_HOME/config/Catalina. defaultHost specifies the default hostname for handling requests; it must match the name attribute of at least one of the host elements. debug is the log level"
+
+#: ../../linux/tomcat.rst:96
+msgid "name指定主机名，一个虚拟主机可以有多个Context。appBase为webapps，也就是\\\\webapps目录， unpackingWARS属性指定在appBase指定的目录中的war包都自动的解压，autoDeploy属性指定是否对加入到appBase目录的war包进行自动的部署"
+msgstr "name specifies the hostname; a virtual host can have multiple Contexts. appBase is webapps, i.e. the \\\\webapps directory. The unpackWARs attribute specifies whether war packages in the appBase directory are automatically unpacked. autoDeploy specifies whether war packages added to the appBase directory are automatically deployed"
+
+#: ../../linux/tomcat.rst:103
+#, python-brace-format, python-format
+msgid "Valve中文意思是阀门，Valve是Tomcat中责任链模式的实现，通过链接多个Valve对请求进行处理。其中Valve可以定义在任何的容器中，上面说的Engine,Host,Context都属于容器。className 指定Valve使用的类名。默认定义了一个名为org.apache.catalina.valves.AccessLogValve的类,负责拦截每个请求，然后记录应用程序的访问信息志。directory 指定log文件存放的位置，pattern 有两个值，common方式记录远程主机名或ip地址，用户名，日期，第一行请求的字符串，HTTP响应代码，发送的字节数。combined方式比common方式记录的值更多。建议使用pattern=\"%{X-Real-IP}i %l %u %t \"%r\" %s %b %{User-Agent}i\" ，记录真实IP。"
+msgstr "Valve means \"valve\" in English; Valve is Tomcat's implementation of the chain-of-responsibility pattern, processing requests by chaining multiple Valves together. A Valve can be defined in any container — Engine, Host, and Context, mentioned above, are all containers. className specifies the class name the Valve uses. By default, a class named org.apache.catalina.valves.AccessLogValve is defined, responsible for intercepting every request and then logging the application's access information. directory specifies where the log file is stored. pattern has two values: the common style logs the remote hostname or IP address, username, date, the first line of the request string, the HTTP response code, and the number of bytes sent; the combined style logs even more than common. It's recommended to use pattern=\"%{X-Real-IP}i %l %u %t \\\"%r\\\" %s %b %{User-Agent}i\" to log the real IP."
+
+#: ../../linux/tomcat.rst:113
+msgid "在Tomcat中，每一个运行的webapp其实最终都是以Context的形成存在，每个Context都有一个根路径和请求URL路径， 在Tomcat中我们通常采用如下的两种方式创建一个Context：在\\\\webapps目录中创建一个目录，这个时候将自动创建一个context，默认context的访问url为http://host:port/dirname ；在server.xml文件的元素中增加context元素。这样的话，我们就可以通过http://host:port/mypath访问上面配置的context了。"
+msgstr "In Tomcat, every running webapp ultimately exists in the form of a Context, and every Context has a root path and a request URL path. In Tomcat we usually create a Context in one of two ways: creating a directory under the \\\\webapps directory, which automatically creates a context whose default access URL is http://host:port/dirname; or adding a context element inside an element in server.xml. Either way, we can then access the configured context via http://host:port/mypath."
+
+#: ../../linux/tomcat.rst:118
+msgid "web.xml"
+msgstr "web.xml"
+
+#: ../../linux/tomcat.rst:120
+msgid "遵循Servlet规范标准的配置文件，用于配置servlet，并为所有的Web应用程序提供包括MIME映射等默认配置信息"
+msgstr "A configuration file that follows the Servlet specification, used to configure servlets and provide default configuration information, including MIME mappings, for all web applications"
+
+#: ../../linux/tomcat.rst:134
+msgid "catalina.properties"
+msgstr "catalina.properties"
+
+#: ../../linux/tomcat.rst:136
+msgid "Tomcat内部package的定义及访问相关的控制，也包括对通过类装载器装载的内容的控制；Tomcat在启动时会事先读取此文件的相关设置"
+msgstr "Defines Tomcat's internal packages and access-related controls, including control over content loaded through class loaders; Tomcat reads the relevant settings from this file in advance at startup"
+
+#: ../../linux/tomcat.rst:138
+msgid "`Class Loader HOW-TO <http://tomcat.apache.org/tomcat-7.0-doc/class-loader-howto.html>`__"
+msgstr "`Class Loader HOW-TO <http://tomcat.apache.org/tomcat-7.0-doc/class-loader-howto.html>`__"
+
+#: ../../linux/tomcat.rst:141
+msgid "`理解Tomcat的Classpath-常见问题以及如何解决 <http://www.linuxidc.com/Linux/2011-08/41684.htm>`__"
+msgstr "`Understanding Tomcat's Classpath — Common Problems and How to Solve Them <http://www.linuxidc.com/Linux/2011-08/41684.htm>`__"
+
+#: ../../linux/tomcat.rst:144
+msgid "lib"
+msgstr "lib"
+
+#: ../../linux/tomcat.rst:146
+msgid "存放tomcat所需的jar文件"
+msgstr "Holds the jar files tomcat needs"
+
+#: ../../linux/tomcat.rst:149
+msgid "logs"
+msgstr "logs"
+
+#: ../../linux/tomcat.rst:151
+msgid "存放日志文件"
+msgstr "Holds log files"
+
+#: ../../linux/tomcat.rst:154
+msgid "temp"
+msgstr "temp"
+
+#: ../../linux/tomcat.rst:156
+msgid "临时文件"
+msgstr "Temporary files"
+
+#: ../../linux/tomcat.rst:159
+msgid "webapp"
+msgstr "webapp"
+
+#: ../../linux/tomcat.rst:161
+msgid "存放应用程序示例，部署的应用程序也要放到此目录"
+msgstr "Holds example applications; deployed applications also go in this directory"
+
+#: ../../linux/tomcat.rst:164
+msgid "work"
+msgstr "work"
+
+#: ../../linux/tomcat.rst:166
+msgid "存放jsp编译后产生的class文件"
+msgstr "Holds the class files produced after JSP compilation"
+
+#: ../../linux/tomcat.rst:169
+msgid "connector模式"
+msgstr "Connector modes"
+
+#: ../../linux/tomcat.rst:171
+msgid "tomcat的connector模式有3种"
+msgstr "tomcat has 3 connector modes"
+
+#: ../../linux/tomcat.rst:173
+msgid "HTTP connector"
+msgstr "HTTP connector"
+
+#: ../../linux/tomcat.rst:175
+msgid "基于HTTP协议，负责建立HTTP连接。它又分为BIO http connector与NIO http connector两种。"
+msgstr "Based on the HTTP protocol, responsible for establishing HTTP connections. It's further split into the BIO http connector and the NIO http connector."
+
+#: ../../linux/tomcat.rst:178
+msgid "BIO(blocking I/O) HTTP connector 默认的模式,阻塞式I/O操作,性能非常低下,没有经过任何优化处理和支持."
+msgstr "BIO (blocking I/O) HTTP connector — the default mode; blocking I/O operations, very low performance, no optimization or special support applied."
+
+#: ../../linux/tomcat.rst:180
+msgid "NIO(new I/O) HTTP connector 是一个基于缓冲区、并能提供非阻塞I/O操作的Java API，因此nio也被看成是non-blocking I/O的缩写,拥有比传统I/O操作(bio)更好的并发运行性能.修改 connector 节点中的 protocol 为 org.apache.coyote.http11.Http11NioProtocol 即可"
+msgstr "NIO (new I/O) HTTP connector is a buffer-based Java API that supports non-blocking I/O operations, which is why NIO is also seen as short for \"non-blocking I/O\" — it has better concurrent performance than traditional I/O (bio). Just change protocol in the connector node to org.apache.coyote.http11.Http11NioProtocol"
+
+#: ../../linux/tomcat.rst:186
+msgid "AJP connector"
+msgstr "AJP connector"
+
+#: ../../linux/tomcat.rst:188
+msgid "基于AJP协议，AJP是专门设计用来为tomcat与http服务器之间通信专门定制的协议，能提供较高的通信速度和效率。如与Apache服务器集成时，采用这个协议。"
+msgstr "Based on the AJP protocol; AJP is a protocol specifically designed for communication between tomcat and an http server, offering higher communication speed and efficiency. This protocol is used when integrating with an Apache server."
+
+#: ../../linux/tomcat.rst:190
+msgid "APR HTTP connector [#]_"
+msgstr "APR HTTP connector [#]_"
+
+#: ../../linux/tomcat.rst:192
+msgid "从系统级别来解决异步的IO问题,大幅度的提高性能，默认支持，但需要安装APR library \\| JNI wrappers for APR used by Tomcat (libtcnative) [#]_ \\| OpenSSL libraries"
+msgstr "Solves asynchronous I/O problems at the system level, greatly improving performance. Supported by default, but requires installing the APR library \\| JNI wrappers for APR used by Tomcat (libtcnative) [#]_ \\| OpenSSL libraries"
+
+#: ../../linux/tomcat.rst:207
+msgid "libtcnative 将安装至 /usr/lib"
+msgstr "libtcnative will be installed to /usr/lib"
+
+#: ../../linux/tomcat.rst:209
+msgid "Tomcat connectors 会自动开启对 APR 模式"
+msgstr "Tomcat connectors will automatically enable APR mode"
+
+#: ../../linux/tomcat.rst:212
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/tomcat.rst:213
+msgid "`Tomcat总体结构 <http://imtiger.net/blog/2013/10/16/tomcat-architecture/>`_"
+msgstr "`Tomcat's Overall Architecture <http://imtiger.net/blog/2013/10/16/tomcat-architecture/>`_"
+
+#: ../../linux/tomcat.rst:214
+msgid "`The HTTP Connector <http://tomcat.apache.org/tomcat-7.0-doc/config/http.html>`_"
+msgstr "`The HTTP Connector <http://tomcat.apache.org/tomcat-7.0-doc/config/http.html>`_"
+
+#: ../../linux/tomcat.rst:215
+msgid "`Apache Portable Runtime (APR) based Native library for omcat <http://tomcat.apache.org/tomcat-7.0-doc/apr.html>`_"
+msgstr "`Apache Portable Runtime (APR) based Native library for Tomcat <http://tomcat.apache.org/tomcat-7.0-doc/apr.html>`_"
+
+#: ../../linux/tomcat.rst:216
+msgid "`Tomcat Native <http://tomcat.apache.org/native-doc/>`_"
+msgstr "`Tomcat Native <http://tomcat.apache.org/native-doc/>`_"
+

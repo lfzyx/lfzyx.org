@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/ldd.rst:2
+msgid "Ldd"
+msgstr ""
+
+#: ../../linux/ldd.rst:4
+msgid "显示可执行文件的共享库依赖情况"
+msgstr ""
+
+#: ../../linux/ldd.rst:7
+msgid "语法"
+msgstr ""
+
+#: ../../linux/ldd.rst:9
+msgid "ldd [OPTION] FILE"
+msgstr ""
+
+#: ../../linux/ldd.rst:11
+msgid ""
+"-v 显示详细信息 -d 进行 重定位(relocation), 而且 报告 缺少的 函数 (仅限于 ELF) -r 对 数据目标 (data "
+"object) 和 函数 进行 重定位, 而且 报告 缺少的 数据目标 (仅限于 ELF)"
+msgstr ""
+

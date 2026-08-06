@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/sudo.rst:2
+msgid "sudo"
+msgstr ""
+
+#: ../../linux/sudo.rst:4
+msgid "``Defaults   env_reset``"
+msgstr ""
+
+#: ../../linux/sudo.rst:5
+msgid "``Defaults   mail_badpass``"
+msgstr ""
+
+#: ../../linux/sudo.rst:6
+msgid ""
+"``Defaults   secure_path=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/"
+" bin:/sbin:/bin\"``"
+msgstr ""
+
+#: ../../linux/sudo.rst:7
+msgid "``Defaults   logfile=/var/log/sudo.log``"
+msgstr ""
+
+#: ../../linux/sudo.rst:9
+msgid "``# Host alias specification``"
+msgstr ""
+
+#: ../../linux/sudo.rst:11
+msgid "``# User alias specification``"
+msgstr ""
+
+#: ../../linux/sudo.rst:13
+msgid "``# Cmnd alias specification``"
+msgstr ""
+
+#: ../../linux/sudo.rst:14
+msgid ""
+"``Cmnd_Alias   BASE = /bin/ls, /bin/cat, /usr/bin/tail, /usr/bin/tailf, "
+"/usr/bin/apt-get``"
+msgstr ""
+
+#: ../../linux/sudo.rst:15
+msgid "``Cmnd_Alias   LIBVIRT = /usr/bin/virt-install, /usr/bin/virsh``"
+msgstr ""
+
+#: ../../linux/sudo.rst:16
+msgid ""
+"``Cmnd_Alias   SALT = /usr/bin/salt, /usr/bin/git, /usr/bin/vi, "
+"/usr/bin/vim, /bin/cp, /bin/mkdir``"
+msgstr ""
+
+#: ../../linux/sudo.rst:18
+msgid "``# User privilege specification``"
+msgstr ""
+
+#: ../../linux/sudo.rst:19
+msgid "``root   ALL=(ALL:ALL) ALL``"
+msgstr ""
+
+#: ../../linux/sudo.rst:20
+msgid "``lfzyx   ALL=(root:root) PASSWD:ALL, NOPASSWD:LIBVIRT, NOPASSWD:BASE``"
+msgstr ""
+
+#: ../../linux/sudo.rst:22
+msgid "``# Allow members of group sudo to execute any command``"
+msgstr ""
+
+#: ../../linux/sudo.rst:23
+#, python-format
+msgid "``# %sudo    ALL=(ALL:ALL) NOPASSWD: ALL,!/bin/su``"
+msgstr ""
+
+#: ../../linux/sudo.rst:25
+msgid "``vi /etc/rsyslog.conf``"
+msgstr ""
+
+#: ../../linux/sudo.rst:26
+msgid "`` local2.debug    /var/log/sudo.log``"
+msgstr ""
+
+#: ../../linux/sudo.rst:28
+msgid "``service rsyslog restart``"
+msgstr ""
+

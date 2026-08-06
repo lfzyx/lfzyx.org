@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../devops/goaccess.rst:2
+msgid "GoAccess - nginx 日志分析"
+msgstr "GoAccess - Nginx Log Analysis"
+
+#: ../../devops/goaccess.rst:4
+msgid "GoAccess 是一个开源的 web 访问日志分析工具，为系统管理员提供快速可靠的可视化统计信息，包括访问概况、动态页面请求、静态页面请求、访客排名，访客使用的操作系统，访客使用的浏览器，来路域名，404 错误，搜索爬虫，搜索关键词等等 [#]_"
+msgstr "GoAccess is an open source web access log analysis tool that provides administrators with fast, reliable, visualized statistics, including visit overview, dynamic page requests, static page requests, visitor rankings, visitor operating systems, visitor browsers, referrer domains, 404 errors, search crawlers, search keywords, and more [#]_"
+
+#: ../../devops/goaccess.rst:9
+msgid "安装"
+msgstr "Installation"
+
+#: ../../devops/goaccess.rst:11
+msgid "``apt-get install goaccess``"
+msgstr "``apt-get install goaccess``"
+
+#: ../../devops/goaccess.rst:15
+msgid "语法"
+msgstr "Usage"
+
+#: ../../devops/goaccess.rst:17
+msgid "``goaccess -f log_file``"
+msgstr "``goaccess -f log_file``"
+
+#: ../../devops/goaccess.rst:19
+msgid "-a 为选定的主机启用User-Agents列表"
+msgstr "-a enable the User-Agents list for selected hosts"
+
+#: ../../devops/goaccess.rst:21
+msgid "-f 设置日志文件路径"
+msgstr "-f set the log file path"
+
+#: ../../devops/goaccess.rst:25
+msgid "示例"
+msgstr "Examples"
+
+#: ../../devops/goaccess.rst:27
+msgid "``goaccess -f  FILE -a``"
+msgstr "``goaccess -f  FILE -a``"
+
+#: ../../devops/goaccess.rst:29
+msgid "分析指定的日志文件"
+msgstr "Analyze the specified log file"
+
+#: ../../devops/goaccess.rst:31
+msgid "``zcat -f  FILE | goaccess -a > report.html``"
+msgstr "``zcat -f  FILE | goaccess -a > report.html``"
+
+#: ../../devops/goaccess.rst:33
+msgid "使用管道处理所有的日志文件,并生成html报告"
+msgstr "Use a pipe to process all log files and generate an html report"
+
+#: ../../devops/goaccess.rst:36
+msgid "参考文献"
+msgstr "References"
+
+#: ../../devops/goaccess.rst:37
+msgid "`GoAccess - Visual Web Log Analyzer <http://goaccess.prosoftcorp.com/>`_"
+msgstr "`GoAccess - Visual Web Log Analyzer <http://goaccess.prosoftcorp.com/>`_"
+

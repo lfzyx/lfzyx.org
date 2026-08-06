@@ -1,0 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/Unix-commands/alias.rst:2
+msgid "alias"
+msgstr "alias"
+
+#: ../../linux/Unix-commands/alias.rst:4
+#, python-brace-format
+msgid "设置指令的别名 alias ll='ls -lah --color' ls='ls -a --color' df='df -hT' free='free -h' vmstat='vmstat -S M' geoip='geoiplookup' sudo='sudo ' ss='ss -4' PS1='${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ ' 永久生效:vi /etc/bash.bashrc，把上面的命令加到后面"
+msgstr "Set aliases for commands alias ll='ls -lah --color' ls='ls -a --color' df='df -hT' free='free -h' vmstat='vmstat -S M' geoip='geoiplookup' sudo='sudo ' ss='ss -4' PS1='${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ ' To make it permanent: vi /etc/bash.bashrc, and append the above commands to the end"
+

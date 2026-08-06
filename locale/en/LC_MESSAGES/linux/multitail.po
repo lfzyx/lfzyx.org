@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/multitail.rst:1
+msgid "在单个shell中同时监控多个文件，算是tail的增强版"
+msgstr ""
+
+#: ../../linux/multitail.rst:4
+msgid "示例"
+msgstr ""
+
+#: ../../linux/multitail.rst:6
+msgid "同时监控两个文件"
+msgstr ""
+
+#: ../../linux/multitail.rst:8
+msgid "``# multitail /var/log/apache2/error.log /var/log/apache2/error.log.1``"
+msgstr ""
+
+#: ../../linux/multitail.rst:10
+msgid "分成两列监控两个文件"
+msgstr ""
+
+#: ../../linux/multitail.rst:12
+msgid "``# multitail -s 2 /var/log/mysqld.log /var/log/xferlog``"
+msgstr ""
+
+#: ../../linux/multitail.rst:14
+msgid "分成两列监控，第一列3个，第二列2个"
+msgstr ""
+
+#: ../../linux/multitail.rst:16
+msgid ""
+"``# multitail -s 2 -sn 3,2 /var/log/mysqld.log /var/log/xferlog "
+"/var/log/yum.log /var/log/ajenti.log /var/log/xferlog``"
+msgstr ""
+
+#: ../../linux/multitail.rst:18
+msgid "合并两个文件"
+msgstr ""
+
+#: ../../linux/multitail.rst:20
+msgid "``# multitail /var/log/mysqld.log -I /var/log/xferlog``"
+msgstr ""
+
+#: ../../linux/multitail.rst:22
+msgid "合并两个文件并且区分颜色"
+msgstr ""
+
+#: ../../linux/multitail.rst:24
+msgid ""
+"``# multitail -ci green /var/log/yum.log -ci yellow -I "
+"/var/log/mysqld.log``"
+msgstr ""
+
+#: ../../linux/multitail.rst:26
+msgid "监控文件的同时执行命令"
+msgstr ""
+
+#: ../../linux/multitail.rst:28
+msgid "``# multitail log/josei.access.log  -l \"ping lfzyx.org\"``"
+msgstr ""
+
+#: ../../linux/multitail.rst:30
+msgid "过滤内容"
+msgstr ""
+
+#: ../../linux/multitail.rst:32
+msgid "``# multitail -e \"Opera/9.80\" log/access.log ``"
+msgstr ""
+
+#: ../../linux/multitail.rst:34
+msgid "反选过滤内容"
+msgstr ""
+
+#: ../../linux/multitail.rst:36
+msgid "``# #multitail -v -e“ssh”/var/log/messages``"
+msgstr ""
+

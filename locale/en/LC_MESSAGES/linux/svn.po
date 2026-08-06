@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/svn.rst:2
+msgid "SVN - 上一代版本控制系统"
+msgstr "SVN - The Previous-Generation Version Control System"
+
+#: ../../linux/svn.rst:4
+msgid "Apache Subversion（简称SVN，svn），是一个开放源代码的版本控制系统，相对于的RCS、CVS，采用了分支管理系统， 它的设计目标就是取代CVS。互联网上越来越多的控制服务从CVS转移到Subversion。"
+msgstr "Apache Subversion (SVN or svn for short) is an open source version control system. Compared to RCS and CVS, it adopts a branch management system, and its design goal was to replace CVS. More and more version control services on the internet have migrated from CVS to Subversion."
+
+#: ../../linux/svn.rst:9
+msgid "单库与多库"
+msgstr "Single Repository vs. Multiple Repositories"
+
+#: ../../linux/svn.rst:11
+msgid "如果项目是相关的，并且有可能要共享数据，那么建议使用单库svn，代码可以很容易的在两个项目之间拷贝和移动，并且操作的历史记录会被保存下来。 [#]_"
+msgstr "If your projects are related and might need to share data, it's recommended to use a single svn repository — code can easily be copied and moved between two projects, and the operation history is preserved. [#]_"
+
+#: ../../linux/svn.rst:13
+msgid "如果工程是完全不相关的，并且他们之间不可能共享数据，这样最好创建几个独立的完全不相关的版本库，利于安全管理。"
+msgstr "If projects are completely unrelated and could never need to share data, it's better to create several independent, completely separate repositories, for easier security management."
+
+#: ../../linux/svn.rst:16
+msgid "配置单库SVN"
+msgstr "Configuring a Single Repository SVN"
+
+#: ../../linux/svn.rst:19
+msgid "建立SVN版本库目录"
+msgstr "Creating the SVN repository directory"
+
+#: ../../linux/svn.rst:21
+msgid "建立目录：mkdir -p ../repository"
+msgstr "Create the directory: mkdir -p ../repository"
+
+#: ../../linux/svn.rst:23
+msgid "建立svn版本库：svnadmin create ../repository"
+msgstr "Create the svn repository: svnadmin create ../repository"
+
+#: ../../linux/svn.rst:25
+msgid "在../repository下就可以看到conf, db,format,hooks, locks, README.txt等文件，说明一个SVN库已经建立。"
+msgstr "Under ../repository you'll see files such as conf, db, format, hooks, locks, README.txt, etc., indicating an SVN repository has been created."
+
+#: ../../linux/svn.rst:29
+msgid "修改主配置"
+msgstr "Modifying the main configuration"
+
+#: ../../linux/svn.rst:31
+msgid "vi ../repository/conf/svnserve.conf"
+msgstr "vi ../repository/conf/svnserve.conf"
+
+#: ../../linux/svn.rst:33
+msgid "内容修改为:"
+msgstr "Change the contents to:"
+
+#: ../../linux/svn.rst:35
+msgid "[general]"
+msgstr "[general]"
+
+#: ../../linux/svn.rst:37
+msgid "anon-access = none"
+msgstr "anon-access = none"
+
+#: ../../linux/svn.rst:39
+msgid "auth-access = write"
+msgstr "auth-access = write"
+
+#: ../../linux/svn.rst:42
+msgid "配置允许访问的svn用户"
+msgstr "Configuring which svn users are allowed access"
+
+#: ../../linux/svn.rst:44
+msgid "vi ../repository/conf/pwd"
+msgstr "vi ../repository/conf/pwd"
+
+#: ../../linux/svn.rst:46
+msgid "文件格式如下："
+msgstr "The file format is as follows:"
+
+#: ../../linux/svn.rst:48 ../../linux/svn.rst:58
+msgid "[users]"
+msgstr "[users]"
+
+#: ../../linux/svn.rst:50 ../../linux/svn.rst:52
+msgid "="
+msgstr "="
+
+#: ../../linux/svn.rst:54
+msgid "其中，[users]是必须的。下面列出要访问svn的用户，每个用户一行。"
+msgstr "Here, [users] is required. Below it, list the users who should have access to svn, one user per line."
+
+#: ../../linux/svn.rst:56 ../../linux/svn.rst:87 ../../linux/svn.rst:138
+msgid "示例："
+msgstr "Example:"
+
+#: ../../linux/svn.rst:60
+msgid "alan = password"
+msgstr "alan = password"
+
+#: ../../linux/svn.rst:62
+msgid "king = hello"
+msgstr "king = hello"
+
+#: ../../linux/svn.rst:65
+msgid "配置svn用户访问权限"
+msgstr "Configuring svn user access permissions"
+
+#: ../../linux/svn.rst:67
+msgid "vi ../repository/conf/authz"
+msgstr "vi ../repository/conf/authz"
+
+#: ../../linux/svn.rst:69 ../../linux/svn.rst:118
+msgid "用户组："
+msgstr "User groups:"
+
+#: ../../linux/svn.rst:71 ../../linux/svn.rst:120
+msgid "[groups]"
+msgstr "[groups]"
+
+#: ../../linux/svn.rst:73
+msgid "用户组a = 用户1,用户2 用户组b = 用户3,用户4"
+msgstr "group_a = user1,user2 group_b = user3,user4"
+
+#: ../../linux/svn.rst:75 ../../linux/svn.rst:126
+msgid "版本库目录："
+msgstr "Repository directory:"
+
+#: ../../linux/svn.rst:77
+msgid "[/目录]"
+msgstr "[/directory]"
+
+#: ../../linux/svn.rst:79 ../../linux/svn.rst:130
+msgid "@用户组 = 权限"
+msgstr "@group = permission"
+
+#: ../../linux/svn.rst:81 ../../linux/svn.rst:132
+msgid "用户 = 权限"
+msgstr "user = permission"
+
+#: ../../linux/svn.rst:83 ../../linux/svn.rst:134
+msgid "用户组在前面加@，*表示全部用户。"
+msgstr "Prefix a group name with @; * means all users."
+
+#: ../../linux/svn.rst:85 ../../linux/svn.rst:136
+msgid "权限可以是w、r、wr和空，空表示没有任何权限。"
+msgstr "Permissions can be w, r, wr, or empty; empty means no permissions at all."
+
+#: ../../linux/svn.rst:99
+msgid "*注意：对用户配置文件的修改立即生效，不必重启svn。权限配置文件中出现的用户名必须已在用户配置文件中定义。对权限配置文件的修改立即生效，不必重启svn*"
+msgstr "*Note: changes to the user configuration file take effect immediately, without needing to restart svn. Usernames appearing in the permissions configuration file must already be defined in the user configuration file. Changes to the permissions configuration file also take effect immediately, without needing to restart svn*"
+
+#: ../../linux/svn.rst:102
+msgid "启动单库svn"
+msgstr "Starting a single-repository svn"
+
+#: ../../linux/svn.rst:104
+msgid "``svnserve -d -r ../repository``"
+msgstr "``svnserve -d -r ../repository``"
+
+#: ../../linux/svn.rst:106
+msgid "-d表示以daemon方式（后台运行）运行，启动路径指向版本库所在的路径，这样在SVN客户端直接访问svn://ip地址 即可。"
+msgstr "-d means run in daemon mode (in the background); the startup path points to the repository's location, so on the SVN client you can access it directly via svn://ip-address."
+
+#: ../../linux/svn.rst:109
+msgid "配置多库svn"
+msgstr "Configuring a Multi-Repository SVN"
+
+#: ../../linux/svn.rst:111
+msgid "与单库svn不同的是多库svn需要建立多个版本库，各个版本库的配置文件需要单独修改。大部分配置方式和单库svn相同，这里不再复述，需要注意的是配置svn用户访问权限和启动方式。"
+msgstr "Unlike a single-repository svn, a multi-repository svn requires creating multiple repositories, and each repository's configuration file needs to be modified individually. Most of the configuration is the same as for a single-repository svn, so it won't be repeated here — what needs attention is configuring svn user access permissions and the startup method."
+
+#: ../../linux/svn.rst:114
+msgid "配置多库svn用户访问权限"
+msgstr "Configuring multi-repository svn user access permissions"
+
+#: ../../linux/svn.rst:116
+msgid "vi ../repository*/conf/authz *#每个版本库都需要单独配置*"
+msgstr "vi ../repository*/conf/authz *#each repository needs to be configured individually*"
+
+#: ../../linux/svn.rst:122
+msgid "用户组a = 用户1,用户2"
+msgstr "group_a = user1,user2"
+
+#: ../../linux/svn.rst:124
+msgid "用户组b = 用户3,用户4"
+msgstr "group_b = user3,user4"
+
+#: ../../linux/svn.rst:128
+msgid "[版本库:/目录]"
+msgstr "[repository:/directory]"
+
+#: ../../linux/svn.rst:151
+msgid "启动多库svn"
+msgstr "Starting a multi-repository svn"
+
+#: ../../linux/svn.rst:153
+msgid "``svnserve -d -r ../``"
+msgstr "``svnserve -d -r ../``"
+
+#: ../../linux/svn.rst:155
+msgid "-d表示以daemon方式（后台运行）运行，启动路径不要指向版本库，而是指向所有版本库的上一层级， 需要在SVN客户端访问svn://ip地址/版本库 ，才能访问到指定的版本库"
+msgstr "-d means run in daemon mode (in the background); the startup path should not point to a repository, but to the level above all repositories — on the SVN client you need to access svn://ip-address/repository to reach a specific repository"
+
+#: ../../linux/svn.rst:159
+msgid "备份还原"
+msgstr "Backup and Restore"
+
+#: ../../linux/svn.rst:162
+msgid "备份"
+msgstr "Backup"
+
+#: ../../linux/svn.rst:164
+msgid "``svnadmin dump ../repository > *.dump``"
+msgstr "``svnadmin dump ../repository > *.dump``"
+
+#: ../../linux/svn.rst:166
+msgid "或"
+msgstr "or"
+
+#: ../../linux/svn.rst:168
+msgid "``svnadmin hotcopy ../repository > PATH``"
+msgstr "``svnadmin hotcopy ../repository > PATH``"
+
+#: ../../linux/svn.rst:171
+msgid "还原"
+msgstr "Restore"
+
+#: ../../linux/svn.rst:173
+msgid "``svnadmin load ../repository < *.dump``"
+msgstr "``svnadmin load ../repository < *.dump``"
+
+#: ../../linux/svn.rst:176
+msgid "镜像"
+msgstr "Mirroring"
+
+#: ../../linux/svn.rst:178
+msgid "svn不支持分布式开发，所以把svn版本库保存在一台服务器上是不安全的"
+msgstr "svn does not support distributed development, so keeping an svn repository on a single server is not safe"
+
+#: ../../linux/svn.rst:196
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/svn.rst:197
+msgid "`Subversion FAQ <http://subversion.apache.org/faq.zh.html>`_"
+msgstr "`Subversion FAQ <http://subversion.apache.org/faq.zh.html>`_"
+

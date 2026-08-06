@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/hardware/lsblk.rst:2
+msgid "lsblk"
+msgstr "lsblk"
+
+#: ../../linux/hardware/lsblk.rst:4
+msgid "以树状图显示系统支持的设备"
+msgstr "Display devices supported by the system as a tree"
+
+#: ../../linux/hardware/lsblk.rst:6
+msgid "–m 显示设备的所有者和挂载模式 NAME – the device name MAJ:MIN - Every device on a Linux operating system is represented by a file, for block (disk) devices, they describe the device using major and minor device numbers. RM – removable device – shows 1 if this is a removable device and 0 if it’s not TYPE – the device type MOUNTPOINT - the location where the device is mounted RO – it will display 1 for read-only filesystems and 0 for those that are not read-only SIZE – the size of the device"
+msgstr "–m show the device's owner and mount mode NAME – the device name MAJ:MIN - Every device on a Linux operating system is represented by a file, for block (disk) devices, they describe the device using major and minor device numbers. RM – removable device – shows 1 if this is a removable device and 0 if it’s not TYPE – the device type MOUNTPOINT - the location where the device is mounted RO – it will display 1 for read-only filesystems and 0 for those that are not read-only SIZE – the size of the device"
+

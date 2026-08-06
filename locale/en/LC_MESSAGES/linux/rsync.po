@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/rsync.rst:2
+msgid "Rsync - 文件同步"
+msgstr "Rsync - File Synchronization"
+
+#: ../../linux/rsync.rst:4
+msgid "`Rsync <http://rsync.samba.org/documentation.html>`_  是一个开源实用程序，提供快速的增量文件传输， 并适当利用差分编码以减少数据传输量。在 daemon 模式下，rsync监听873端口，通过rsync协议传输文件。在ssh模式下，通过ssh协议传输文件。"
+msgstr "`Rsync <http://rsync.samba.org/documentation.html>`_ is an open source utility that provides fast incremental file transfer, making good use of delta encoding to reduce the amount of data transferred. In daemon mode, rsync listens on port 873 and transfers files over the rsync protocol. In ssh mode, files are transferred over the ssh protocol."
+
+#: ../../linux/rsync.rst:9
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/rsync.rst:11
+msgid "``apt-get install rsync``"
+msgstr "``apt-get install rsync``"
+
+#: ../../linux/rsync.rst:14
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/rsync.rst:17
+msgid "服务端"
+msgstr "Server side"
+
+#: ../../linux/rsync.rst:66
+msgid "客户端"
+msgstr "Client side"
+
+#: ../../linux/rsync.rst:77
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/rsync.rst:102
+msgid "-r 递归地同步目录"
+msgstr "-r recursively sync directories"
+
+#: ../../linux/rsync.rst:104
+msgid "-l 保持符号链接文件"
+msgstr "-l preserve symlinks"
+
+#: ../../linux/rsync.rst:106
+msgid "-p 保持文件权限"
+msgstr "-p preserve file permissions"
+
+#: ../../linux/rsync.rst:108
+msgid "-t 保持文件时间信息"
+msgstr "-t preserve file modification times"
+
+#: ../../linux/rsync.rst:110
+msgid "-g 保持文件属组信息 （如果运行rsync操作的不是超级用户，则仅当调用rsync操作的用户属于源文件属组成员时，才保持属组信息）"
+msgstr "-g preserve file group ownership (if the user running rsync is not a superuser, group ownership is only preserved if the invoking user is a member of the source file's group)"
+
+#: ../../linux/rsync.rst:113
+msgid "-o 保持文件属主信息 (super-user only)"
+msgstr "-o preserve file owner (super-user only)"
+
+#: ../../linux/rsync.rst:115
+msgid "-D 保持设备文件和特殊文件 (super-user only)"
+msgstr "-D preserve device files and special files (super-user only)"
+
+#: ../../linux/rsync.rst:117
+msgid "-a 归档模式，相当于 -rlptgoD"
+msgstr "-a archive mode, equivalent to -rlptgoD"
+
+#: ../../linux/rsync.rst:119
+msgid "-v 输出详情"
+msgstr "-v verbose output"
+
+#: ../../linux/rsync.rst:121
+msgid "-z 开启压缩"
+msgstr "-z enable compression"
+
+#: ../../linux/rsync.rst:123
+msgid "--compress-level=NUM 明确设置压缩级别"
+msgstr "--compress-level=NUM explicitly set the compression level"
+
+#: ../../linux/rsync.rst:125
+msgid "-P 显示进度和断点传续"
+msgstr "-P show progress and support resuming interrupted transfers"
+
+#: ../../linux/rsync.rst:127
+msgid "-e 使用ssh和ssh语法"
+msgstr "-e use ssh, with ssh syntax"
+
+#: ../../linux/rsync.rst:129
+msgid "-H 保持文件的硬链接特性"
+msgstr "-H preserve hard links"
+
+#: ../../linux/rsync.rst:131
+msgid "-L 遇到符号链接时，同步该符号链接所指向的文件，而不是该符号链接"
+msgstr "-L when a symlink is encountered, sync the file it points to rather than the symlink itself"
+
+#: ../../linux/rsync.rst:133
+msgid "-u 排除被修改过的目的文件"
+msgstr "-u skip files that have been modified on the destination"
+
+#: ../../linux/rsync.rst:135
+msgid "--delete 在DEST删除SRC没有的文件"
+msgstr "--delete delete files on DEST that don't exist on SRC"
+

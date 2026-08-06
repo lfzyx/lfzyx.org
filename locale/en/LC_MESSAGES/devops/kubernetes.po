@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../devops/kubernetes.rst:2
+msgid "Kubernetes -  自动化的容器部署、扩展和管理"
+msgstr "Kubernetes - Automated Container Deployment, Scaling, and Management"
+
+#: ../../devops/kubernetes.rst:4
+msgid "Kubernetes 是一个生产级别的容器编排系统，用于自动部署，扩展和管理容器化应用程序。它将组成应用程序的容器组合成逻辑单元，以便于管理和服务发现。"
+msgstr "Kubernetes is a production-grade container orchestration system for automating the deployment, scaling, and management of containerized applications. It groups the containers that make up an application into logical units for easy management and service discovery."
+
+#: ../../devops/kubernetes.rst:7
+msgid "对象"
+msgstr "Objects"
+
+#: ../../devops/kubernetes.rst:9
+msgid "Pod : Kubernetes的基本构建块，是创建或部署的对象模型中最小和最简单的单元。一个Pod封装了应用程序容器，存储资源和唯一的网络IP。"
+msgstr "Pod: Kubernetes' basic building block, the smallest and simplest unit in the object model that gets created or deployed. A Pod encapsulates an application container, storage resources, and a unique network IP."
+
+#: ../../devops/kubernetes.rst:11
+msgid "Service : 定义了Pod的逻辑集合以及访问它们的策略"
+msgstr "Service: defines a logical collection of Pods and the policy for accessing them"
+
+#: ../../devops/kubernetes.rst:13
+msgid "Volume : 一个卷就是一个目录，包含一些数据，可以通过一个容器中的容器访问。"
+msgstr "Volume: a volume is a directory containing some data, accessible by a container within a container."
+
+#: ../../devops/kubernetes.rst:15
+msgid "Namespace : 由同一物理集群支持的多个虚拟集群。 这些虚拟集群被称为命名空间。"
+msgstr "Namespace: multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces."
+
+#: ../../devops/kubernetes.rst:19
+msgid "组件"
+msgstr "Components"
+
+#: ../../devops/kubernetes.rst:22
+msgid "Master Node"
+msgstr "Master Node"
+
+#: ../../devops/kubernetes.rst:24
+msgid "Master 提供集群控制，作出集群的全局决策，检测并响应群集事件。"
+msgstr "The Master provides cluster control, makes global decisions about the cluster, and detects and responds to cluster events."
+
+#: ../../devops/kubernetes.rst:26
+msgid "Master 组件可以运行在集群的任意一台机器上。但一般来说，运行 Master 组件的机器不会运行用户级容器。"
+msgstr "Master components can run on any machine in the cluster. But generally, the machine running Master components does not run user-level containers."
+
+#: ../../devops/kubernetes.rst:28
+msgid "kube-apiserver : kube-apiserver 用于暴露 Kubernetes API。"
+msgstr "kube-apiserver: kube-apiserver is used to expose the Kubernetes API."
+
+#: ../../devops/kubernetes.rst:30
+msgid "etcd : etcd 用作群集数据的一致性且高可用的键值存储。"
+msgstr "etcd: etcd serves as a consistent and highly available key-value store for cluster data."
+
+#: ../../devops/kubernetes.rst:32
+msgid "kube-scheduler : 监控新创建但没有被分配至 node 的 Pod"
+msgstr "kube-scheduler: watches for newly created Pods that have not been assigned to a node"
+
+#: ../../devops/kubernetes.rst:34
+msgid "kube-controller-manager : 一个循环控制器，通过 apiserver 监视集群的共享状态，并进行更改，试图将当前状态移动到所需的状态。"
+msgstr "kube-controller-manager: a loop controller that watches the shared state of the cluster via the apiserver and makes changes attempting to move the current state toward the desired state."
+
+#: ../../devops/kubernetes.rst:37
+msgid "Worker Node"
+msgstr "Worker Node"
+
+#: ../../devops/kubernetes.rst:39
+msgid "Worker Node 组件运行在每一个 Worker node 上，维持 pods 的运行。 Master node 控制每一个 Worker node 。"
+msgstr "Worker Node components run on every Worker node, keeping the pods running. The Master node controls every Worker node."
+
+#: ../../devops/kubernetes.rst:41
+msgid "kubelet : 保证容器运行在 pod 上。"
+msgstr "kubelet: ensures containers are running in a pod."
+
+#: ../../devops/kubernetes.rst:43
+msgid "kube-proxy : 维持主机上的网络规则并执行连接转发"
+msgstr "kube-proxy: maintains network rules on the host and performs connection forwarding"
+
+#: ../../devops/kubernetes.rst:45
+msgid "Container Runtime : Kubernetes 支持的运行时: Docker, rkt, runc"
+msgstr "Container Runtime: runtimes supported by Kubernetes: Docker, rkt, runc"
+
+#: ../../devops/kubernetes.rst:48
+msgid "安装"
+msgstr "Installation"
+
+#: ../../devops/kubernetes.rst:50
+msgid "系统需求："
+msgstr "System requirements:"
+
+#: ../../devops/kubernetes.rst:52
+msgid "Debian 9"
+msgstr "Debian 9"
+
+#: ../../devops/kubernetes.rst:53
+msgid "RAM - minimum 2GB, Swap disabled"
+msgstr "RAM - minimum 2GB, Swap disabled"
+
+#: ../../devops/kubernetes.rst:54
+msgid "CPU - minimum 2 cores"
+msgstr "CPU - minimum 2 cores"
+
+#: ../../devops/kubernetes.rst:55
+msgid "docker - 17.03+"
+msgstr "docker - 17.03+"
+
+#: ../../devops/kubernetes.rst:58
+msgid "安装 kubeadm, kubelet 和 kubectl"
+msgstr "Installing kubeadm, kubelet, and kubectl"
+
+#: ../../devops/kubernetes.rst:60
+msgid "kubeadm : 初始化集群的命令"
+msgstr "kubeadm: command for initializing the cluster"
+
+#: ../../devops/kubernetes.rst:61
+msgid "kubelet : 在集群中所有主机上运行，用于启动 pods"
+msgstr "kubelet: runs on every host in the cluster, used to start pods"
+
+#: ../../devops/kubernetes.rst:62
+msgid "kubectl : 用于管理集群的命令行工具"
+msgstr "kubectl: command-line tool for managing the cluster"
+
+#: ../../devops/kubernetes.rst:64
+msgid "确保 kubeadm, kubelet 和 kubectl 的版本匹配"
+msgstr "Make sure the versions of kubeadm, kubelet, and kubectl match"
+
+#: ../../devops/kubernetes.rst:79
+msgid "kubelet 使用的 Cgroup Driver 需要和 Docker 的 Cgroup Driver 默认值 cgroupfs 一致 [#]_"
+msgstr "The Cgroup Driver used by kubelet needs to match Docker's default Cgroup Driver value of cgroupfs [#]_"
+
+#: ../../devops/kubernetes.rst:83
+msgid "master node 初始化"
+msgstr "Initializing the master node"
+
+#: ../../devops/kubernetes.rst:85
+msgid "``kubeadm init --pod-network-cidr=10.244.0.0/16``"
+msgstr "``kubeadm init --pod-network-cidr=10.244.0.0/16``"
+
+#: ../../devops/kubernetes.rst:87 ../../devops/kubernetes.rst:131
+msgid "输出::"
+msgstr "Output::"
+
+#: ../../devops/kubernetes.rst:95
+msgid "为了使用 kubectl 命令行工具，需要运行以下命令:"
+msgstr "To use the kubectl command-line tool, you need to run the following command:"
+
+#: ../../devops/kubernetes.rst:97
+msgid "``cp -i /etc/kubernetes/admin.conf $HOME/.kube/config``"
+msgstr "``cp -i /etc/kubernetes/admin.conf $HOME/.kube/config``"
+
+#: ../../devops/kubernetes.rst:100
+msgid "安装 pod 网络"
+msgstr "Installing the pod network"
+
+#: ../../devops/kubernetes.rst:102
+msgid "为了 pod 之间可以通讯，必须安装 pod 网络。"
+msgstr "For pods to be able to communicate with each other, a pod network must be installed."
+
+#: ../../devops/kubernetes.rst:104
+msgid "``kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.9.1/Documentation/kube-flannel.yml``"
+msgstr "``kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.9.1/Documentation/kube-flannel.yml``"
+
+#: ../../devops/kubernetes.rst:106
+msgid "运行 ``kubectl get pods -n kube-system`` ，查看 kube-dns 和 kube-flannel 是否处于运行状态::"
+msgstr "Run ``kubectl get pods -n kube-system`` to check whether kube-dns and kube-flannel are running::"
+
+#: ../../devops/kubernetes.rst:119
+msgid "使 master node 参与调度"
+msgstr "Allowing the master node to participate in scheduling"
+
+#: ../../devops/kubernetes.rst:121
+msgid "默认情况下， master node 不参与 pod 调度。如果希望 master node 参与调度，需要运行以下命令："
+msgstr "By default, the master node does not participate in pod scheduling. If you want the master node to participate in scheduling, run the following command:"
+
+#: ../../devops/kubernetes.rst:123
+msgid "``kubectl taint nodes --all node-role.kubernetes.io/master-``"
+msgstr "``kubectl taint nodes --all node-role.kubernetes.io/master-``"
+
+#: ../../devops/kubernetes.rst:127
+msgid "加入其他 nodes"
+msgstr "Joining other nodes"
+
+#: ../../devops/kubernetes.rst:129
+msgid "在其他 nodes 上运行 ``kubeadm join --token <token> <master-ip>:<master-port> --discovery-token-ca-cert-hash sha256:<hash>``"
+msgstr "On other nodes, run ``kubeadm join --token <token> <master-ip>:<master-port> --discovery-token-ca-cert-hash sha256:<hash>``"
+
+#: ../../devops/kubernetes.rst:140
+msgid "参考文献"
+msgstr "References"
+
+#: ../../devops/kubernetes.rst:141
+msgid "`Configure cgroup driver used by kubelet on Master Node <https://kubernetes.io/docs/setup/independent/install-kubeadm/#configure-cgroup-driver-used-by-kubelet-on-master-node>`_"
+msgstr "`Configure cgroup driver used by kubelet on Master Node <https://kubernetes.io/docs/setup/independent/install-kubeadm/#configure-cgroup-driver-used-by-kubelet-on-master-node>`_"
+

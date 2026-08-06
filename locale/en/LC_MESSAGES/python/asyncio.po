@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../python/asyncio.rst:2
+msgid "asyncio - 异步 I/O, 事件循环，协程和任务"
+msgstr "asyncio - Asynchronous I/O, Event Loops, Coroutines, and Tasks"
+
+#: ../../python/asyncio.rst:4
+msgid "CPU 的执行是顺序的，线程是操作系统提供的一种机制，允许我们在操作系统的层面上实现“并行”。 而协程则可以认为是应用程序提供的一种机制（用户或库来完成），允许我们在应用程序的层面上实现“并行”。"
+msgstr "CPU execution is sequential; threads are a mechanism provided by the operating system that let us achieve “parallelism” at the OS level. Coroutines, on the other hand, can be thought of as a mechanism provided by the application itself (implemented by the user or a library) that let us achieve “parallelism” at the application level."
+
+#: ../../python/asyncio.rst:7
+msgid "由于本质上程序是顺序执行的，要实现这种“并行”的假像，我们需要一种机制，来“暂停”当前的执行流，并在之后“恢复”之前的执行流。 这在操作系统及多线程/多进程中称为“上下文切换” (context switch)。 其中“上下文”记录了某个线程执行的状态，包括线程里用到的各个变量，线程的调用栈等。 而“切换”指的就是保存某个线程当前的运行状态，之后再从之前的状态中恢复。只不过线程相关的工作是由操作系统完成，而协程则是由应用程序自己来完成。"
+msgstr "Since a program is inherently executed sequentially, to create the illusion of this “parallelism” we need a mechanism to “pause” the current execution flow and “resume” a previous one later. In operating systems and multi-threading/multi-processing, this is called a “context switch”. The “context” records the execution state of a thread, including the variables it uses and its call stack. “Switching” means saving a thread's current running state and later restoring it from that saved state. The only difference is that thread-related work is done by the operating system, while coroutine-related work is done by the application itself."
+
+#: ../../python/asyncio.rst:12
+msgid "与线程不同的时，协程完成的功能通常较小，所以会有需求将不同的协程串起来，我们暂时称它为协程链 (coroutine chain)。 [#]_"
+msgstr "Unlike threads, coroutines typically accomplish smaller pieces of work, so there's often a need to chain different coroutines together — for now we'll call this a coroutine chain. [#]_"
+
+#: ../../python/asyncio.rst:14
+msgid "此模块为使用协程编写单线程并发代码，sockets 和其他资源的 I/O 多路复用，运行网络客户端和服务端提供了基础架构。以下是更详细的包内容列表："
+msgstr "This module provides the infrastructure for writing single-threaded concurrent code using coroutines, multiplexing I/O over sockets and other resources, and running network clients and servers. Here is a more detailed list of what the package includes:"
+
+#: ../../python/asyncio.rst:16
+msgid "可用于多种特定系统具体实现的可插拔事件循环"
+msgstr "A pluggable event loop with various system-specific implementations"
+
+#: ../../python/asyncio.rst:17
+msgid "传输和协议抽象"
+msgstr "Transport and protocol abstractions"
+
+#: ../../python/asyncio.rst:18
+msgid "支持 TCP、 UDP、 SSL、 子进程管道，延迟通信以及其他的具体支持（有些可能是系统相关的)"
+msgstr "Support for TCP, UDP, SSL, subprocess pipes, delayed calls, and other concrete facilities (some of which may be platform-specific)"
+
+#: ../../python/asyncio.rst:19
+msgid "一个模仿 concurrent.futures 模块但适合在事件循环中使用的 Future 类"
+msgstr "A Future class that mimics the concurrent.futures module but is designed for use with the event loop"
+
+#: ../../python/asyncio.rst:20
+msgid "协程和任务基于 yield from，帮助以顺序的方式编写并发代码"
+msgstr "Coroutines and tasks based on yield from, helping you write concurrent code in a sequential style"
+
+#: ../../python/asyncio.rst:21
+msgid "对 Future 和协程提供终止支持"
+msgstr "Cancellation support for Futures and coroutines"
+
+#: ../../python/asyncio.rst:22
+msgid "单线程中，在协程间使用同步原语来模拟那些线程模块"
+msgstr "Synchronization primitives for use between coroutines in a single thread, mirroring those threading modules"
+
+#: ../../python/asyncio.rst:23
+msgid "一个用于传递工作的线程池的接口，当年你不得不使用一个阻塞 I/O 调用的库的时候使用"
+msgstr "An interface for a thread pool to hand off work to, for use when you're stuck with a library that only offers a blocking I/O call"
+
+#: ../../python/asyncio.rst:26
+msgid "在使用 asyncio 模块进行异步编程前需要理解以下概念 [#]_ ："
+msgstr "Before doing asynchronous programming with the asyncio module, you need to understand the following concepts [#]_:"
+
+#: ../../python/asyncio.rst:28
+msgid "Event loop 事件循环复用 I/O，利用 selectors 工作，序列化事件处理。 程序开启一个无限的循环，把一些函数注册到事件循环上。当满足事件发生的时候，调用相应的协程函数。"
+msgstr "Event loop — the event loop multiplexes I/O, working through selectors, and serializes event handling. The program starts an infinite loop and registers functions with the event loop. When the conditions for an event are met, the corresponding coroutine function is called."
+
+#: ../../python/asyncio.rst:32
+msgid "coroutine 协程对象，指一个使用async def 关键字定义的函数，它的调用不会立即执行函数，而是会返回一个协程对象。 协程不能直接运行, 需要把协程对象注册到事件循环，由事件循环调用。"
+msgstr "coroutine — a coroutine object refers to a function defined with the async def keyword; calling it does not execute the function immediately, but instead returns a coroutine object. A coroutine cannot run directly — the coroutine object needs to be registered with the event loop, which then invokes it."
+
+#: ../../python/asyncio.rst:36
+msgid "Futures 这是那些延迟生产者的抽象。 asyncio.Future 类与 Python3.2 中引入的 Future 类似。即，concurrent.futures.Future类。 但是，在这种情况下，Future 适用于协程。该 asyncio 模块不适用现有的concurrent.futures.Future类，因为它被设计用于线程工作。 该模块鼓励在协程中使用 await 锁住当前的任务来等待结果，从而避免阻塞你的应用。 你的协程代码块；也就是说，你的协程被挂起，直到产生了结果，但是事件循环却没有被阻塞。 若同一个 event loop 还有其他的任务序列，他们可能会运行。 当协程产生结果的时候，暂停的协程会恢复，你可以编写同顺序执行一样的代码。 你可以阅读代码，无需考虑 await 的存在。当你使用在函数中使用 await 返回一个 await 对象，你可以忘记 Future 执行的特殊的细节和它特定的 API。 如果产生异常，比如你调用了函数，它没有返回 Future，却做了顺序执行，那么异常会被抛出。 所以，编写异步代码同编写同步代码一样，除了添加 await。"
+msgstr "Futures — this is the abstraction for those deferred producers. The asyncio.Future class is similar to the Future class introduced in Python 3.2, i.e. concurrent.futures.Future. However, in this case Future is meant for use with coroutines. The asyncio module does not reuse the existing concurrent.futures.Future class, because that one was designed for threaded work. This module encourages using await within a coroutine to suspend the current task while waiting for a result, so as to avoid blocking your application. Your coroutine's code block — that is, your coroutine — is suspended until a result is produced, but the event loop itself is not blocked. If the same event loop has other task sequences, they may run in the meantime. When the coroutine produces a result, the suspended coroutine resumes, and you can write code as if it executed sequentially. You can read the code without needing to think about the presence of await. When you use await within a function to get back an awaited object, you can forget about the specific details of how Future executes and its particular API. If an exception occurs — for instance you called a function that doesn't return a Future but instead runs synchronously — that exception is raised. So, writing asynchronous code looks just like writing synchronous code, except for adding await."
+
+#: ../../python/asyncio.rst:48
+msgid "Tasks 每个 Task 是一个被 Future 包裹的协程，随着 event loop 的运行而运行。 asyncio.Task 类是 asyncio.Future 的子类。tasks 也与 await 一起工作。"
+msgstr "Tasks — each Task is a coroutine wrapped by a Future, and it runs as the event loop runs. The asyncio.Task class is a subclass of asyncio.Future. Tasks also work together with await."
+
+#: ../../python/asyncio.rst:54
+msgid "语法 [#]_"
+msgstr "Syntax"
+
+#: ../../python/asyncio.rst:56
+msgid "async def 用于定义协程的关键字"
+msgstr "async def — keyword used to define a coroutine"
+
+#: ../../python/asyncio.rst:58
+msgid "await 挂起阻塞的异步调用接口"
+msgstr "await — suspends a blocking asynchronous call interface"
+
+#: ../../python/asyncio.rst:60
+msgid "asyncio.get_event_loop 创建一个默认的事件循环"
+msgstr "asyncio.get_event_loop — creates a default event loop"
+
+#: ../../python/asyncio.rst:62
+msgid "asyncio.gather 接受一堆协程"
+msgstr "asyncio.gather — accepts a bunch of coroutines"
+
+#: ../../python/asyncio.rst:64
+msgid "asyncio.wait 接受一个协程组成的列表"
+msgstr "asyncio.wait — accepts a list made up of coroutines"
+
+#: ../../python/asyncio.rst:68
+msgid "下面是一个示例:"
+msgstr "Here is an example:"
+
+#: ../../python/asyncio.rst:103
+msgid "参考文献"
+msgstr "References"
+
+#: ../../python/asyncio.rst:104
+msgid "`理解 Python asyncio <http://lotabout.me/2017/understand-python-asyncio/>`_"
+msgstr "`Understanding Python asyncio <http://lotabout.me/2017/understand-python-asyncio/>`_"
+
+#: ../../python/asyncio.rst:105
+msgid "`Python之asyncio <https://vvl.me/2016/03/python-coroutines/>`_"
+msgstr "`Python's asyncio <https://vvl.me/2016/03/python-coroutines/>`_"
+
+#: ../../python/asyncio.rst:106
+msgid "`Python黑魔法 <https://www.jianshu.com/p/b5e347b3a17c>`_"
+msgstr "`Python Black Magic <https://www.jianshu.com/p/b5e347b3a17c>`_"
+
+#: ../../python/asyncio.rst:107
+msgid "`使用Python进行并发编程 <http://www.dongwm.com/archives/使用Python进行并发编程-asyncio篇/>`_"
+msgstr "`Concurrent Programming with Python <http://www.dongwm.com/archives/使用Python进行并发编程-asyncio篇/>`_"
+

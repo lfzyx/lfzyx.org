@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/nfs.rst:2
+msgid "NFS - 分布式文件系统"
+msgstr "NFS - Distributed File System"
+
+#: ../../linux/nfs.rst:4
+msgid "网络文件系统（英语：Network File System，缩写为NFS）是一种分布式文件系统协议，其功能旨在允许客户端主机可以像访问本地存储一样通过网络访问服务器端文件。"
+msgstr "The Network File System (NFS) is a distributed file system protocol whose purpose is to let a client host access files on a server over the network as if accessing local storage."
+
+#: ../../linux/nfs.rst:7
+msgid "NFS在文件传送或信息传送过程中依赖于RPC协议。RPC，远程过程调用 (Remote Procedure Call) 是能使客户端执行其他系统中程序的一种机制。NFS本身是没有提供信息传输的协议和功能的，但NFS却能让我们通过网络进行资料的分享，这是因为NFS使用了一些其它的传输协议。而这些传输协议用到这个RPC功能的。可以说NFS本身就是使用RPC的一个程序。或者说NFS也是一个RPC SERVER。所以只要用到NFS的地方都要启动RPC服务，不论是NFS SERVER或者NFS CLIENT。这样SERVER和CLIENT才能通过RPC来实现PROGRAM PORT的对应。可以这么理解RPC和NFS的关系：NFS是一个文件系统，而RPC是负责负责信息的传输。"
+msgstr "NFS relies on the RPC protocol during file or data transfer. RPC (Remote Procedure Call) is a mechanism that lets a client execute a program on another system. NFS itself does not provide any protocol or functionality for transferring information, but NFS still lets us share data over the network because it makes use of other transport protocols, and those transport protocols use this RPC functionality. You could say NFS itself is a program that uses RPC — or that NFS is also an RPC SERVER. So wherever NFS is used, the RPC service must be started, whether it's an NFS SERVER or an NFS CLIENT. Only this way can the SERVER and CLIENT map PROGRAM to PORT via RPC. You can think of the relationship between RPC and NFS this way: NFS is a file system, while RPC is responsible for transporting information."
+
+#: ../../linux/nfs.rst:15
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/nfs.rst:17
+msgid "服务端"
+msgstr "Server side"
+
+#: ../../linux/nfs.rst:19
+msgid "``apt-get install nfs-kernel-server nfs-common``"
+msgstr "``apt-get install nfs-kernel-server nfs-common``"
+
+#: ../../linux/nfs.rst:21
+msgid "客户端"
+msgstr "Client side"
+
+#: ../../linux/nfs.rst:23
+msgid "``apt-get install nfs-common``"
+msgstr "``apt-get install nfs-common``"
+
+#: ../../linux/nfs.rst:26
+msgid "使用"
+msgstr "Usage"
+
+#: ../../linux/nfs.rst:29
+msgid "服务端配置"
+msgstr "Server-side configuration"
+
+#: ../../linux/nfs.rst:31
+msgid "配置文件: /etc/exports [#]_"
+msgstr "Configuration file: /etc/exports [#]_"
+
+#: ../../linux/nfs.rst:33
+msgid "格式: [共享的目录] [客户端(参数1,参数2)]"
+msgstr "Format: [shared directory] [client(parameter1,parameter2)]"
+
+#: ../../linux/nfs.rst:35
+msgid "客户端是指网络中可以访问这个NFS输出目录的计算机，客户端常用的指定方式："
+msgstr "The client refers to a machine on the network that can access this NFS exported directory. Common ways to specify a client:"
+
+#: ../../linux/nfs.rst:37
+msgid "指定ip地址的主机：192.168.0.200"
+msgstr "A host with a specific IP address: 192.168.0.200"
+
+#: ../../linux/nfs.rst:38
+msgid "指定子网中的所有主机：192.168.0.0/24 192.168.0.0/255.255.255.0"
+msgstr "All hosts in a given subnet: 192.168.0.0/24 or 192.168.0.0/255.255.255.0"
+
+#: ../../linux/nfs.rst:39
+msgid "所有主机：\\*"
+msgstr "All hosts: \\*"
+
+#: ../../linux/nfs.rst:41
+msgid "参数选项用来设置输出目录的访问权限、用户映射等。"
+msgstr "Parameter options are used to set the exported directory's access permissions, user mapping, etc."
+
+#: ../../linux/nfs.rst:43
+msgid "访问权限选项:"
+msgstr "Access permission options:"
+
+#: ../../linux/nfs.rst:45
+msgid "设置输出目录只读：ro"
+msgstr "Set the exported directory as read-only: ro"
+
+#: ../../linux/nfs.rst:46
+msgid "设置输出目录读写：rw"
+msgstr "Set the exported directory as read-write: rw"
+
+#: ../../linux/nfs.rst:48
+msgid "用户映射选项:"
+msgstr "User mapping options:"
+
+#: ../../linux/nfs.rst:50
+msgid "all_squash：不管使用NFS的用户是谁，他的身份都会被限定成为一个指定的普通用户身份；"
+msgstr "all_squash: regardless of which NFS user it is, their identity is restricted to a specified ordinary user identity;"
+
+#: ../../linux/nfs.rst:51
+msgid "no_all_squash：与all_squash取反（默认设置）；"
+msgstr "no_all_squash: the opposite of all_squash (default setting);"
+
+#: ../../linux/nfs.rst:52
+msgid "root_squash：root用户对共享目录的权限不高，只有普通用户的权限，即限制了root（默认设置）；"
+msgstr "root_squash: the root user does not get elevated permissions on the shared directory, only ordinary-user permissions, i.e. root is restricted (default setting);"
+
+#: ../../linux/nfs.rst:53
+msgid "no_root_squash：root用户对共享的目录拥有至高的权限控制，就像是对本机的目录操作一样。"
+msgstr "no_root_squash: the root user has full control over the shared directory, just as if operating on a local directory."
+
+#: ../../linux/nfs.rst:54
+msgid "anonuid/anongid：要和root_squash 以及 all_squash一同使用，用于指定使用NFS的用户限定后的uid和gid"
+msgstr "anonuid/anongid: used together with root_squash and all_squash, to specify the restricted uid and gid for NFS users"
+
+#: ../../linux/nfs.rst:57
+msgid "其它选项:"
+msgstr "Other options:"
+
+#: ../../linux/nfs.rst:59
+msgid "secure：限制客户端只能从小于1024的tcp/ip端口连接nfs服务器（默认设置）；"
+msgstr "secure: restricts clients to connecting to the NFS server only from TCP/IP ports below 1024 (default setting);"
+
+#: ../../linux/nfs.rst:60
+msgid "insecure：允许客户端从大于1024的tcp/ip端口连接服务器；"
+msgstr "insecure: allows clients to connect to the server from TCP/IP ports above 1024;"
+
+#: ../../linux/nfs.rst:61
+msgid "sync：将数据同步写入内存缓冲区与磁盘中，效率低，但可以保证数据的一致性；"
+msgstr "sync: writes data synchronously to both the memory buffer and disk — low efficiency, but ensures data consistency;"
+
+#: ../../linux/nfs.rst:62
+msgid "async：将数据先保存在内存缓冲区中，必要时才写入磁盘(建议设置)；"
+msgstr "async: first stores data in the memory buffer, only writing to disk when necessary (recommended setting);"
+
+#: ../../linux/nfs.rst:63
+msgid "wdelay：检查是否有相关的写操作，如果有则将这些写操作一起执行，这样可以提高效率（默认设置）；"
+msgstr "wdelay: checks for related write operations, and if there are any, executes them together to improve efficiency (default setting);"
+
+#: ../../linux/nfs.rst:64
+msgid "no_wdelay：若有写操作则立即执行，应与sync配合使用；"
+msgstr "no_wdelay: executes write operations immediately; should be used together with sync;"
+
+#: ../../linux/nfs.rst:65
+msgid "subtree：若输出目录是一个子目录，则nfs服务器将检查其父目录的权限；"
+msgstr "subtree: if the exported directory is a subdirectory, the NFS server checks the permissions of its parent directory;"
+
+#: ../../linux/nfs.rst:66
+msgid "no_subtree：即使输出目录是一个子目录，nfs服务器也不检查其父目录的权限，这样可以提高效率(默认设置)；"
+msgstr "no_subtree: even if the exported directory is a subdirectory, the NFS server does not check the permissions of its parent directory, which improves efficiency (default setting);"
+
+#: ../../linux/nfs.rst:69
+msgid "命令"
+msgstr "Commands"
+
+#: ../../linux/nfs.rst:71
+msgid "showmount -e [ipaddress] ： 在客户端上查看服务端的资源共享情况"
+msgstr "showmount -e [ipaddress]: view the server's shared resources from the client"
+
+#: ../../linux/nfs.rst:73
+msgid "exportfs -auv ：卸载所有共享目录"
+msgstr "exportfs -auv: unmount all shared directories"
+
+#: ../../linux/nfs.rst:75
+msgid "exportfs -arv ：重新共享所有目录"
+msgstr "exportfs -arv: re-share all directories"
+
+#: ../../linux/nfs.rst:78
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/nfs.rst:80
+msgid "假设一个Unix风格的场景，其中一台计算机（客户端）需要访问存储在其他机器上的数据（NFS 服务器）："
+msgstr "Assume a Unix-style scenario, where one machine (the client) needs to access data stored on another machine (the NFS server):"
+
+#: ../../linux/nfs.rst:83
+msgid "服务端实现 NFS 守护进程, 默认运行 nfsd, 用来使得数据可以被客户端访问"
+msgstr "The server implements the NFS daemon, running nfsd by default, so that data can be accessed by clients"
+
+#: ../../linux/nfs.rst:85
+msgid "2. 服务端系统管理员可以决定哪些资源可以被访问, 导出目录的名字和参数, 通常使用 /etc/exports 配置文件 和 exportfs 命令。"
+msgstr "2. The server-side system administrator can decide which resources can be accessed, and the names and parameters of exported directories, typically using the /etc/exports configuration file and the exportfs command."
+
+#: ../../linux/nfs.rst:93
+msgid "服务端 安全-管理员 保证它可以组织和认证合法的客户端."
+msgstr "The server-side security administrator ensures it can organize and authenticate legitimate clients."
+
+#: ../../linux/nfs.rst:95
+msgid "服务端网络配置保证可以跟客户端透过 防火墙 进行协商."
+msgstr "The server's network configuration ensures it can negotiate with clients through the firewall."
+
+#: ../../linux/nfs.rst:97
+msgid "5. 客户端请求导出的数据, 通常调用一个 mount 命令. (The client asks the server (rpcbind) which port the NFS server is using, the client connects to the NFS server (nfsd), nfsd passes the request to mountd)"
+msgstr "5. The client requests the exported data, typically by calling a mount command. (The client asks the server (rpcbind) which port the NFS server is using, the client connects to the NFS server (nfsd), nfsd passes the request to mountd)"
+
+#: ../../linux/nfs.rst:106
+msgid "6. 如果一切顺利, 客户端的用户就可以通过已经挂载的文件系统查看和访问服务端的文件了."
+msgstr "6. If everything goes smoothly, the client's user can then view and access files on the server via the mounted file system."
+
+#: ../../linux/nfs.rst:109
+msgid "7.启动时挂载NFS"
+msgstr "7. Mounting NFS at boot time"
+
+#: ../../linux/nfs.rst:118
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/nfs.rst:119
+msgid "`Linux NFS服务器的安装与配置 <http://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html>`_"
+msgstr "`Installing and Configuring a Linux NFS Server <http://www.cnblogs.com/mchina/archive/2013/01/03/2840040.html>`_"
+

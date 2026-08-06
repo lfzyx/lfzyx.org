@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/crontab.rst:2
+msgid "Crontab - 周期性任务"
+msgstr "Crontab - Periodic Tasks"
+
+#: ../../linux/crontab.rst:4
+msgid "cron是类unix系统中的周期性任务工具 [#]_ ,使系统维护和管理能够自动化。cron这个名称来自于古希腊语中的“时间”，χρόνος 柯罗诺斯"
+msgstr "cron is a periodic-task tool found in Unix-like systems [#]_, letting system maintenance and administration be automated. The name cron comes from the ancient Greek word for \"time\", χρόνος (chronos)."
+
+#: ../../linux/crontab.rst:9
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/crontab.rst:11
+msgid "cron的配置文件为 crontab ，是cron table的简写，分为系统 crontab 和用户 crontab"
+msgstr "cron's configuration file is called crontab, short for \"cron table\". It's split into system crontabs and user crontabs"
+
+#: ../../linux/crontab.rst:15
+msgid "系统crontab"
+msgstr "System crontab"
+
+#: ../../linux/crontab.rst:17
+msgid "由系统管理员制定的系统维护以及其他任务的crontab文件，与用户任务配置文件格式略有不同，可以通过USERNAME字段指定由哪个用户身份来执行任务。"
+msgstr "The crontab file for system maintenance and other tasks defined by the system administrator; its format differs slightly from a user task configuration file, and you can specify which user identity runs a task via the USERNAME field."
+
+#: ../../linux/crontab.rst:30
+msgid "用户crontab"
+msgstr "User crontab"
+
+#: ../../linux/crontab.rst:32
+msgid "用户crontab文件存放在/var/spool/cron/\\ **[crontabs]**\\ 目录下，以所属用户的登录名来命名，cron根据文件名来决定执行任务时应该使用的用户身份。"
+msgstr "User crontab files are stored under /var/spool/cron/\\ **[crontabs]**\\ , named after the owning user's login name; cron uses the file name to decide which user identity to run the task as."
+
+#: ../../linux/crontab.rst:41
+msgid "crontab格式"
+msgstr "Crontab format"
+
+#: ../../linux/crontab.rst:55
+msgid "cron每分钟读取一次crontab文件，按照crontab文件中给出的时间执行指定的任务。"
+msgstr "cron reads the crontab file once every minute and runs the specified tasks according to the times given in the crontab file."
+
+#: ../../linux/crontab.rst:56
+msgid "crontab文件的每一行代表一个任务，均遵守特定的格式，由空格或tab分隔。"
+msgstr "Each line of a crontab file represents a task, following a specific format, separated by spaces or tabs."
+
+#: ../../linux/crontab.rst:57
+msgid "前5个时间字段可以使用特殊字符"
+msgstr "The first 5 time fields can use special characters"
+
+#: ../../linux/crontab.rst:59
+msgid "星号(*) 匹配任何可能的值"
+msgstr "Asterisk (*) matches any possible value"
+
+#: ../../linux/crontab.rst:60
+msgid "划线(-) 隔开两个值，设定范围"
+msgstr "Hyphen (-) separates two values, setting a range"
+
+#: ../../linux/crontab.rst:61
+msgid "逗号(,) 隔开整数或范围，匹配所有列出的值"
+msgstr "Comma (,) separates integers or ranges, matching all the listed values"
+
+#: ../../linux/crontab.rst:62
+msgid "斜线(/) 设置间隔"
+msgstr "Slash (/) sets an interval"
+
+#: ../../linux/crontab.rst:64
+msgid "星期和日期有潜在的二义性，如果同时指定了星期和日期，那么只要有一个条件满足就会执行。"
+msgstr "Day-of-week and day-of-month have a potential ambiguity — if both are specified, the task runs whenever either condition is satisfied."
+
+#: ../../linux/crontab.rst:65
+msgid "***USERNAME***\\ 字段只出现在系统crontab文件/etc/crontab和/etc/cron.d目录下的文件，用来指定由哪个用户身份来执行任务。这个字段不会也没有必要出现在用户crontab文件中，因为用户crontab文件名暗含了UID"
+msgstr "The ***USERNAME***\\  field only appears in the system crontab file /etc/crontab and files under the /etc/cron.d directory, and is used to specify which user identity runs the task. This field neither appears in, nor is needed in, user crontab files, because the user crontab's file name already implies the UID"
+
+#: ../../linux/crontab.rst:66
+msgid "命令可以是系统命令也可以是编写的脚本"
+msgstr "The command can be either a system command or a written script"
+
+#: ../../linux/crontab.rst:69
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/crontab.rst:76
+msgid "将FILE做为crontab的任务列表文件载入crontab，替换之前的所有版本"
+msgstr "Load FILE as the crontab task list file into crontab, replacing all previous versions"
+
+#: ../../linux/crontab.rst:78
+msgid "-u user 用来设定某个用户的crontab服务"
+msgstr "-u user: sets the crontab service for a given user"
+
+#: ../../linux/crontab.rst:80
+msgid "-e 编辑某个用户crontab文件内容。如果不指定用户，则表示编辑当前用户的crontab文件"
+msgstr "-e: edit a given user's crontab file contents. If no user is specified, this edits the current user's crontab file"
+
+#: ../../linux/crontab.rst:82
+msgid "-l 显示某个用户crontab文件内容，如果不指定用户，则表示显示当前用户的crontab文件内容"
+msgstr "-l: show a given user's crontab file contents. If no user is specified, this shows the current user's crontab file contents"
+
+#: ../../linux/crontab.rst:84
+msgid "-r 删除某个用户crontab文件，如果不指定用户，则默认删除当前用户的crontab文件"
+msgstr "-r: delete a given user's crontab file. If no user is specified, this deletes the current user's crontab file by default"
+
+#: ../../linux/crontab.rst:86
+msgid "-i 在删除用户crontab文件时给确认提示"
+msgstr "-i: prompt for confirmation when deleting a user's crontab file"
+
+#: ../../linux/crontab.rst:89
+msgid "权限"
+msgstr "Permissions"
+
+#: ../../linux/crontab.rst:91
+msgid "用/etc/cron.deny 和 /etc/cron.allow 指定哪些用户可以提交crontab文件。如果存在cron.allow文件，那么它将包含可以提交crontan的所有用户名单，名单每行一个用户， 任何没被列出的用户都不能使用crontab。如果没有cron.allow文件，那么将检查是否有cron.deny文件，除了名单中列出的用户， 所有其他用户都允许使用crontab。如果cron.allow和cron.deny文件都不存在，那么就只有root用户才能使用crontab（debian允许所有用户使用crontab）。"
+msgstr "/etc/cron.deny and /etc/cron.allow specify which users may submit crontab files. If a cron.allow file exists, it contains the full list of users allowed to submit a crontab, one user per line, and any user not listed cannot use crontab. If no cron.allow file exists, cron checks whether a cron.deny file exists; besides the users listed there, all other users are allowed to use crontab. If neither cron.allow nor cron.deny exists, then only the root user can use crontab (Debian allows all users to use crontab)."
+
+#: ../../linux/crontab.rst:97
+msgid "示例"
+msgstr "Examples"
+
+#: ../../linux/crontab.rst:118
+msgid "保存文件时， cron会对其进行检查，如果其中的某个字段出现了超出允许范围的值，cron会发出警告"
+msgstr "When you save the file, cron checks it; if any field has a value outside the allowed range, cron issues a warning"
+
+#: ../../linux/crontab.rst:122
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/crontab.rst:123
+msgid "`Cron - Wikipedia <http://en.wikipedia.org/wiki/Cron>`_"
+msgstr "`Cron - Wikipedia <http://en.wikipedia.org/wiki/Cron>`_"
+
+#: ../../linux/crontab.rst:124
+msgid "`每天一个linux命令（50）：crontab命令 <http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html>`_"
+msgstr "`One Linux command a day (50): the crontab command <http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html>`_"
+

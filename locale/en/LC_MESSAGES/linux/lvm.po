@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/lvm.rst:2
+msgid "lvm"
+msgstr ""
+
+#: ../../linux/lvm.rst:5
+msgid "修改逻辑卷大小"
+msgstr ""
+
+#: ../../linux/lvm.rst:8
+msgid "扩大逻辑卷"
+msgstr ""
+
+#: ../../linux/lvm.rst:10 ../../linux/lvm.rst:17
+msgid "先检查分区 e2fsck -f ***PATH***"
+msgstr ""
+
+#: ../../linux/lvm.rst:11
+msgid "扩大逻辑卷 lvresize -L 120G ***PATH***"
+msgstr ""
+
+#: ../../linux/lvm.rst:12
+msgid "将文件系统扩大 resize2fs ***PATH***"
+msgstr ""
+
+#: ../../linux/lvm.rst:15
+msgid "缩小逻辑卷"
+msgstr ""
+
+#: ../../linux/lvm.rst:18
+msgid "将文件系统缩小 resize2fs ***PATH*** 50G"
+msgstr ""
+
+#: ../../linux/lvm.rst:19
+msgid "缩小逻辑卷 lvresize -L 50G ***PATH***"
+msgstr ""
+
+#: ../../linux/lvm.rst:21
+msgid ""
+"`在 LVM中录制逻辑卷快照并恢复（第三部分） <http://linux.cn/article-4145-1-qqmail.html>`__ "
+"`在Linux中扩展/缩减LVM（第二部分） <http://linux.cn/article-3974-1.html>`__ "
+"`在Linux中使用LVM构建灵活的磁盘存储（第一部分） <http://linux.cn/article-3965-1.html>`__"
+msgstr ""
+

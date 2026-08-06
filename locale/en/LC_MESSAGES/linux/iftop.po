@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/iftop.rst:2
+msgid "Iftop - 监控实时流量"
+msgstr "Iftop - Monitor Real-Time Traffic"
+
+#: ../../linux/iftop.rst:4
+msgid "iftop 可以用来监控网卡的实时流量。"
+msgstr "iftop can be used to monitor real-time traffic on a network interface."
+
+#: ../../linux/iftop.rst:8
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/iftop.rst:10
+msgid "-i 设定监测的网卡，如：# iftop -i eth1"
+msgstr "-i set the network interface to monitor, e.g.: # iftop -i eth1"
+
+#: ../../linux/iftop.rst:12
+msgid "-B 以bytes为单位显示流量(默认是bits)，如：# iftop -B"
+msgstr "-B display traffic in bytes (default is bits), e.g.: # iftop -B"
+
+#: ../../linux/iftop.rst:14
+msgid "-n 不解析ip地址"
+msgstr "-n don't resolve IP addresses"
+
+#: ../../linux/iftop.rst:16
+msgid "-N 使端口信息默认直接都显示端口号，如: # iftop -N"
+msgstr "-N show port numbers directly by default instead of service names, e.g.: # iftop -N"
+
+#: ../../linux/iftop.rst:18
+msgid "-F 显示特定网段的进出流量，如# iftop -F 10.10.1.0/24或# iftop -F 10.10.1.0/255.255.255.0"
+msgstr "-F show inbound/outbound traffic for a specific subnet, e.g. # iftop -F 10.10.1.0/24 or # iftop -F 10.10.1.0/255.255.255.0"
+
+#: ../../linux/iftop.rst:21
+msgid "-h（display this message），帮助，显示参数信息"
+msgstr "-h (display this message), help — shows argument information"
+
+#: ../../linux/iftop.rst:23
+msgid "-p 使用这个参数后，中间的列表显示的本地主机信息，出现了本机以外的IP信息;"
+msgstr "-p with this option, the middle list shows local-host information, and IPs outside the local host also appear;"
+
+#: ../../linux/iftop.rst:25
+msgid "-b 使流量图形条默认就显示;"
+msgstr "-b make the average-traffic bar graph shown by default;"
+
+#: ../../linux/iftop.rst:27
+msgid "-f 这个暂时还不太会用，过滤计算包用的;"
+msgstr "-f not very familiar with this one yet — used for filtering computed packets;"
+
+#: ../../linux/iftop.rst:29
+msgid "-P 使host信息及端口信息默认就都显示;"
+msgstr "-P make both host information and port information shown by default;"
+
+#: ../../linux/iftop.rst:31
+msgid "-m 设置界面最上边的刻度的最大值，刻度分五个大段显示，例：# iftop -m 100M 进入iftop画面后的一些操作命令(注意大小写)"
+msgstr "-m set the maximum value of the scale at the top of the interface, divided into five major segments, e.g.: # iftop -m 100M. Some operations after entering the iftop screen (note case-sensitivity)"
+
+#: ../../linux/iftop.rst:34
+msgid "h 显示帮助;"
+msgstr "h show help;"
+
+#: ../../linux/iftop.rst:36
+msgid "s 隐藏/显示本机的host;"
+msgstr "s hide/show the local host;"
+
+#: ../../linux/iftop.rst:38
+msgid "d 隐藏/显示远端目标主机的host;"
+msgstr "d hide/show the remote destination host;"
+
+#: ../../linux/iftop.rst:40
+msgid "按t切换显示格式为2行/1行/只显示发送流量/只显示接收流量;"
+msgstr "press t to toggle the display format between 2-line/1-line/send-only/receive-only;"
+
+#: ../../linux/iftop.rst:42
+msgid "按N切换显示端口号或端口服务名称;"
+msgstr "press N to toggle showing port numbers or port service names;"
+
+#: ../../linux/iftop.rst:44
+msgid "按S切换是否显示本机的端口信息;"
+msgstr "press S to toggle whether local port information is shown;"
+
+#: ../../linux/iftop.rst:46
+msgid "按D切换是否显示远端目标主机的端口信息;"
+msgstr "press D to toggle whether remote destination host port information is shown;"
+
+#: ../../linux/iftop.rst:48
+msgid "p 隐藏/显示端口信息;"
+msgstr "p hide/show port information;"
+
+#: ../../linux/iftop.rst:50
+msgid "按P切换暂停/继续显示;"
+msgstr "press P to toggle pause/resume display;"
+
+#: ../../linux/iftop.rst:52
+msgid "按b切换是否显示平均流量图形条;"
+msgstr "press b to toggle whether the average-traffic bar graph is shown;"
+
+#: ../../linux/iftop.rst:54
+msgid "按B切换计算2秒或10秒或40秒内的平均流量;"
+msgstr "press B to toggle computing the average traffic over 2, 10, or 40 seconds;"
+
+#: ../../linux/iftop.rst:56
+msgid "按T切换是否显示每个连接的总流量;"
+msgstr "press T to toggle whether total traffic per connection is shown;"
+
+#: ../../linux/iftop.rst:58
+msgid "按l打开屏幕过滤功能，输入要过滤的字符，比如ip,按回车后，屏幕就只显示这个IP相关的流量信息;"
+msgstr "press l to open the screen filter, enter the characters to filter on (e.g. an IP), and after pressing enter the screen only shows traffic information related to that IP;"
+
+#: ../../linux/iftop.rst:60
+msgid "按L切换显示画面上边的刻度;刻度不同，流量图形条会有变化;"
+msgstr "press L to toggle the scale shown at the top of the screen; different scales change the traffic bar graph;"
+
+#: ../../linux/iftop.rst:62
+msgid "按j或按k可以向上或向下滚动屏幕显示的连接记录;"
+msgstr "press j or k to scroll the connection records shown on screen up or down;"
+
+#: ../../linux/iftop.rst:64
+msgid "按1或2或3可以根据右侧显示的三列流量数据进行排序;"
+msgstr "press 1, 2, or 3 to sort by one of the three traffic columns shown on the right;"
+
+#: ../../linux/iftop.rst:66
+msgid "按<根据左边的本机名或IP排序;"
+msgstr "press < to sort by the local hostname or IP on the left;"
+
+#: ../../linux/iftop.rst:68
+msgid "按>根据远端目标主机的主机名或IP排序;"
+msgstr "press > to sort by the remote destination host's hostname or IP;"
+
+#: ../../linux/iftop.rst:70
+msgid "按o切换是否固定只显示当前的连接;"
+msgstr "press o to toggle whether only current connections are shown, pinned in place;"
+
+#: ../../linux/iftop.rst:72
+msgid "按f可以编辑过滤代码，这是翻译过来的说法，我还没用过这个！"
+msgstr "press f to edit the filter code — this is a translated description, I haven't actually used this one yet!"
+
+#: ../../linux/iftop.rst:74
+msgid "按!可以使用shell命令，这个没用过！没搞明白啥命令在这好用呢！"
+msgstr "press ! to use a shell command — haven't used this either! Not sure what commands are actually useful here!"
+
+#: ../../linux/iftop.rst:76
+msgid "按q退出监控。"
+msgstr "press q to quit monitoring."
+
+#: ../../linux/iftop.rst:79
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/iftop.rst:92
+msgid "界面上方显示的是类似刻度尺的刻度范围，为显示流量图形的长条作标尺用的。"
+msgstr "Shown at the top of the interface is a ruler-like scale range, used as a ruler for the traffic bar graphs below."
+
+#: ../../linux/iftop.rst:94
+msgid "中间的<= =>箭头，表示的是流量的方向,后面的三列数值分别是最近 2 秒、10 秒、40 秒发送的平均网络流量。默认情况下，是按十秒内的平均网络流量排序的。"
+msgstr "The <= and => arrows in the middle indicate the direction of traffic; the three columns of values after them represent the average network traffic sent over the last 2, 10, and 40 seconds respectively. By default, sorting is based on the average network traffic over the last ten seconds."
+
+#: ../../linux/iftop.rst:98
+msgid "底部会显示一些全局的统计数据"
+msgstr "Some global statistics are shown at the bottom"
+
+#: ../../linux/iftop.rst:106
+msgid "TX：发送流量"
+msgstr "TX: outbound traffic"
+
+#: ../../linux/iftop.rst:108
+msgid "RX：接收流量"
+msgstr "RX: inbound traffic"
+
+#: ../../linux/iftop.rst:110
+msgid "TOTAL：总流量"
+msgstr "TOTAL: total traffic"
+
+#: ../../linux/iftop.rst:112
+msgid "cum：运行iftop到目前时间的总流量"
+msgstr "cum: cumulative traffic since iftop started running"
+
+#: ../../linux/iftop.rst:114
+msgid "peak：流量峰值"
+msgstr "peak: peak traffic"
+
+#: ../../linux/iftop.rst:116
+msgid "rates：分别表示过去 2s 10s 40s 的平均流量"
+msgstr "rates: the average traffic over the past 2s, 10s, and 40s respectively"
+

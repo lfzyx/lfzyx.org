@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/systemd.rst:4
+msgid "Systemd - 系统启动管理"
+msgstr "Systemd - System Boot Management"
+
+#: ../../linux/systemd.rst:6
+msgid "linux 在开机加载内核后，便由内核加载 systemd init 系统，再由 systemd init 系统加载用户空间和启动进程。systemd 控制系统服务间的依赖关系，并依此实现系统初始化时服务的并行启动。"
+msgstr "After Linux loads the kernel at boot, the kernel loads the systemd init system, which then loads userspace and starts processes. systemd controls the dependencies between system services and, based on those, achieves parallel service startup during system initialization."
+
+#: ../../linux/systemd.rst:11
+msgid "设计"
+msgstr "Design"
+
+#: ../../linux/systemd.rst:14
+msgid "单元"
+msgstr "Units"
+
+#: ../../linux/systemd.rst:16
+msgid "systemd 的核心是一个叫单元 unit 的概念，systemd 使用声明性语句在配置文件中为每个守护进程记录初始化指令，配置文件被称之为 Unit file 。 Unit 一共分成12种:"
+msgstr "At the core of systemd is the concept of a \"unit\". systemd uses declarative statements in configuration files to record startup instructions for each daemon; these configuration files are called Unit files. There are 12 types of Units in total:"
+
+#: ../../linux/systemd.rst:20
+msgid "Service unit：系统服务"
+msgstr "Service unit: a system service"
+
+#: ../../linux/systemd.rst:21
+msgid "Target unit：多个 Unit 构成的一个组"
+msgstr "Target unit: a group made up of multiple Units"
+
+#: ../../linux/systemd.rst:22
+msgid "Device Unit：硬件设备"
+msgstr "Device Unit: a hardware device"
+
+#: ../../linux/systemd.rst:23
+msgid "Mount Unit：文件系统的挂载点"
+msgstr "Mount Unit: a filesystem mount point"
+
+#: ../../linux/systemd.rst:24
+msgid "Automount Unit：自动挂载点"
+msgstr "Automount Unit: an automount point"
+
+#: ../../linux/systemd.rst:25
+msgid "Path Unit：文件或路径"
+msgstr "Path Unit: a file or path"
+
+#: ../../linux/systemd.rst:26
+msgid "Scope Unit：不是由 Systemd 启动的外部进程"
+msgstr "Scope Unit: an external process not started by Systemd"
+
+#: ../../linux/systemd.rst:27
+msgid "Slice Unit：进程组"
+msgstr "Slice Unit: a process group"
+
+#: ../../linux/systemd.rst:28
+msgid "Snapshot Unit：Systemd 快照，可以切回某个快照"
+msgstr "Snapshot Unit: a Systemd snapshot, which lets you switch back to a given snapshot"
+
+#: ../../linux/systemd.rst:29
+msgid "Socket Unit：进程间通信的socket"
+msgstr "Socket Unit: a socket for inter-process communication"
+
+#: ../../linux/systemd.rst:30
+msgid "Swap Unit：swap 文件"
+msgstr "Swap Unit: a swap file"
+
+#: ../../linux/systemd.rst:31
+msgid "Timer Unit：定时器"
+msgstr "Timer Unit: a timer"
+
+#: ../../linux/systemd.rst:33
+msgid "一个sshd.service 是一个 Unit，一个 multi-user.target 集合也是一个 Unit。Systemd 的其中一个目标就是简化这些单元之间的相互作用，因此如果你有程序需要在某个挂载点被创建或某个设备被接入后开始运行，Systemd 可以让这一切正常运作起来变得相当容易。"
+msgstr "An sshd.service is a Unit, and a multi-user.target collection is also a Unit. One of Systemd's goals is to simplify the interactions between these units, so if you have a program that needs to start running once a certain mount point is created or a certain device is plugged in, Systemd makes it quite easy to get that working correctly."
+
+#: ../../linux/systemd.rst:39
+msgid "核心组件和库"
+msgstr "Core components and libraries"
+
+#: ../../linux/systemd.rst:41
+msgid "systemd 是一个系统和服务管理程序."
+msgstr "systemd is a system and service manager."
+
+#: ../../linux/systemd.rst:42
+msgid "systemctl 是与 Systemd 交互的控制程序."
+msgstr "systemctl is the control program for interacting with Systemd."
+
+#: ../../linux/systemd.rst:43
+msgid "systemd-analyze 用于确定系统启动性能统计信息，从系统和服务管理器中了解其他状态和跟踪信息"
+msgstr "systemd-analyze is used to determine system boot performance statistics, gathering additional state and tracing information from the system and service manager"
+
+#: ../../linux/systemd.rst:46
+msgid "systemd 用 linux 内核的 cgroups 子系统代替 PIDs 来追踪进程，以此即使是两次fork之后生成的守护进程也不会脱离systemd的控制。"
+msgstr "systemd uses the Linux kernel's cgroups subsystem instead of PIDs to track processes, so that even daemons spawned after two forks won't escape systemd's control."
+
+#: ../../linux/systemd.rst:50
+msgid "辅助部件"
+msgstr "Auxiliary components"
+
+#: ../../linux/systemd.rst:52
+msgid "systemd-journald 负责事件记录的守护进程，二进制文件作为其日志文件，系统管理员可以选择使用 systemd-journald，syslog-ng或rsyslog 记录系统事件。"
+msgstr "systemd-journald is the daemon responsible for event logging, using a binary file as its log file; system administrators can choose to use systemd-journald, syslog-ng, or rsyslog to record system events."
+
+#: ../../linux/systemd.rst:55
+msgid "systemd-logind 管理用户登陆的守护进程，它是一个集成的登录管理器，替代不再维护的ConsoleKit"
+msgstr "systemd-logind is the daemon that manages user logins; it's an integrated login manager that replaces the no-longer-maintained ConsoleKit"
+
+#: ../../linux/systemd.rst:57
+msgid "networkd 处理网络接口配置的守护进程"
+msgstr "networkd is the daemon that handles network interface configuration"
+
+#: ../../linux/systemd.rst:58
+msgid "timedated 控制时间设置的守护进程"
+msgstr "timedated is the daemon that controls time settings"
+
+#: ../../linux/systemd.rst:59
+msgid "udevd 驱动管理器"
+msgstr "udevd is the device manager"
+
+#: ../../linux/systemd.rst:60
+msgid "systemd-boot 启动管理器"
+msgstr "systemd-boot is the boot manager"
+
+#: ../../linux/systemd.rst:63
+msgid "使用"
+msgstr "Usage"
+
+#: ../../linux/systemd.rst:66
+msgid "systemctl"
+msgstr "systemctl"
+
+#: ../../linux/systemd.rst:68
+msgid "systemctl status 显示系统状态"
+msgstr "systemctl status shows the system status"
+
+#: ../../linux/systemd.rst:69
+msgid "systemctl list-units 输出已加载的单元"
+msgstr "systemctl list-units lists loaded units"
+
+#: ../../linux/systemd.rst:70
+msgid "systemctl list-units --all 输出已加载的单元（包含未激活）"
+msgstr "systemctl list-units --all lists loaded units (including inactive ones)"
+
+#: ../../linux/systemd.rst:71
+msgid "systemctl list-units --failed 输出运行失败的单元"
+msgstr "systemctl list-units --failed lists units that failed to run"
+
+#: ../../linux/systemd.rst:72
+msgid "systemctl list-unit-files 查看所有已安装单元，自动启动 enabled 的单元显示为绿色，被禁用自动启动 disabled 的显示为红色。标记为 static 的单元不能直接启用，它们是其他单元所依赖的对象，masked 是被禁用的单元。所有可用的单元文件存放在 /lib/systemd/system 和 /etc/systemd/system/ 目录（后者优先级更高）。在单元配置文件中，您可以看到各种选项，包括要被运行的二进制文件（“ExecStart”那一行），相冲突的其他单元（即不能同时进入运行的单元），以及需要在本单元执行前进入运行的单元（“After”那一行）。一些单元有附加的依赖选项，例如“Requires”（必要的依赖）和“Wants”（可选的依赖）。"
+msgstr "systemctl list-unit-files shows all installed units — units enabled to autostart are shown in green, those disabled from autostart are shown in red. Units marked static cannot be enabled directly; they are objects other units depend on, and masked means a unit is disabled. All available unit files are stored in the /lib/systemd/system and /etc/systemd/system/ directories (the latter takes priority). In a unit configuration file, you'll see various options, including the binary to be run (the \"ExecStart\" line), other conflicting units (units that cannot run at the same time), and units that must be running before this unit executes (the \"After\" line). Some units have additional dependency options, such as \"Requires\" (mandatory dependency) and \"Wants\" (optional dependency)."
+
+#: ../../linux/systemd.rst:78
+msgid "systemctl start 立即激活单元"
+msgstr "systemctl start activates a unit immediately"
+
+#: ../../linux/systemd.rst:79
+msgid "systemctl stop 立即停止单元"
+msgstr "systemctl stop stops a unit immediately"
+
+#: ../../linux/systemd.rst:80
+msgid "systemctl restart 重启单元"
+msgstr "systemctl restart restarts a unit"
+
+#: ../../linux/systemd.rst:81
+msgid "systemctl reload 重新加载配置"
+msgstr "systemctl reload reloads the configuration"
+
+#: ../../linux/systemd.rst:82
+msgid "systemctl status 输出单元状态"
+msgstr "systemctl status outputs a unit's status"
+
+#: ../../linux/systemd.rst:83
+msgid "systemctl is-enabled 检查单元是否配置为自动启动"
+msgstr "systemctl is-enabled checks whether a unit is configured to autostart"
+
+#: ../../linux/systemd.rst:84
+msgid "systemctl enable 开机自动启动单元,这会为该单元创建一个符号链接，并将其放置在当前启动目标的 .wants 目录下，这些 .wants 目录在/etc/systemd/system 文件夹中。"
+msgstr "systemctl enable makes a unit start automatically at boot; this creates a symlink for the unit and places it in the .wants directory of the current boot target, and these .wants directories live under the /etc/systemd/system folder."
+
+#: ../../linux/systemd.rst:87
+msgid "systemctl disable 取消开机自动启动单元"
+msgstr "systemctl disable cancels a unit's autostart at boot"
+
+#: ../../linux/systemd.rst:88
+msgid "systemctl mask 禁用一个单元"
+msgstr "systemctl mask disables a unit"
+
+#: ../../linux/systemd.rst:89
+msgid "systemctl unmask 取消禁用一个单元"
+msgstr "systemctl unmask re-enables a disabled unit"
+
+#: ../../linux/systemd.rst:90
+msgid "systemctl list-dependencies 列出一个 Unit 的所有依赖"
+msgstr "systemctl list-dependencies lists all dependencies of a Unit"
+
+#: ../../linux/systemd.rst:92
+msgid "使用 systemctl 控制单元时，通常需要使用单元文件的全名，包括扩展名（例如 sshd.service ）。但是有些单元可以在 systemctl 中使用简写方式。"
+msgstr "When controlling units with systemctl, you usually need to use the unit file's full name, including the extension (e.g. sshd.service). But some units can be referenced with a shorthand form in systemctl."
+
+#: ../../linux/systemd.rst:96
+msgid "journalctl"
+msgstr "journalctl"
+
+#: ../../linux/systemd.rst:98
+msgid "journalctl -b 输出本次启动的日志"
+msgstr "journalctl -b outputs the log for the current boot"
+
+#: ../../linux/systemd.rst:99
+msgid "journalctl -b --since=”2016-10-24 16:38” 2016年10月24日16:38以来的日志"
+msgstr "journalctl -b --since=”2016-10-24 16:38” shows logs since 2016-10-24 16:38"
+
+#: ../../linux/systemd.rst:103
+msgid "systemd-analyze"
+msgstr "systemd-analyze"
+
+#: ../../linux/systemd.rst:105
+msgid "systemd-analyze blame 查看每个服务的启动耗时"
+msgstr "systemd-analyze blame shows the startup time taken by each service"
+
+#: ../../linux/systemd.rst:106
+msgid "systemd-analyze critical-chain 显示瀑布状的启动过程流"
+msgstr "systemd-analyze critical-chain shows the boot process flow as a waterfall"
+

@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/sysstat/mpstat.rst:2
+msgid "mpstat - 报告个别或组合的处理器相关统计"
+msgstr "mpstat - Report Statistics for Individual or Combined Processors"
+
+#: ../../linux/sysstat/mpstat.rst:4
+msgid "用于监控系统上cpu的利用率。mpstat命令把每个可用的处理器的状态写到标准输出，默认第一个处理器为processor 0。 所有处理器的全局平均状态也会以报告形式给出。 mpstat命令可以用于SMP和UP的机器上，但是在UP机器上，只有全局平均状态会被打印出来。如果没有选择具体行为，默认将报告CPU的利用率"
+msgstr "Used to monitor CPU utilization on the system. The mpstat command writes the status of each available processor to standard output; by default the first processor is processor 0. A global average status across all processors is also given in the report. mpstat can be used on both SMP and UP machines, but on a UP machine only the global average status is printed. If no specific behavior is selected, CPU utilization is reported by default"
+
+#: ../../linux/sysstat/mpstat.rst:9
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/sysstat/mpstat.rst:11
+msgid "``apt-get install sysstat``"
+msgstr "``apt-get install sysstat``"
+
+#: ../../linux/sysstat/mpstat.rst:14
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/sysstat/mpstat.rst:16
+msgid "P 指定cpu编号"
+msgstr "P specifies the CPU number"
+
+#: ../../linux/sysstat/mpstat.rst:18
+msgid "3 每隔3秒打印一次报告"
+msgstr "3 print a report every 3 seconds"
+
+#: ../../linux/sysstat/mpstat.rst:20
+msgid "5 一共打印5次"
+msgstr "5 print 5 times in total"
+
+#: ../../linux/sysstat/mpstat.rst:23
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/sysstat/mpstat.rst:25
+msgid "``mpstat -P ALL``"
+msgstr "``mpstat -P ALL``"
+
+#: ../../linux/sysstat/mpstat.rst:27
+msgid "Linux 2.6.32-openvz-042stab093.4-amd64 (91) 2014年10月21日 _x86_64_ (2 CPU)"
+msgstr "Linux 2.6.32-openvz-042stab093.4-amd64 (91) 10/21/2014 _x86_64_ (2 CPU)"
+
+#: ../../linux/sysstat/mpstat.rst:30 ../../linux/sysstat/mpstat.rst:32
+msgid "22时54分42秒"
+msgstr "22:54:42"
+
+#: ../../linux/sysstat/mpstat.rst:30
+msgid "CPU"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%usr"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+msgid "%nice"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%sys"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%iowait"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%irq"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%soft"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%steal"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%guest"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:30
+#, python-format
+msgid "%idle"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:32
+msgid "all"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:32 ../../linux/sysstat/mpstat.rst:34
+#: ../../linux/sysstat/mpstat.rst:36
+msgid "0.04"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:32 ../../linux/sysstat/mpstat.rst:34
+#: ../../linux/sysstat/mpstat.rst:36
+msgid "0.00"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:32
+msgid "0.05"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:32
+msgid "0.27"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:32
+msgid "99.63"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:34 ../../linux/sysstat/mpstat.rst:36
+msgid "14时48分45秒"
+msgstr "14:48:45"
+
+#: ../../linux/sysstat/mpstat.rst:34
+msgid "0"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:34
+msgid "0.24"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:34
+msgid "99.72"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:36
+msgid "1"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:36
+msgid "0.23"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:36
+msgid "99.74"
+msgstr ""
+
+#: ../../linux/sysstat/mpstat.rst:39
+#, python-format
+msgid "%usr : 显示在用户级别（例如应用程序）执行时CPU利用率的百分比"
+msgstr "%usr: shows the percentage of CPU utilization spent executing at the user level (e.g. applications)"
+
+#: ../../linux/sysstat/mpstat.rst:40
+msgid "%nice :显示在拥有nice优先级的用户级别执行时CPU利用率的百分比"
+msgstr "%nice: shows the percentage of CPU utilization spent executing at the user level with a nice priority"
+
+#: ../../linux/sysstat/mpstat.rst:41
+#, python-format
+msgid "%sys : 现实在系统级别（例如内核）执行时CPU利用率的百分比"
+msgstr "%sys: shows the percentage of CPU utilization spent executing at the system level (e.g. the kernel)"
+
+#: ../../linux/sysstat/mpstat.rst:42
+#, python-format
+msgid "%iowait : 显示在系统有未完成的磁盘I/O请求期间CPU空闲时间的百分比"
+msgstr "%iowait: shows the percentage of time the CPU was idle while the system had an outstanding disk I/O request"
+
+#: ../../linux/sysstat/mpstat.rst:43
+#, python-format
+msgid "%irq : 显示CPU服务硬件中断所花费时间的百分比"
+msgstr "%irq: shows the percentage of time the CPU spent servicing hardware interrupts"
+
+#: ../../linux/sysstat/mpstat.rst:44
+#, python-format
+msgid "%soft : 显示CPU服务软件中断所花费时间的百分比"
+msgstr "%soft: shows the percentage of time the CPU spent servicing software interrupts"
+
+#: ../../linux/sysstat/mpstat.rst:45
+#, python-format
+msgid "%steal : 显示虚拟机管理器在服务另一个虚拟处理器时虚拟CPU处在非自愿等待下花费时间的百分比"
+msgstr "%steal: shows the percentage of time a virtual CPU spent in involuntary wait while the hypervisor was servicing another virtual processor"
+
+#: ../../linux/sysstat/mpstat.rst:46
+#, python-format
+msgid "%guest : 显示运行虚拟处理器时CPU花费时间的百分比"
+msgstr "%guest: shows the percentage of time the CPU spent running a virtual processor"
+
+#: ../../linux/sysstat/mpstat.rst:47
+#, python-format
+msgid "%idle : 显示系统没有未完成的磁盘I/O请求期间CPU空闲时间的百分比"
+msgstr "%idle: shows the percentage of time the CPU was idle while the system had no outstanding disk I/O requests"
+

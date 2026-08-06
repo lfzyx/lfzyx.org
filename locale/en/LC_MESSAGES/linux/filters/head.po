@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/filters/head.rst:2
+msgid "head"
+msgstr "head"
+
+#: ../../linux/filters/head.rst:4
+msgid "显示文件的第一部分"
+msgstr "Show the first part of a file"
+
+#: ../../linux/filters/head.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/filters/head.rst:9
+msgid "head [OPTION]... [FILE]..."
+msgstr "head [OPTION]... [FILE]..."
+
+#: ../../linux/filters/head.rst:12
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/filters/head.rst:14
+msgid "head tmpfile"
+msgstr "head tmpfile"
+
+#: ../../linux/filters/head.rst:16
+msgid "dmesg | head -20"
+msgstr "dmesg | head -20"
+

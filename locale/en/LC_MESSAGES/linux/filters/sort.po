@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/filters/sort.rst:2
+msgid "sort"
+msgstr "sort"
+
+#: ../../linux/filters/sort.rst:4
+msgid "对文本行进行排序"
+msgstr "Sort lines of text"
+
+#: ../../linux/filters/sort.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/filters/sort.rst:9
+msgid "sort [OPTION]... [FILE]..."
+msgstr "sort [OPTION]... [FILE]..."
+
+#: ../../linux/filters/sort.rst:12
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/filters/sort.rst:14
+msgid "sort -u .python_history"
+msgstr "sort -u .python_history"
+
+#: ../../linux/filters/sort.rst:16
+msgid "nl .bash_history | sort -u -k2 | sort -n"
+msgstr "nl .bash_history | sort -u -k2 | sort -n"
+

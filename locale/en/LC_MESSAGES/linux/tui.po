@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/tui.rst:1
+msgid "***推荐资料***"
+msgstr ""
+
+#: ../../linux/tui.rst:3
+msgid ""
+"UNIX and Linux System Administration Handbook（\\ `英文 "
+"<http://www.amazon.com/gp/product/0131480057/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0131480057&linkCode=as2&tag=lfzyx-20>`__\\"
+" \\|\\ `中文 "
+"<http://www.amazon.cn/gp/product/B0018CQ05S/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0018CQ05S&linkCode=as2&tag=lfzyx-23>`__\\"
+" ）"
+msgstr ""
+
+#: ../../linux/tui.rst:6
+msgid ""
+"The Debian Administrator's Handbook (`英文 <https://debian-"
+"handbook.info/browse/stable/>`__\\ \\|\\ `中文 <https://debian-"
+"handbook.info/browse/zh-CN/stable/>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:9
+msgid ""
+"Python v3.3.2 documentation (`英文 <http://docs.python.org/3/>`__\\ \\|\\ "
+"`中文 <http://docspy3zh.readthedocs.org/en/latest/>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:12
+msgid ""
+"Nginx HTTP Server (`英文 "
+"<http://www.amazon.com/gp/product/B00E3BHBL8/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00E3BHBL8&linkCode=as2&tag=lfzyx-20>`__\\"
+" \\|\\ `中文 "
+"<http://www.amazon.cn/gp/product/B007BJN05A/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B007BJN05A&linkCode=as2&tag=lfzyx-23>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:15
+msgid ""
+"Think Python (`英文 "
+"<http://greenteapress.com/thinkpython/html/index.html>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:18
+msgid ""
+"Learn Python The Hard Way (`英文 "
+"<http://learnpythonthehardway.org/book/>`__\\ \\|\\ `中文 "
+"<http://sebug.net/paper/books/LearnPythonTheHardWay/>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:21
+msgid ""
+"Dive Into Python (`英文 <http://www.diveintopython3.net/>`__\\ \\|\\ `中文 "
+"<http://woodpecker.org.cn/diveintopython3/>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:24
+msgid "Learn C The Hard Way (`英文 <http://c.learncodethehardway.org/book/>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:26
+msgid "Learn SQL The Hard Way (`英文 <http://sql.learncodethehardway.org/book/>`__)"
+msgstr ""
+
+#: ../../linux/tui.rst:29
+msgid "Apache Ant™ Manual (`英文 <http://ant.apache.org/manual/>`__)"
+msgstr ""
+

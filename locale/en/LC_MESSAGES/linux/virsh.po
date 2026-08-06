@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/virsh.rst:2
+msgid "virsh"
+msgstr ""
+
+#: ../../linux/virsh.rst:4
+msgid "help 显示该命令的说明"
+msgstr ""
+
+#: ../../linux/virsh.rst:6
+msgid "quit 结束 virsh ，回到 Shell"
+msgstr ""
+
+#: ../../linux/virsh.rst:8
+msgid "connect 连接到指定的虚拟机服务器"
+msgstr ""
+
+#: ../../linux/virsh.rst:10
+msgid "create 启动一个新的虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:12
+msgid "destroy 删除一个虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:14
+msgid "start 开启（已定义的）非启动的虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:16
+msgid "define 从 XML 定义一个虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:18
+msgid "undefine 取消定义的虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:20
+msgid "dumpxml 转储虚拟机的设置值"
+msgstr ""
+
+#: ../../linux/virsh.rst:22
+msgid "list 列出虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:24
+msgid "reboot 重新启动虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:26
+msgid "save 存储虚拟机的状态"
+msgstr ""
+
+#: ../../linux/virsh.rst:28
+msgid "restore 回复虚拟机的状态"
+msgstr ""
+
+#: ../../linux/virsh.rst:30
+msgid "suspend 暂停虚拟机的执行"
+msgstr ""
+
+#: ../../linux/virsh.rst:32
+msgid "resume 继续执行该虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:34
+msgid "dump 将虚拟机的内核转储到指定的文件，以便进行分析与排错"
+msgstr ""
+
+#: ../../linux/virsh.rst:36
+msgid "shutdown 关闭虚拟机"
+msgstr ""
+
+#: ../../linux/virsh.rst:38
+msgid "setmem 修改内存的大小"
+msgstr ""
+
+#: ../../linux/virsh.rst:40
+msgid "setmaxmem 设置内存的最大值"
+msgstr ""
+
+#: ../../linux/virsh.rst:42
+msgid "setvcpus 修改虚拟处理器的数量"
+msgstr ""
+

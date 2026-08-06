@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/hardware/lshw.rst:2
+msgid "lshw"
+msgstr "lshw"
+
+#: ../../linux/hardware/lshw.rst:4
+msgid "以详细或概要的形式列出许多个不同硬件的参数信息，其中包括cpu，内存，磁盘，usb控制器，网卡等等，lshw实质上是从/proc文件目录下的不同文件中提取对应的硬件信息。"
+msgstr "Lists parameter information for many different hardware components, in detailed or summary form, including CPU, memory, disks, USB controllers, network cards, and more. lshw essentially extracts the corresponding hardware information from various files under the /proc directory."
+

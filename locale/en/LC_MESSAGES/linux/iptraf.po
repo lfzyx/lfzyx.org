@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/iptraf.rst:2
+msgid "IPTraf"
+msgstr "IPTraf"
+
+#: ../../linux/iptraf.rst:4
+msgid "是一个局域网监控工具，采集TCP, UDP, ICMP, non-IP和以太网信息 [1]_"
+msgstr "A LAN monitoring tool that captures TCP, UDP, ICMP, non-IP, and Ethernet traffic information [1]_"
+
+#: ../../linux/iptraf.rst:7
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/iptraf.rst:9
+msgid "``# apt-get install iptraf``"
+msgstr "``# apt-get install iptraf``"
+
+#: ../../linux/iptraf.rst:12
+msgid "语法"
+msgstr "Usage"
+
+#: ../../linux/iptraf.rst:14
+msgid "``IP traffic monitor              流量监控``"
+msgstr "``IP traffic monitor              Traffic monitoring``"
+
+#: ../../linux/iptraf.rst:15
+msgid "``General interface statistics    常规接口统计``"
+msgstr "``General interface statistics    General interface statistics``"
+
+#: ../../linux/iptraf.rst:16
+msgid "``Detailed interface statistics   详细接口统计``"
+msgstr "``Detailed interface statistics   Detailed interface statistics``"
+
+#: ../../linux/iptraf.rst:17
+msgid "``Statistical breakdowns...       故障统计``"
+msgstr "``Statistical breakdowns...       Fault statistics``"
+
+#: ../../linux/iptraf.rst:18
+msgid "``LAN station monitor             局域网监控``"
+msgstr "``LAN station monitor             LAN monitoring``"
+
+#: ../../linux/iptraf.rst:19
+msgid "``Filters...                      过滤``"
+msgstr "``Filters...                      Filtering``"
+
+#: ../../linux/iptraf.rst:20
+msgid "``Configure...                    配置``"
+msgstr "``Configure...                    Configuration``"
+
+#: ../../linux/iptraf.rst:21
+msgid "``Exit                            退出``"
+msgstr "``Exit                            Exit``"
+
+#: ../../linux/iptraf.rst:24
+msgid "示例"
+msgstr "Examples"
+
+#: ../../linux/iptraf.rst:27
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/iptraf.rst:34
+msgid ""
+"`Real Time Interactive IP LAN Monitoring with IPTraf Tool "
+"<http://www.tecmint.com/real-time-interactive-ip-lan-monitoring-with-"
+"iptraf-tool/>`__"
+msgstr ""
+"`Real Time Interactive IP LAN Monitoring with IPTraf Tool "
+"<http://www.tecmint.com/real-time-interactive-ip-lan-monitoring-with-"
+"iptraf-tool/>`__"
+

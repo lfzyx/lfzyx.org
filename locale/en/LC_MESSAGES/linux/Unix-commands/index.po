@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/Unix-commands/index.rst:2
+msgid "Unix 实用程序列表"
+msgstr "List of Unix Utilities"
+
+#: ../../linux/Unix-commands/index.rst:3
+msgid "本列表中的 UNIX 实用程序由IEEE Std 1003.1-2008定义，是单一UNIX规范（SUS）的一部分。本列表中的实用程序可以在UNIX操作系统和绝大多数类UNIX操作系统中找到。 [#]_ [#]_ [#]_"
+msgstr "The UNIX utilities in this list are defined by IEEE Std 1003.1-2008, part of the Single UNIX Specification (SUS). The utilities in this list can be found on UNIX operating systems and most Unix-like operating systems. [#]_ [#]_ [#]_"
+
+#: ../../linux/Unix-commands/index.rst:18
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/Unix-commands/index.rst:19
+msgid "`List of Unix commands <https://en.wikipedia.org/wiki/List_of_Unix_commands>`_"
+msgstr "`List of Unix commands <https://en.wikipedia.org/wiki/List_of_Unix_commands>`_"
+
+#: ../../linux/Unix-commands/index.rst:20
+msgid "`Standard Unix programs <https://en.wikipedia.org/wiki/Category:Standard_Unix_programs>`_"
+msgstr "`Standard Unix programs <https://en.wikipedia.org/wiki/Category:Standard_Unix_programs>`_"
+
+#: ../../linux/Unix-commands/index.rst:21
+msgid "`Unix SUS2008 utilities <https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities>`_"
+msgstr "`Unix SUS2008 utilities <https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities>`_"
+

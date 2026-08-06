@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../c/inotify.rst:2
+msgid "Inotify - 文件系统变化通知"
+msgstr "Inotify - Filesystem Change Notification"
+
+#: ../../c/inotify.rst:3
+msgid "是一个 Linux内核2.6.13开始引入的文件变化通知机制，它监控文件系统，并且及时向专门的应用程序发出相关的事件警告，比如删除、读、写和卸载操作等。 [#]_"
+msgstr "A filesystem change notification mechanism introduced starting with Linux kernel 2.6.13. It monitors the filesystem and promptly alerts dedicated applications of related events, such as delete, read, write, and unmount operations. [#]_"
+
+#: ../../c/inotify.rst:6
+msgid "inotify C API"
+msgstr "inotify C API"
+
+#: ../../c/inotify.rst:8
+msgid "Inotify 提供 3 个系统调用  [#]_"
+msgstr "Inotify provides 3 system calls [#]_"
+
+#: ../../c/inotify.rst:11
+msgid "inotify_init()"
+msgstr "inotify_init()"
+
+#: ../../c/inotify.rst:13
+msgid "在内核中创建 inotify 子系统的一个实例，失败则返回 -1，成功的话将返回一个文件描述符，调用 read() 等待警告。read()返回struct inotify_event 事件结构:"
+msgstr "Creates an instance of the inotify subsystem in the kernel. Returns -1 on failure; on success it returns a file descriptor, and you call read() to wait for alerts. read() returns a struct inotify_event event structure:"
+
+#: ../../c/inotify.rst:29
+msgid "inotify_add_watch()"
+msgstr "inotify_add_watch()"
+
+#: ../../c/inotify.rst:31
+msgid "用于添加监视器。每个监视器必须提供一个路径名和相关事件列表，要监控多个事件，只需在事件之间使用逻辑操作符或 — C 语言中的管道线（|）操作符"
+msgstr "Used to add a watch. Each watch must be given a pathname and a list of related events; to watch multiple events, simply combine them with the logical OR operator — the pipe (|) operator in C"
+
+#: ../../c/inotify.rst:34
+msgid "``inotify_add_watch( fd, \"/home/strike\", IN_MODIFY | IN_CREATE | IN_DELETE );``"
+msgstr "``inotify_add_watch( fd, \"/home/strike\", IN_MODIFY | IN_CREATE | IN_DELETE );``"
+
+#: ../../c/inotify.rst:36
+msgid "该调用会返回一个惟一的标识符，使用这个标识符更改或删除相关的监视器。如果调用失败返回 -1。"
+msgstr "This call returns a unique identifier, which is used to modify or remove the associated watch. If the call fails it returns -1."
+
+#: ../../c/inotify.rst:39
+msgid "事件列表："
+msgstr "Event list:"
+
+#: ../../c/inotify.rst:41
+msgid "IN_ACCESS: 文件被访问;"
+msgstr "IN_ACCESS: the file was accessed;"
+
+#: ../../c/inotify.rst:42
+msgid "IN_MODIFY: 文件被修改;"
+msgstr "IN_MODIFY: the file was modified;"
+
+#: ../../c/inotify.rst:43
+msgid "IN_ATTRIB: 文件属性被修改,如 chmod、chown、touch 等;"
+msgstr "IN_ATTRIB: the file's attributes were changed, e.g. via chmod, chown, touch, etc.;"
+
+#: ../../c/inotify.rst:44
+msgid "IN_CLOSE_WRITE: 可写文件被关闭;"
+msgstr "IN_CLOSE_WRITE: a writable file was closed;"
+
+#: ../../c/inotify.rst:45
+msgid "IN_CLOSE_NOWRITE: 不可写文件被关闭;"
+msgstr "IN_CLOSE_NOWRITE: a non-writable file was closed;"
+
+#: ../../c/inotify.rst:46
+msgid "IN_CLOSE: 文件被关闭,等同于(IN_CLOSE_WRITE \\| IN_CLOSE_NOWRITE) ;"
+msgstr "IN_CLOSE: the file was closed, equivalent to (IN_CLOSE_WRITE \\| IN_CLOSE_NOWRITE);"
+
+#: ../../c/inotify.rst:47
+msgid "IN_OPEN: 文件被打开;"
+msgstr "IN_OPEN: the file was opened;"
+
+#: ../../c/inotify.rst:48
+msgid "IN_MOVED_FROM: 文件被移走,如 mv ;"
+msgstr "IN_MOVED_FROM: the file was moved away, e.g. via mv;"
+
+#: ../../c/inotify.rst:49
+msgid "IN_MOVED_TO: 文件被移来,如 mv、cp ;"
+msgstr "IN_MOVED_TO: the file was moved in, e.g. via mv or cp;"
+
+#: ../../c/inotify.rst:50
+msgid "IN_MOVE: 文件被移动,等同于(IN_MOVED_FROM \\| IN_MOVED_TO);"
+msgstr "IN_MOVE: the file was moved, equivalent to (IN_MOVED_FROM \\| IN_MOVED_TO);"
+
+#: ../../c/inotify.rst:51
+msgid "IN_CREATE: 创建新文件;"
+msgstr "IN_CREATE: a new file was created;"
+
+#: ../../c/inotify.rst:52
+msgid "IN_DELETE: 文件被删除,如 rm ;"
+msgstr "IN_DELETE: the file was deleted, e.g. via rm;"
+
+#: ../../c/inotify.rst:53
+msgid "IN_DELETE_SELF: 自删除,即一个可执行文件在执行时删除自己;"
+msgstr "IN_DELETE_SELF: self-deletion, i.e. an executable file deletes itself while running;"
+
+#: ../../c/inotify.rst:54
+msgid "IN_MOVE_SELF: 自移动,即一个可执行文件在执行时移动自己;"
+msgstr "IN_MOVE_SELF: self-move, i.e. an executable file moves itself while running;"
+
+#: ../../c/inotify.rst:55
+msgid "IN_ONESHOT: 仅监控一次事件;"
+msgstr "IN_ONESHOT: watch for only a single event;"
+
+#: ../../c/inotify.rst:56
+msgid "IN_ONLYDIR: 只监控目录;"
+msgstr "IN_ONLYDIR: watch directories only;"
+
+#: ../../c/inotify.rst:57
+msgid "IN_UNMOUNT: 宿主文件系统被 umount;"
+msgstr "IN_UNMOUNT: the host filesystem was unmounted;"
+
+#: ../../c/inotify.rst:58
+msgid "IN_ALL_EVENTS: 以上所有事件;"
+msgstr "IN_ALL_EVENTS: all of the events above;"
+
+#: ../../c/inotify.rst:61
+msgid "inotify_rm_watch()"
+msgstr "inotify_rm_watch()"
+
+#: ../../c/inotify.rst:63
+msgid "删除一个监视器。"
+msgstr "Removes a watch."
+
+#: ../../c/inotify.rst:66
+msgid "inotify-tools"
+msgstr "inotify-tools"
+
+#: ../../c/inotify.rst:68
+msgid "Inotify 工具库提供监控文件系统活动的命令行工具  [#]_"
+msgstr "The Inotify tools library provides command-line tools for monitoring filesystem activity [#]_"
+
+#: ../../c/inotify.rst:70
+msgid "``apt-get install inotify-tools``"
+msgstr "``apt-get install inotify-tools``"
+
+#: ../../c/inotify.rst:72
+msgid "该工具提供两个命令"
+msgstr "This tool provides two commands"
+
+#: ../../c/inotify.rst:74
+msgid "inotifywait 仅执行阻塞，等待 inotify 事件。"
+msgstr "inotifywait simply blocks and waits for inotify events."
+
+#: ../../c/inotify.rst:75
+msgid "您可以监控任何一组文件和目录，或监控整个目录树（目录、子目录、子目录的子目录等等）。"
+msgstr "You can monitor any set of files and directories, or watch an entire directory tree (directories, subdirectories, sub-subdirectories, and so on)."
+
+#: ../../c/inotify.rst:77
+msgid "``inotifywait -rme modify,attrib,move,close_write,create,delete,delete_self path``"
+msgstr "``inotifywait -rme modify,attrib,move,close_write,create,delete,delete_self path``"
+
+#: ../../c/inotify.rst:79
+msgid "inotifywatch 收集关于被监视的文件系统的统计数据，包括每个 inotify 事件发生多少次。"
+msgstr "inotifywatch collects statistics about the watched filesystem, including how many times each inotify event occurred."
+
+#: ../../c/inotify.rst:81
+msgid "``inotifywatch [OPTION] FILE``"
+msgstr "``inotifywatch [OPTION] FILE``"
+
+#: ../../c/inotify.rst:85
+msgid "参考文献"
+msgstr "References"
+
+#: ../../c/inotify.rst:86
+msgid "`inotify - 维基百科，自由的百科全书 <https://zh.wikipedia.org/wiki/Inotify>`_"
+msgstr "`inotify - Wikipedia <https://zh.wikipedia.org/wiki/Inotify>`_"
+
+#: ../../c/inotify.rst:87
+msgid "`使用 inotify 监控文件系统的活动 <http://www.ibm.com/developerworks/cn/linux/l-ubuntu-inotify/>`_"
+msgstr "`Monitoring filesystem activity with inotify <http://www.ibm.com/developerworks/cn/linux/l-ubuntu-inotify/>`_"
+
+#: ../../c/inotify.rst:88
+msgid "`Inotify: 高效、实时的Linux文件系统事件监控框架 <http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring>`_"
+msgstr "`Inotify: an efficient, real-time Linux filesystem event monitoring framework <http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring>`_"
+

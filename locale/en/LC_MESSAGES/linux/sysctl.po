@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/sysctl.rst:1
+msgid "sysctl用语配置内核参数，支持的参数都在 /proc/sys 中列出"
+msgstr ""
+
+#: ../../linux/sysctl.rst:4
+msgid "语法"
+msgstr ""
+
+#: ../../linux/sysctl.rst:6
+msgid "-a, --all 显示当前所有的内核参数值"
+msgstr ""
+
+#: ../../linux/sysctl.rst:8
+msgid "-p 从 /etc/sysctl.conf 加载配置"
+msgstr ""
+
+#: ../../linux/sysctl.rst:11
+msgid "配置"
+msgstr ""
+
+#: ../../linux/sysctl.rst:13
+msgid "*sysctl.conf 中的参数配置是与 /proc/sys 中的文件相关联的，将文件路径中 / 转换为 . 即可*"
+msgstr ""
+
+#: ../../linux/sysctl.rst:16
+msgid "net.ipv4.tcp_syncookies = 1"
+msgstr ""
+
+#: ../../linux/sysctl.rst:18
+msgid "表示开启 TCP/IP SYN cookies ，当出现SYN等待队列溢出时，启用cookies来处理，可防范少量SYN攻击"
+msgstr ""
+
+#: ../../linux/sysctl.rst:21
+msgid "fs.file-max"
+msgstr ""
+
+#: ../../linux/sysctl.rst:23
+msgid "Linux系统最多允许同时打开(即包含所有用户打开文件数总和)的文件数，是Linux系统级硬限制，所有用户级的打开文件数限制都不应超过这个数值。通常这个系统级硬限制是Linux系统在启动时根据系统硬件资源状况计算出来的最佳的最大同时打开文件数限制，如果没有特殊需要，不应该修改此限制，除非想为用户级打开文件数限制设置超过此限制的值。"
+msgstr ""
+

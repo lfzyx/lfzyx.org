@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/nginx.rst:2
+msgid "Nginx - 高性能 web 服务器"
+msgstr "Nginx - High-Performance Web Server"
+
+#: ../../linux/nginx.rst:4
+msgid "`Nginx <http://nginx.org/>`_ （发音同engine x）是一款由俄罗斯程序员Igor Sysoev所开发轻量级的网页服务器、反向代理服务器以及电子邮件（IMAP/POP3）代理服务器。整体采用模块化设计是nginx的一个重大特点，甚至http服务器核心功能也是一个模块。要注意的是：nginx的模块是静态的，添加和删除模块都要对nginx进行重新编译，这一点与Apache的动态模块完全不同。"
+msgstr "`Nginx <http://nginx.org/>`_ (pronounced like \"engine x\") is a lightweight web server, reverse proxy server, and email (IMAP/POP3) proxy server developed by Russian programmer Igor Sysoev. One of nginx's major characteristics is its overall modular design — even the core HTTP server functionality is a module. Note that nginx's modules are static: adding or removing modules requires recompiling nginx, which is completely different from Apache's dynamic modules."
+
+#: ../../linux/nginx.rst:7
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/nginx.rst:10
+msgid "编译"
+msgstr "Compiling from source"
+
+#: ../../linux/nginx.rst:24
+msgid "选项"
+msgstr "Options"
+
+#: ../../linux/nginx.rst:26
+msgid "运行./configure 时可用的选项"
+msgstr "Options available when running ./configure"
+
+#: ../../linux/nginx.rst:205
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/nginx.rst:207
+msgid "依据apt标准编译"
+msgstr "Compiled to the apt standard"
+
+#: ../../linux/nginx.rst:209
+msgid "./configure --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --modules-path=/usr/lib/nginx/modules --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --http-client-body-temp-path=/var/cache/nginx/client_temp --http-proxy-temp-path=/var/cache/nginx/proxy_temp --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp --http-scgi-temp-path=/var/cache/nginx/scgi_temp --user=nginx --group=nginx --with-compat --with-file-aio --with-threads --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_flv_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_mp4_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-mail --with-mail_ssl_module --with-stream --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-cc-opt='-g -O2 -fdebug-prefix-map=/data/builder/debuild/nginx-1.12.2/debian/debuild-base/nginx-1.12.2=. -specs=/usr/share/dpkg/no-pie-compile.specs -fstack-protector-strong -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fPIC' --with-ld-opt='-specs=/usr/share/dpkg/no-pie-link.specs -Wl,-z,relro -Wl,-z,now -Wl,--as-needed -pie'"
+msgstr ""
+
+#: ../../linux/nginx.rst:253
+msgid "apt"
+msgstr "apt"
+
+#: ../../linux/nginx.rst:260
+msgid "编辑/etc/apt/sources.list，加入以下内容："
+msgstr "Edit /etc/apt/sources.list and add the following:"
+
+#: ../../linux/nginx.rst:267
+msgid "根据操作系统的版本，将codename替换成 stretch 或者 jessie"
+msgstr "Depending on your OS version, replace codename with stretch or jessie"
+
+#: ../../linux/nginx.rst:275
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/nginx.rst:286
+msgid "event"
+msgstr "event"
+
+#: ../../linux/nginx.rst:297
+msgid "http"
+msgstr "http"
+
+#: ../../linux/nginx.rst:319
+msgid "server"
+msgstr "server"
+
+#: ../../linux/nginx.rst:333
+msgid "ssl模块"
+msgstr "ssl module"
+
+#: ../../linux/nginx.rst:350
+msgid "location"
+msgstr "location"
+

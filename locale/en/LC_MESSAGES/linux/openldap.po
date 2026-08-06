@@ -1,0 +1,310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/openldap.rst:2
+msgid "OpenLDAP - LDAP 协议的开源实现"
+msgstr "OpenLDAP - Open Source Implementation of the LDAP Protocol"
+
+#: ../../linux/openldap.rst:4
+msgid "`LDAP <https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol>`_ 是轻型目录访问协议。LDAP 的基本单元是条目(entry)，条目由属性（attribute）组成，属性由 ObjectClasses 约束，ObjectClasses 和其关联的属性定义在 schema 中。"
+msgstr "`LDAP <https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol>`_ is the Lightweight Directory Access Protocol. LDAP's basic unit is the entry, which is made up of attributes; attributes are constrained by ObjectClasses, and ObjectClasses and their associated attributes are defined in a schema."
+
+#: ../../linux/openldap.rst:9
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../linux/openldap.rst:12
+msgid "Entry"
+msgstr "Entry"
+
+#: ../../linux/openldap.rst:14
+msgid "条目，也叫记录项，是LDAP中最基本的单元，就像是数据库中的一行记录。通常对LDAP的添加、删除、更改、检索都是以条目为基本对象的。 [#]_"
+msgstr "An entry, also called a record, is the most basic unit in LDAP, similar to a row in a database. Adding, deleting, modifying, and searching in LDAP are generally all done with the entry as the basic object. [#]_"
+
+#: ../../linux/openldap.rst:16
+msgid "每一个条目的开头都有一个唯一的标识名（distinguished Name ，DN），如 DN: cn=baby,ou=marketing,ou=people,dc=lfzyx,dc=org\" 。通过DN的层次型语法结构，可以方便地表示出条目在LDAP树中的位置，通常用于检索。rdn指dn逗号最左边的部分，如cn=baby. LDAP目录树的最顶部就是根，也就是所谓的“Base DN”，如”dc=mydomain,dc=org”。"
+msgstr "Every entry begins with a unique distinguished Name (DN), such as DN: cn=baby,ou=marketing,ou=people,dc=lfzyx,dc=org\". Thanks to the hierarchical syntax of the DN, an entry's position in the LDAP tree can be conveniently represented, which is commonly used for searching. The RDN refers to the leftmost segment of the DN before the first comma, e.g. cn=baby. The very top of the LDAP directory tree is the root, known as the \"Base DN\", such as \"dc=mydomain,dc=org\"."
+
+#: ../../linux/openldap.rst:23
+msgid "Attribute"
+msgstr "Attribute"
+
+#: ../../linux/openldap.rst:25
+msgid "每个条目都可以有很多属性（Attribute），比如常见的人都有姓名、地址、电话等属性。每个属性都有名称及对应的值。"
+msgstr "Every entry can have many attributes; for instance, a typical person has attributes like name, address, and phone number. Every attribute has a name and a corresponding value."
+
+#: ../../linux/openldap.rst:27
+msgid "LDAP为人员组织机构中常见的对象都设计了属性："
+msgstr "LDAP has designed attributes for objects commonly found in personnel organizational structures:"
+
+#: ../../linux/openldap.rst:30
+msgid "属性"
+msgstr "Attribute"
+
+#: ../../linux/openldap.rst:30
+msgid "别名"
+msgstr "Alias"
+
+#: ../../linux/openldap.rst:30
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/openldap.rst:30
+msgid "描述"
+msgstr "Description"
+
+#: ../../linux/openldap.rst:30
+msgid "值(举例)"
+msgstr "Value (example)"
+
+#: ../../linux/openldap.rst:32
+msgid "commonName"
+msgstr "commonName"
+
+#: ../../linux/openldap.rst:32
+msgid "cn"
+msgstr "cn"
+
+#: ../../linux/openldap.rst:32 ../../linux/openldap.rst:34
+#: ../../linux/openldap.rst:36
+msgid "Directory String"
+msgstr "Directory String"
+
+#: ../../linux/openldap.rst:32
+msgid "姓名"
+msgstr "Name"
+
+#: ../../linux/openldap.rst:32
+msgid "lfzyx"
+msgstr "lfzyx"
+
+#: ../../linux/openldap.rst:34
+msgid "surname"
+msgstr "surname"
+
+#: ../../linux/openldap.rst:34
+msgid "sn"
+msgstr "sn"
+
+#: ../../linux/openldap.rst:34
+msgid "姓"
+msgstr "Surname"
+
+#: ../../linux/openldap.rst:34
+msgid "zhou"
+msgstr "zhou"
+
+#: ../../linux/openldap.rst:36
+msgid "organizationalUnitName"
+msgstr "organizationalUnitName"
+
+#: ../../linux/openldap.rst:36
+msgid "ou"
+msgstr "ou"
+
+#: ../../linux/openldap.rst:36
+msgid "单位（部门）名称"
+msgstr "Organizational unit (department) name"
+
+#: ../../linux/openldap.rst:36
+msgid "DevOps"
+msgstr "DevOps"
+
+#: ../../linux/openldap.rst:38
+msgid "telephoneNumber"
+msgstr "telephoneNumber"
+
+#: ../../linux/openldap.rst:38
+msgid "Telephone Number"
+msgstr "Telephone Number"
+
+#: ../../linux/openldap.rst:38
+msgid "电话号码"
+msgstr "Phone number"
+
+#: ../../linux/openldap.rst:38
+msgid "911"
+msgstr "911"
+
+#: ../../linux/openldap.rst:40
+msgid "objectClass"
+msgstr "objectClass"
+
+#: ../../linux/openldap.rst:40
+msgid "内置属性"
+msgstr "Built-in attribute"
+
+#: ../../linux/openldap.rst:40
+msgid "inetOrgPerson"
+msgstr "inetOrgPerson"
+
+#: ../../linux/openldap.rst:44
+msgid "ObjectClass"
+msgstr "ObjectClass"
+
+#: ../../linux/openldap.rst:46
+msgid "属性不是随便定义的，需要符合一定的规则，而这个规则可以通过schema制定。比如，如果一个entry没有定义在 inetorgperson 这个 schema 中的objectClass: inetOrgPerson，那么就不能为它指定employeeNumber属性，因为employeeNumber是在inetOrgPerson中定义的。"
+msgstr "Attributes cannot be defined arbitrarily — they need to follow certain rules, and those rules are set through a schema. For example, if an entry isn't defined with the objectClass: inetOrgPerson from the inetorgperson schema, you cannot set the employeeNumber attribute on it, because employeeNumber is defined in inetOrgPerson."
+
+#: ../../linux/openldap.rst:50
+msgid "ObjectClass是属性的集合，LDAP预想了很多人员组织机构中常见的对象，并将其封装成对象类。比如人员（person）含有姓（sn）、名（cn）、电话(telephoneNumber)、密码(userPassword)等属性，单位职工(organizationalPerson)是人员(person)的继承类，除了上述属性之外还含有职务（title）、邮政编码（postalCode）、通信地址(postalAddress)等属性。通过对象类可以方便的定义条目类型。每个条目可以直接继承多个对象类，这样就继承了各种属性。"
+msgstr "ObjectClass is a collection of attributes. LDAP anticipates many objects commonly found in personnel organizational structures and packages them into object classes. For example, person has attributes like surname (sn), given name (cn), telephone (telephoneNumber), and password (userPassword); organizationalPerson is a subclass of person that, besides those attributes, also has title, postalCode, postalAddress, and so on. Object classes make it convenient to define entry types. Each entry can directly inherit from multiple object classes, thereby inheriting various attributes."
+
+#: ../../linux/openldap.rst:53
+msgid "Schema"
+msgstr "Schema"
+
+#: ../../linux/openldap.rst:55
+msgid "对象类（ObjectClass）、属性类型（AttributeType）、语法（Syntax）分别约定了条目、属性、值。这些构成了模式(Schema)——对象类的集合。条目数据在导入时通常需要接受模式检查，它确保了目录中所有的条目数据结构都是一致的。"
+msgstr "ObjectClass, AttributeType, and Syntax define entries, attributes, and values respectively. Together these make up the Schema — a collection of object classes. Entry data usually needs to pass schema validation on import, which ensures that all entry data structures in the directory are consistent."
+
+#: ../../linux/openldap.rst:58 ../../linux/openldap.rst:104
+msgid "LDIF"
+msgstr "LDIF"
+
+#: ../../linux/openldap.rst:60
+msgid "LDIF（LDAP Data Interchange Format，数据交换格式）是LDAP数据库信息的一种文本格式，用于数据的导入导出，每行都是“属性: 值”"
+msgstr "LDIF (LDAP Data Interchange Format) is a text format for LDAP database information, used for importing and exporting data; every line is \"attribute: value\""
+
+#: ../../linux/openldap.rst:65
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/openldap.rst:67
+msgid "OpenLDAP [#]_ 是 LDAP 的开源实现，由三个主要的部分："
+msgstr "OpenLDAP [#]_ is an open source implementation of LDAP, made up of three main parts:"
+
+#: ../../linux/openldap.rst:69
+msgid "slapd - LDAP服务守护进程"
+msgstr "slapd - the LDAP service daemon"
+
+#: ../../linux/openldap.rst:70
+msgid "libraries - 实现LDAP协议的库"
+msgstr "libraries - libraries implementing the LDAP protocol"
+
+#: ../../linux/openldap.rst:71
+msgid "ldap-utils - ldapsearch, ldapadd, ldapdelete, ldapmodify, etc."
+msgstr "ldap-utils - ldapsearch, ldapadd, ldapdelete, ldapmodify, etc."
+
+#: ../../linux/openldap.rst:73
+msgid "OpenLDAP 将数据存储在后端数据库，默认使用 mdb 数据库。"
+msgstr "OpenLDAP stores data in a backend database, using the mdb database by default."
+
+#: ../../linux/openldap.rst:75
+msgid "``apt-get install slapd ldap-utils``"
+msgstr "``apt-get install slapd ldap-utils``"
+
+#: ../../linux/openldap.rst:77
+msgid "安装完成后需要对 slapd 重新配置"
+msgstr "After installation, slapd needs to be reconfigured"
+
+#: ../../linux/openldap.rst:79
+msgid "``dpkg-reconfigure slapd``"
+msgstr "``dpkg-reconfigure slapd``"
+
+#: ../../linux/openldap.rst:81
+msgid "Omit OpenLDAP server configuration? **No**"
+msgstr "Omit OpenLDAP server configuration? **No**"
+
+#: ../../linux/openldap.rst:83
+msgid "DNS domain name? **lfzyx.org**"
+msgstr "DNS domain name? **lfzyx.org**"
+
+#: ../../linux/openldap.rst:85
+msgid "Organization name? **lfzyx**"
+msgstr "Organization name? **lfzyx**"
+
+#: ../../linux/openldap.rst:87
+msgid "Administrator password? **admin的密码**"
+msgstr "Administrator password? **the admin password**"
+
+#: ../../linux/openldap.rst:89
+msgid "Database backend? **MDB**"
+msgstr "Database backend? **MDB**"
+
+#: ../../linux/openldap.rst:91
+msgid "Remove the database when slapd is purged? **No**"
+msgstr "Remove the database when slapd is purged? **No**"
+
+#: ../../linux/openldap.rst:93
+msgid "Move old database? **Yes**"
+msgstr "Move old database? **Yes**"
+
+#: ../../linux/openldap.rst:95
+msgid "Allow LDAPv2 protocol? **No**"
+msgstr "Allow LDAPv2 protocol? **No**"
+
+#: ../../linux/openldap.rst:98
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/openldap.rst:100
+msgid "OpenLDAP 的配置文件是 /etc/ldap/slapd.d/cn=config 目录中的ldif格式文件。 [#]_"
+msgstr "OpenLDAP's configuration file is an ldif-format file under the /etc/ldap/slapd.d/cn=config directory. [#]_"
+
+#: ../../linux/openldap.rst:106
+msgid "LDIF 文件用于操作或修改数据 [#]_"
+msgstr "LDIF files are used to manipulate or modify data [#]_"
+
+#: ../../linux/openldap.rst:109
+msgid "添加"
+msgstr "Adding"
+
+#: ../../linux/openldap.rst:111
+msgid "添加一个Marketing部门"
+msgstr "Adding a Marketing department"
+
+#: ../../linux/openldap.rst:125
+msgid "修改"
+msgstr "Modifying"
+
+#: ../../linux/openldap.rst:127
+msgid "添加mail属性，修改sn的值，删除description属性"
+msgstr "Add the mail attribute, change the value of sn, delete the description attribute"
+
+#: ../../linux/openldap.rst:145
+msgid "图形界面"
+msgstr "Graphical interface"
+
+#: ../../linux/openldap.rst:147
+msgid "尽管可以通过命令行管理 LDAP 数据，但使用 `Apache Directory Studio <http://directory.apache.org/studio/>`_ 更方便"
+msgstr "Although LDAP data can be managed from the command line, using `Apache Directory Studio <http://directory.apache.org/studio/>`_ is more convenient"
+
+#: ../../linux/openldap.rst:151
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/openldap.rst:152
+msgid "`LDAP服务器的概念和原理简单介绍 <http://seanlook.com/2015/01/15/openldap_introduction/>`_"
+msgstr "`A Brief Introduction to LDAP Server Concepts and Principles <http://seanlook.com/2015/01/15/openldap_introduction/>`_"
+
+#: ../../linux/openldap.rst:153
+msgid "`OpenLDAP - Wikipedia, the free encyclopedia <https://en.wikipedia.org/wiki/OpenLDAP>`_"
+msgstr "`OpenLDAP - Wikipedia, the free encyclopedia <https://en.wikipedia.org/wiki/OpenLDAP>`_"
+
+#: ../../linux/openldap.rst:154
+msgid "`OpenLDAP(2.4.3x)服务器搭建及配置说明 <http://seanlook.com/2015/01/21/openldap-install-guide-ssl/#3-1-apt-get安装>`_"
+msgstr "`Setting Up and Configuring an OpenLDAP (2.4.3x) Server <http://seanlook.com/2015/01/21/openldap-install-guide-ssl/#3-1-apt-get安装>`_"
+
+#: ../../linux/openldap.rst:155
+msgid "`LDIF修改ldap记录或配置示例 <http://seanlook.com/2015/01/22/openldap_ldif_example/>`_"
+msgstr "`Examples of Modifying LDAP Records or Configuration with LDIF <http://seanlook.com/2015/01/22/openldap_ldif_example/>`_"
+

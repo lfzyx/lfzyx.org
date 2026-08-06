@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/log4j.rst:1
+msgid "log4j.rootLogger=INFO, stdout, weblog, mail"
+msgstr ""
+
+#: ../../linux/log4j.rst:3
+msgid "log4j.appender.stdout=org.apache.log4j.ConsoleAppender"
+msgstr ""
+
+#: ../../linux/log4j.rst:5
+msgid "log4j.appender.stdout.Threshold=INFO"
+msgstr ""
+
+#: ../../linux/log4j.rst:7
+msgid "log4j.appender.stdout.Target=System.out"
+msgstr ""
+
+#: ../../linux/log4j.rst:9
+msgid "log4j.appender.stdout.layout=org.apache.log4j.PatternLayout"
+msgstr ""
+
+#: ../../linux/log4j.rst:11
+#, python-brace-format, python-format
+msgid ""
+"log4j.appender.stdout.layout.ConversionPattern=[%-5p] %d{yyyy-MM-dd "
+"HH:mm:ss} %x %m%n"
+msgstr ""
+
+#: ../../linux/log4j.rst:15
+msgid "log4j.appender.weblog=org.apache.log4j.DailyRollingFileAppender"
+msgstr ""
+
+#: ../../linux/log4j.rst:17
+msgid "log4j.appender.weblog.Threshold=WARN"
+msgstr ""
+
+#: ../../linux/log4j.rst:19
+#, python-brace-format
+msgid "log4j.appender.weblog.File=${catalina.home}/logs/web.log"
+msgstr ""
+
+#: ../../linux/log4j.rst:21
+msgid "log4j.appender.weblog.DatePattern='.'yyyy-MM-dd"
+msgstr ""
+
+#: ../../linux/log4j.rst:23
+msgid "log4j.appender.weblog.layout=org.apache.log4j.PatternLayout"
+msgstr ""
+
+#: ../../linux/log4j.rst:25
+#, python-brace-format, python-format
+msgid ""
+"log4j.appender.weblog.layout.ConversionPattern=[%-5p] %d{yyyy-MM-dd "
+"HH:mm:ss} %l %x %m%n"
+msgstr ""
+
+#: ../../linux/log4j.rst:29
+msgid "log4j.appender.mail=org.apache.log4j.net.SMTPAppender"
+msgstr ""
+
+#: ../../linux/log4j.rst:31
+msgid "log4j.appender.mail.Threshold=WARN"
+msgstr ""
+
+#: ../../linux/log4j.rst:33
+msgid "log4j.appender.mail.BufferSize=1"
+msgstr ""
+
+#: ../../linux/log4j.rst:35
+msgid "log4j.appender.mail.SMTPHost=mail.test.com"
+msgstr ""
+
+#: ../../linux/log4j.rst:37
+msgid "log4j.appender.mail.SMTPUsername=user@test.com"
+msgstr ""
+
+#: ../../linux/log4j.rst:39
+msgid "log4j.appender.mail.SMTPPassword=passwd"
+msgstr ""
+
+#: ../../linux/log4j.rst:41
+msgid "log4j.appender.mail.Subject=alert"
+msgstr ""
+
+#: ../../linux/log4j.rst:43
+msgid "log4j.appender.mail.From=user@test.com"
+msgstr ""
+
+#: ../../linux/log4j.rst:45
+msgid "log4j.appender.mail.To=user1@test.com"
+msgstr ""
+
+#: ../../linux/log4j.rst:47
+msgid "log4j.appender.mail.layout=org.apache.log4j.PatternLayout"
+msgstr ""
+
+#: ../../linux/log4j.rst:49
+#, python-brace-format, python-format
+msgid ""
+"log4j.appender.mail.layout.ConversionPattern=[%-5p] %d{yyyy-MM-dd "
+"HH:mm:ss} %l %x %m%n"
+msgstr ""
+

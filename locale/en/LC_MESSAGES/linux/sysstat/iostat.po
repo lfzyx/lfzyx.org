@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/sysstat/iostat.rst:2
+msgid "iostat - 报告块设备和分区的CPU统计信息和输入/输出统计信息"
+msgstr "iostat - Report CPU Statistics and Input/Output Statistics for Block Devices and Partitions"
+
+#: ../../linux/sysstat/iostat.rst:4
+msgid "CPU的统计数据和设备分区输入/输出统计信息 [#]_"
+msgstr "CPU statistics and device/partition input/output statistics [#]_"
+
+#: ../../linux/sysstat/iostat.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/sysstat/iostat.rst:9
+msgid "``iostat [options] [delay [count]]``"
+msgstr "``iostat [options] [delay [count]]``"
+
+#: ../../linux/sysstat/iostat.rst:11
+msgid "-c 显示CPU利用率的报告"
+msgstr "-c show a CPU utilization report"
+
+#: ../../linux/sysstat/iostat.rst:13
+msgid "-d 显示所有设备的磁盘I/O统计报告"
+msgstr "-d show a disk I/O statistics report for all devices"
+
+#: ../../linux/sysstat/iostat.rst:15
+msgid "-p 显示指定设备的I/O统计报告"
+msgstr "-p show an I/O statistics report for a given device"
+
+#: ../../linux/sysstat/iostat.rst:17
+msgid "-N 显示LVM的I/O统计报告"
+msgstr "-N show an I/O statistics report for LVM"
+
+#: ../../linux/sysstat/iostat.rst:20
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/sysstat/iostat.rst:21
+msgid "`Linux Performance Monitoring with Vmstat and Iostat Commands <http://www.tecmint.com/linux-performance-monitoring-with-vmstat-and-iostat-commands/>`__"
+msgstr "`Linux Performance Monitoring with Vmstat and Iostat Commands <http://www.tecmint.com/linux-performance-monitoring-with-vmstat-and-iostat-commands/>`__"
+

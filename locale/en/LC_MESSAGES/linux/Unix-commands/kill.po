@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/Unix-commands/kill.rst:2
+msgid "kill"
+msgstr "kill"
+
+#: ../../linux/Unix-commands/kill.rst:4
+msgid "kill [-signal] pid 默认signal为TERM -l 列出所有signal -TERM会被捕获，-KILL可以保证进程被杀死 killall 以名字方式来杀死进程"
+msgstr "kill [-signal] pid, the default signal is TERM -l lists all signals -TERM can be caught, -KILL guarantees the process is killed killall kills processes by name"
+

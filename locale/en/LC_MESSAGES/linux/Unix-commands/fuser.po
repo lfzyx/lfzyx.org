@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/Unix-commands/fuser.rst:4
+msgid "Fuser"
+msgstr "Fuser"
+
+#: ../../linux/Unix-commands/fuser.rst:6
+msgid "fuser 命令用于显示正在访问指定文件,文件系统,或 unix socket 的进程 PID。 在默认显示模式下，每个文件名后跟一个表示访问类型的字母："
+msgstr "The fuser command shows the PIDs of processes currently accessing a given file, filesystem, or unix socket. In the default display mode, each file name is followed by a letter indicating the access type:"
+
+#: ../../linux/Unix-commands/fuser.rst:19
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/Unix-commands/fuser.rst:20
+msgid "``fuser [OPTIONS] name``"
+msgstr "``fuser [OPTIONS] name``"
+
+#: ../../linux/Unix-commands/fuser.rst:22
+msgid "-a, --all 显示在命令行中指定的所有文件。 默认情况下，只显示至少一个进程访问的文件。"
+msgstr "-a, --all show all files specified on the command line. By default, only files accessed by at least one process are shown."
+
+#: ../../linux/Unix-commands/fuser.rst:24
+msgid "-k, --kill 杀死访问文件的进程。"
+msgstr "-k, --kill kill the processes accessing the file."
+
+#: ../../linux/Unix-commands/fuser.rst:26
+msgid "-i, --interactive 在杀死一个进程之前请求用户确认。 如果-k不存在，则此选项将被忽略。"
+msgstr "-i, --interactive ask for user confirmation before killing a process. Ignored if -k is not given."
+
+#: ../../linux/Unix-commands/fuser.rst:28
+msgid "-l, --list-signals 列出所有已知的信号名称。"
+msgstr "-l, --list-signals list all known signal names."
+
+#: ../../linux/Unix-commands/fuser.rst:30
+msgid "-m NAME, --mount NAME 显示使用指定的文件系统或块设备的所有进程"
+msgstr "-m NAME, --mount NAME show all processes using the given filesystem or block device"
+
+#: ../../linux/Unix-commands/fuser.rst:32
+msgid "-M, --ismountpoint 仅当指定挂载点时，请求才会被执行，可以防止你杀死机器。"
+msgstr "-M, --ismountpoint only carry out the request if NAME is a mount point; this can prevent you from accidentally killing the whole machine."
+
+#: ../../linux/Unix-commands/fuser.rst:34
+msgid "-w 仅杀死具有写权限的进程。 如果-k不存在，则此选项将被忽略。"
+msgstr "-w only kill processes that have write access. Ignored if -k is not given."
+
+#: ../../linux/Unix-commands/fuser.rst:36
+msgid "-n SPACE, --namespace SPACE 选择一个不同的名字空间（file, udp, tcp）。"
+msgstr "-n SPACE, --namespace SPACE select a different namespace (file, udp, tcp)."
+
+#: ../../linux/Unix-commands/fuser.rst:38
+msgid "-s, --silent 安静模式"
+msgstr "-s, --silent silent mode"
+
+#: ../../linux/Unix-commands/fuser.rst:40
+msgid "-SIGNAL 发送指定信号替代SIGKILL"
+msgstr "-SIGNAL send the given signal instead of SIGKILL"
+
+#: ../../linux/Unix-commands/fuser.rst:42
+msgid "-u, --user 将进程所有者的用户名追加到每个 PID 边上。"
+msgstr "-u, --user append the owning user's username next to each PID."
+
+#: ../../linux/Unix-commands/fuser.rst:44
+msgid "-v, --verbose 详细模式."
+msgstr "-v, --verbose verbose mode."
+
+#: ../../linux/Unix-commands/fuser.rst:50
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/Unix-commands/fuser.rst:52
+msgid "显示访问了该目录的进程"
+msgstr "Show processes accessing this directory"
+
+#: ../../linux/Unix-commands/fuser.rst:68
+msgid "显示访问了该文件系统或块设备的进程"
+msgstr "Show processes accessing this filesystem or block device"
+
+#: ../../linux/Unix-commands/fuser.rst:84
+msgid "fuser 命令也可用于检测使用网络端口的进程"
+msgstr "The fuser command can also be used to detect processes using a network port"
+
+#: ../../linux/Unix-commands/fuser.rst:96
+msgid "杀死正在访问该文件系统或网络端口的进程"
+msgstr "Kill processes currently accessing this filesystem or network port"
+

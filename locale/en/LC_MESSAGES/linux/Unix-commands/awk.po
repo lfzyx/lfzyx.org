@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/Unix-commands/awk.rst:2
+msgid "awk"
+msgstr "awk"
+
+#: ../../linux/Unix-commands/awk.rst:4
+msgid "AWK是一种优良的文本处理工具，Linux及Unix环境中现有的功能最强大的数据处理引擎之一。AWK提供了极其强大的功能：可以进行正则表达式的匹配，样式装入、流控制、数学运算符、进程控制语句甚至于内置的变量和函数。它具备了一个完整的语言所应具有的几乎所有精美特性。最简单地说，AWK是一种用于处理文本的编程语言工具。"
+msgstr "AWK is an excellent text-processing tool, one of the most powerful data-processing engines available in Linux and Unix environments. AWK offers extremely powerful features: regular-expression matching, pattern loading, flow control, math operators, process-control statements, and even built-in variables and functions. It has nearly every elegant feature a complete language should have. Put most simply, AWK is a programming-language tool for processing text."
+
+#: ../../linux/Unix-commands/awk.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/Unix-commands/awk.rst:9
+msgid "AWK程序是由一系列模式--动作对组成的"
+msgstr "An AWK program is made up of a series of pattern-action pairs"
+
+#: ../../linux/Unix-commands/awk.rst:16
+#, python-brace-format
+msgid "{print} 会输出当前记录的内容。在AWK中，记录会被分割成“域”，它们可以被分别显示或使用"
+msgstr "{print} outputs the content of the current record. In AWK, a record is split into \"fields\", which can be displayed or used individually"
+
+#: ../../linux/Unix-commands/awk.rst:19
+#, python-brace-format
+msgid "{print $1} 显示当前记录的第1个域"
+msgstr "{print $1} shows the 1st field of the current record"
+
+#: ../../linux/Unix-commands/awk.rst:21
+#, python-brace-format
+msgid "{print $1, $3} 显示当前记录的第1和第3个域，并以预定义的输出域分隔符（Output field separator, OFS）分隔，其默认值为一个空格符"
+msgstr "{print $1, $3} shows the 1st and 3rd fields of the current record, separated by the predefined Output Field Separator (OFS), whose default value is a single space"
+
+#: ../../linux/Unix-commands/awk.rst:25
+#, python-brace-format
+msgid "{print $0} 显示当前记录的整个域"
+msgstr "{print $0} shows the entire current record"
+
+#: ../../linux/Unix-commands/awk.rst:27
+#, python-brace-format
+msgid "{print $NF} 显示最后一个域"
+msgstr "{print $NF} shows the last field"
+
+#: ../../linux/Unix-commands/awk.rst:29
+#, python-brace-format
+msgid "{print $(NF-1)} 显示倒数第二个域"
+msgstr "{print $(NF-1)} shows the second-to-last field"
+
+#: ../../linux/Unix-commands/awk.rst:31
+#, python-brace-format
+msgid "{sum+=$NF} END {print sum} 计算总和"
+msgstr "{sum+=$NF} END {print sum} computes a total"
+
+#: ../../linux/Unix-commands/awk.rst:33
+msgid "-F 指定你的分隔符"
+msgstr "-F specify your delimiter"
+
+#: ../../linux/Unix-commands/awk.rst:36
+msgid "内建变量"
+msgstr "Built-in Variables"
+
+#: ../../linux/Unix-commands/awk.rst:38
+msgid "AWK的内建变量包括域变量，例如$1, $2, $3，以及$0。这些变量给出了记录中域的内容。内建变量也包括一些其他变量："
+msgstr "AWK's built-in variables include field variables, such as $1, $2, $3, and $0. These variables hold the content of the fields in a record. Built-in variables also include several other variables:"
+
+#: ../../linux/Unix-commands/awk.rst:41
+msgid "NR：已输入记录的条数。"
+msgstr "NR: the number of records read so far."
+
+#: ../../linux/Unix-commands/awk.rst:42
+msgid "NF：当前记录中域的个数。记录中最后一个域可以以$NF的方式引用。"
+msgstr "NF: the number of fields in the current record. The last field of a record can be referenced as $NF."
+
+#: ../../linux/Unix-commands/awk.rst:43
+msgid "FILENAME：当前输入文件的文件名。"
+msgstr "FILENAME: the name of the current input file."
+
+#: ../../linux/Unix-commands/awk.rst:44
+msgid "FS：“域分隔符”，用于将输入记录分割成域。其默认值为“空白字符”，即空格和制表符。FS可以替换为其它字符，从而改变域分隔符。"
+msgstr "FS: the \"field separator\", used to split an input record into fields. Its default value is \"whitespace\", i.e. spaces and tabs. FS can be replaced with other characters to change the field separator."
+
+#: ../../linux/Unix-commands/awk.rst:45
+msgid "RS：当前的“记录分隔符”。默认状态下，输入的每行都被作为一个记录，因此默认记录分隔符是换行符。"
+msgstr "RS: the current \"record separator\". By default, each line of input is treated as one record, so the default record separator is the newline character."
+
+#: ../../linux/Unix-commands/awk.rst:46
+msgid "OFS：“输出域分隔符”，即分隔print命令的参数的符号。其默认值为空格。"
+msgstr "OFS: the \"output field separator\", the symbol that separates the arguments of a print command. Its default value is a space."
+
+#: ../../linux/Unix-commands/awk.rst:47
+msgid "ORS：“输出记录分隔符”，即每个print命令之间的符号。其默认值为换行符。"
+msgstr "ORS: the \"output record separator\", the symbol placed between each print command's output. Its default value is the newline character."
+
+#: ../../linux/Unix-commands/awk.rst:48
+#, python-format
+msgid "OFMT：“输出数字格式”（Format for numeric output），其默认值为\"%.6g\"。"
+msgstr "OFMT: the \"format for numeric output\", whose default value is \"%.6g\"."
+
+#: ../../linux/Unix-commands/awk.rst:51
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/Unix-commands/awk.rst:53
+#, python-brace-format
+msgid "``awk -F '\"' 'NR==1,NR==2 BEGIN{ORS=\"\"}{print $2}'``"
+msgstr "``awk -F '\"' 'NR==1,NR==2 BEGIN{ORS=\"\"}{print $2}'``"
+
+#: ../../linux/Unix-commands/awk.rst:55
+msgid "指定\"为分隔符，指定范围为第一条至第二条，将记录分隔符的值替换为null，打印第二个域"
+msgstr "Specifies \" as the delimiter, sets the range to the first through second record, replaces the record separator's value with null, and prints the second field"
+

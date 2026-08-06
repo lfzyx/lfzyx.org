@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/openssh/sshd.rst:2
+msgid "sshd"
+msgstr "sshd"
+
+#: ../../linux/openssh/sshd.rst:5
+msgid "配置"
+msgstr "Configuration"
+
+#: ../../linux/openssh/sshd.rst:56
+msgid "安全"
+msgstr "Security"
+
+#: ../../linux/openssh/sshd.rst:59
+msgid "TCP Wrappers"
+msgstr "TCP Wrappers"
+
+#: ../../linux/openssh/sshd.rst:61
+msgid "使用TCP wrappers对sshd进行tcp包裹,只允许特定的主机才能连接到ssh服务端"
+msgstr "Use TCP wrappers to wrap sshd in TCP, only allowing specific hosts to connect to the ssh server"
+
+#: ../../linux/openssh/sshd.rst:71
+msgid "PAM"
+msgstr "PAM"
+
+#: ../../linux/openssh/sshd.rst:73
+msgid "利用 :doc:`../pam` 可做双因素登录认证 [#]_ [#]_"
+msgstr "Two-factor login authentication can be done using :doc:`../pam` [#]_ [#]_"
+
+#: ../../linux/openssh/sshd.rst:75
+msgid "*注：key的优先级高于PAM，在key存在的情况下可以无视PAM认证直接用key登录，当然你也可以为key设置钩子command来解决这个问题*"
+msgstr "*Note: a key takes priority over PAM — if a key exists, you can bypass PAM authentication and log in directly with the key. Of course, you can also set a hook command on the key to work around this*"
+
+#: ../../linux/openssh/sshd.rst:78
+msgid "knockd"
+msgstr "knockd"
+
+#: ../../linux/openssh/sshd.rst:80
+msgid "增强计算机安全性的最后一种方案是最激进的：关闭打开的端口，这会让任何攻击都无法攻破您的计算机. [#]_ 只向能够提供 “秘密敲门暗号” 的用户开放所需的端口，让用户能够输入密码并访问计算机。 敲门守护进程 knockd；它监视敲门序列，当发现有效的序列时执行相应的操作。"
+msgstr "The most drastic option for hardening a computer's security is: close all open ports, so that no attack can get through to your computer. [#]_ Only open the needed port to a user who can supply the \"secret knock\", letting them then enter a password and access the computer. The port-knocking daemon knockd watches for the knock sequence, and performs the corresponding action once a valid sequence is detected."
+
+#: ../../linux/openssh/sshd.rst:85
+msgid "Web-based"
+msgstr "Web-based"
+
+#: ../../linux/openssh/sshd.rst:87
+msgid "通过web浏览器访问ssh服务  [#]_"
+msgstr "Accessing the ssh service through a web browser [#]_"
+
+#: ../../linux/openssh/sshd.rst:90
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/openssh/sshd.rst:91
+msgid "`2-factor authentication & writing PAM modules for Ubuntu <http://ben.akrin.com/?p=1068>`_"
+msgstr "`2-factor authentication & writing PAM modules for Ubuntu <http://ben.akrin.com/?p=1068>`_"
+
+#: ../../linux/openssh/sshd.rst:92
+msgid "`google-authenticator <https://code.google.com/p/google-authenticator/>`_"
+msgstr "`google-authenticator <https://code.google.com/p/google-authenticator/>`_"
+
+#: ../../linux/openssh/sshd.rst:93
+msgid "`保护 SSH 的三把锁 <http://www.ibm.com/developerworks/cn/aix/library/au-sshlocks/>`_"
+msgstr "`Three Locks to Protect SSH <http://www.ibm.com/developerworks/cn/aix/library/au-sshlocks/>`_"
+
+#: ../../linux/openssh/sshd.rst:94
+msgid "`Web-based SSH <http://en.wikipedia.org/wiki/Web-based_SSH>`_"
+msgstr "`Web-based SSH <http://en.wikipedia.org/wiki/Web-based_SSH>`_"
+

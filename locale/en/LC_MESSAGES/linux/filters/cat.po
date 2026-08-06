@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/filters/cat.rst:2
+msgid "cat"
+msgstr "cat"
+
+#: ../../linux/filters/cat.rst:4
+msgid "串联文件并在标准输出上输出"
+msgstr "Concatenate files and print to standard output"
+
+#: ../../linux/filters/cat.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/filters/cat.rst:9
+msgid "cat [OPTION]... [FILE]..."
+msgstr "cat [OPTION]... [FILE]..."
+
+#: ../../linux/filters/cat.rst:12
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/filters/cat.rst:14
+msgid "cat .bash_aliases .bashrc"
+msgstr "cat .bash_aliases .bashrc"
+

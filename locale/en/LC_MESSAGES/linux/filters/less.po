@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/filters/less.rst:2
+msgid "less"
+msgstr "less"
+
+#: ../../linux/filters/less.rst:4
+msgid "分页器，提供比 more 更多的功能"
+msgstr "A pager that offers more features than more"
+
+#: ../../linux/filters/less.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/filters/less.rst:9
+msgid "less [options] file..."
+msgstr "less [options] file..."
+
+#: ../../linux/filters/less.rst:12
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/filters/less.rst:14
+msgid "less .python_history"
+msgstr "less .python_history"
+

@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/Unix-commands/find.rst:2
+msgid "find"
+msgstr "find"
+
+#: ../../linux/Unix-commands/find.rst:4
+msgid "find 使用名称，大小，类型，文件所有者，创建时间，访问时间等搜索条件来搜索文件和目录"
+msgstr "find searches for files and directories using search criteria like name, size, type, file owner, creation time, and access time"
+
+#: ../../linux/Unix-commands/find.rst:7
+msgid "语法"
+msgstr "Syntax"
+
+#: ../../linux/Unix-commands/find.rst:9
+msgid "find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression]"
+msgstr "find [-H] [-L] [-P] [-D debugopts] [-Olevel] [path...] [expression]"
+
+#: ../../linux/Unix-commands/find.rst:12
+msgid "示例"
+msgstr "Example"
+
+#: ../../linux/Unix-commands/find.rst:14
+msgid "find . -name \"\\*python\\*\"  按名称查找文件"
+msgstr "find . -name \"\\*python\\*\"  find files by name"
+
+#: ../../linux/Unix-commands/find.rst:16
+msgid "find . -wholename \"\\*imghdrdata/\\*python\\*\"  匹配完整路径"
+msgstr "find . -wholename \"\\*imghdrdata/\\*python\\*\"  match the full path"
+
+#: ../../linux/Unix-commands/find.rst:18
+msgid "find . -type d  查找文件夹"
+msgstr "find . -type d  find directories"
+
+#: ../../linux/Unix-commands/find.rst:20
+msgid "find . -type f  查找文件"
+msgstr "find . -type f  find files"
+
+#: ../../linux/Unix-commands/find.rst:22
+msgid "find . -type l  查找符号链接"
+msgstr "find . -type l  find symbolic links"
+
+#: ../../linux/Unix-commands/find.rst:24
+msgid "find . -size +20M 查找超过指定大小的文件"
+msgstr "find . -size +20M find files larger than a given size"
+
+#: ../../linux/Unix-commands/find.rst:26
+msgid "find . -size 13k 查找指定大小的文件"
+msgstr "find . -size 13k find files of a given size"
+
+#: ../../linux/Unix-commands/find.rst:28
+msgid "find . -mtime -2 -type d 过去两天内修改的文件夹"
+msgstr "find . -mtime -2 -type d directories modified in the past two days"
+
+#: ../../linux/Unix-commands/find.rst:30
+msgid "find . -atime -2 -type d 过去两天内访问过的文件夹"
+msgstr "find . -atime -2 -type d directories accessed in the past two days"
+
+#: ../../linux/Unix-commands/find.rst:32
+msgid "find . -user root 查找 root 用户所拥有的文件"
+msgstr "find . -user root find files owned by the root user"
+
+#: ../../linux/Unix-commands/find.rst:34
+msgid "find . -maxdepth 2 -type d ! -group root 查找不属于 root 组的文件夹，最大深度为2"
+msgstr "find . -maxdepth 2 -type d ! -group root find directories not belonging to the root group, at most 2 levels deep"
+
+#: ../../linux/Unix-commands/find.rst:36
+msgid "find . -type f -perm -o=rwx  查找 other 权限为 rwx 的文件"
+msgstr "find . -type f -perm -o=rwx  find files where other has rwx permission"
+
+#: ../../linux/Unix-commands/find.rst:38
+msgid "find . -type f -perm -ug=rwx ! -perm -o=r 查找 user 和 group 拥有 rwx 权限，但 other 没有 r 权限的文件"
+msgstr "find . -type f -perm -ug=rwx ! -perm -o=r find files where user and group have rwx permission, but other does not have r permission"
+
+#: ../../linux/Unix-commands/find.rst:40
+msgid "find . -type f -perm 600 查找 600 权限的文件"
+msgstr "find . -type f -perm 600 find files with 600 permissions"
+

@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/kvm.rst:4
+msgid "KVM - 虚拟化解决方案"
+msgstr "KVM - Virtualization Solution"
+
+#: ../../linux/kvm.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../linux/kvm.rst:9
+msgid "KVM（Kernel-based Virtual Machine 基于内核的虚拟机) 是具备Intel VT或 AMD-V功能的 x86 平台全虚拟化解决方案，它包含一个为处理器提供底层虚拟化可加载的核心模块kvm.ko (kvm-intel.ko或kvm-AMD.ko)。仅有KVM模块是远远不够的， KVM内核模块本身只能提供CPU和内存的虚拟化，用户无法直接控制内核模块去作事情，KVM还需要一个经过修改的 :doc:`qemu` 软件作为虚拟机上层控制，才能构成一个完成的虚拟化技术。 :doc:`qemu` 也是一个虚拟化软件。它的特点是可虚拟不同的CPU。比如说在x86的CPU上可虚拟一个Power的CPU，并可利用它编译出可运行在Power上的程序。"
+msgstr "KVM (Kernel-based Virtual Machine) is a full virtualization solution for x86 platforms that have Intel VT or AMD-V support. It includes a loadable core kernel module, kvm.ko (kvm-intel.ko or kvm-AMD.ko), that provides low-level virtualization for the processor. The KVM module alone is far from enough — the KVM kernel module by itself can only virtualize CPU and memory, and users can't directly control the kernel module to do things. KVM also needs a modified copy of :doc:`qemu` as the upper-level control software for the virtual machine, in order to form a complete virtualization solution. :doc:`qemu` is itself also a virtualization program. Its distinguishing feature is that it can virtualize different CPUs — for example, on an x86 CPU it can virtualize a Power CPU, and can be used to compile programs that run on Power."
+
+#: ../../linux/kvm.rst:18
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/kvm.rst:20
+msgid ":literal:`apt-get install qemu-kvm libvirt-bin`  [#]_"
+msgstr ":literal:`apt-get install qemu-kvm libvirt-bin`  [#]_"
+
+#: ../../linux/kvm.rst:22
+msgid "KVM 使用了 QEMU 的基于 x86 的部分，并稍加改造，形成可控制 KVM 内核模块的用户空间工具 QEMU-KVM。 [#]_ QEMU-KVM 通过ioctl调用/dev/kvm接口，将有关CPU指令的部分交由内核模块来做。KVM 实现了cpu和内存的虚拟化，qemu模拟IO设备。"
+msgstr "KVM uses, with slight modification, the x86-based portion of QEMU, forming the userspace tool QEMU-KVM that controls the KVM kernel module. [#]_ QEMU-KVM calls the /dev/kvm interface via ioctl, handing the CPU-instruction-related parts off to the kernel module. KVM implements CPU and memory virtualization, while qemu emulates I/O devices."
+
+#: ../../linux/kvm.rst:27
+msgid "QEMU-KVM 工具效率不高，不易于使用，RedHat 为 KVM 开发了更多的辅助工具，比如 :doc:`libvirt`"
+msgstr "The QEMU-KVM tool isn't very efficient and isn't easy to use, so RedHat developed more auxiliary tools for KVM, such as :doc:`libvirt`"
+
+#: ../../linux/kvm.rst:30
+msgid ":doc:`libvirt` 是一套提供了多种语言接口的 API，为各种虚拟化工具提供一套方便、可靠的编程接口，不仅支持 KVM，而且支持 Xen 等其他虚拟机，而且一些常用的虚拟机管理工具（如 :doc:`virsh` 、 :doc:`virt-install` 、virt-manager等）和云计算框架平台（如OpenStack、OpenNebula、Eucalyptus等）都在底层使用libvirt的应用程序接口。"
+msgstr ":doc:`libvirt` is a set of APIs offering interfaces in multiple languages, providing a convenient and reliable programming interface for various virtualization tools. It supports not only KVM but also other virtual machines such as Xen, and several commonly-used VM management tools (such as :doc:`virsh`, :doc:`virt-install`, virt-manager, etc.) and cloud computing framework platforms (such as OpenStack, OpenNebula, Eucalyptus, etc.) all use libvirt's application programming interface under the hood."
+
+#: ../../linux/kvm.rst:33
+msgid "为了方便管理虚拟机，应该把当前的操作用户加入 kvm 与 libvirt 组。这样就可以使用 virsh 命令了。"
+msgstr "To make managing virtual machines easier, you should add the current operating user to the kvm and libvirt groups. This lets you use the virsh command."
+
+#: ../../linux/kvm.rst:37
+msgid "使用"
+msgstr "Usage"
+
+#: ../../linux/kvm.rst:40
+msgid "设置桥接网络"
+msgstr "Setting up bridged networking"
+
+#: ../../linux/kvm.rst:42
+msgid "默认情况下，:doc:`qemu` 会给 客户机提供 NAT 网络，这种情况下主机和客户机访问不到对方。为了给客户机提供完整的网络访问权限，应该创建网桥。 [#]_"
+msgstr "By default, :doc:`qemu` provides the guest with a NAT network, in which case the host and guest cannot reach each other. To give the guest full network access, you should create a bridge. [#]_"
+
+#: ../../linux/kvm.rst:45
+msgid ":literal:`apt-get install bridge-utils`"
+msgstr ":literal:`apt-get install bridge-utils`"
+
+#: ../../linux/kvm.rst:47
+msgid "修改 /etc/network/interfaces文件，让网桥br0代理eth0。配置完成后，在客户机中使用网桥接口。"
+msgstr "Modify the /etc/network/interfaces file so that bridge br0 proxies eth0. Once configured, use the bridge interface within the guest."
+
+#: ../../linux/kvm.rst:66
+msgid "创建新的主机"
+msgstr "Creating a new guest"
+
+#: ../../linux/kvm.rst:68
+msgid "virtinst 提供命令行 :doc:`virt-install` 来创建虚拟机。"
+msgstr "virtinst provides the :doc:`virt-install` command line for creating virtual machines."
+
+#: ../../linux/kvm.rst:70
+msgid ":literal:`apt-get install virtinst`"
+msgstr ":literal:`apt-get install virtinst`"
+
+#: ../../linux/kvm.rst:87
+msgid "创建成功后使用 :doc:`virsh` -c qemu:///system list --all 查看虚拟机状态，running 状态表示创建启动成功，使用 VNC 客户端连接服务器即可完成安装。"
+msgstr "After successful creation, use :doc:`virsh` -c qemu:///system list --all to check the VM status; a status of running means creation and startup succeeded, and you can complete the installation by connecting to the server with a VNC client."
+
+#: ../../linux/kvm.rst:91
+msgid "如果需要预置自动安装请参考 preseed [#]_ ."
+msgstr "If you need unattended preseeded installation, refer to preseed [#]_ ."
+
+#: ../../linux/kvm.rst:94
+msgid "启动与停止"
+msgstr "Starting and stopping"
+
+#: ../../linux/kvm.rst:96
+msgid "在登录常规用户的情况下 :doc:`libvirt` 默认情况会使用 qemu:///session 域，添加 -c qemu:///system 选项可使用 qemu:///system 域。"
+msgstr "When logged in as a regular user, :doc:`libvirt` uses the qemu:///session domain by default; add the -c qemu:///system option to use the qemu:///system domain instead."
+
+#: ../../linux/kvm.rst:100
+msgid "查看客户机列表"
+msgstr "List guests"
+
+#: ../../linux/kvm.rst:102
+msgid ":literal:`virsh -c qemu:///system list --all`"
+msgstr ":literal:`virsh -c qemu:///system list --all`"
+
+#: ../../linux/kvm.rst:104
+msgid "停止一个客户机"
+msgstr "Stop a guest"
+
+#: ../../linux/kvm.rst:106
+msgid ":literal:`virsh -c qemu:///system shutdown demo`"
+msgstr ":literal:`virsh -c qemu:///system shutdown demo`"
+
+#: ../../linux/kvm.rst:108
+msgid "如果停止失败，可以强制停止"
+msgstr "If stopping fails, you can force-stop it"
+
+#: ../../linux/kvm.rst:110
+msgid ":literal:`virsh -c qemu:///system destroy demo`"
+msgstr ":literal:`virsh -c qemu:///system destroy demo`"
+
+#: ../../linux/kvm.rst:112
+msgid "启动客户机"
+msgstr "Start a guest"
+
+#: ../../linux/kvm.rst:114
+msgid ":literal:`virsh -c qemu:///system start demo`"
+msgstr ":literal:`virsh -c qemu:///system start demo`"
+
+#: ../../linux/kvm.rst:116
+msgid "设置虚拟机开机启动"
+msgstr "Set a VM to autostart on boot"
+
+#: ../../linux/kvm.rst:118
+msgid ":literal:`virsh autostart alice`"
+msgstr ":literal:`virsh autostart alice`"
+
+#: ../../linux/kvm.rst:122
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/kvm.rst:123
+msgid "`KVM-Debian Wiki <https://wiki.debian.org/KVM#Installation>`_"
+msgstr "`KVM-Debian Wiki <https://wiki.debian.org/KVM#Installation>`_"
+
+#: ../../linux/kvm.rst:124
+msgid "`虚拟化之QEMU与KVM <http://blog.chinaunix.net/uid-23769728-id-3256677.html>`_"
+msgstr "`Virtualization with QEMU and KVM <http://blog.chinaunix.net/uid-23769728-id-3256677.html>`_"
+
+#: ../../linux/kvm.rst:125
+msgid "`BridgeNetworkConnections <https://wiki.debian.org/BridgeNetworkConnections>`_"
+msgstr "`BridgeNetworkConnections <https://wiki.debian.org/BridgeNetworkConnections>`_"
+
+#: ../../linux/kvm.rst:126
+msgid "`preseed <https://www.debian.org/releases/stable/amd64/apb.html.zh-cn>`_"
+msgstr "`preseed <https://www.debian.org/releases/stable/amd64/apb.html.zh-cn>`_"
+

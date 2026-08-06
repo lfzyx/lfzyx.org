@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2019, lfzyx zhou
+# This file is distributed under the same license as the lfzyx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lfzyx \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-06 16:27-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../linux/openssh/index.rst:2
+msgid "Openssh - 安全传输协议"
+msgstr "Openssh - Secure Transfer Protocol"
+
+#: ../../linux/openssh/index.rst:4
+msgid "SSH全称Secure Shell [#]_ ，是一项创建在应用层和传输层基础上的安全协议，为计算机上的Shell（壳层）提供安全的传输和使用环境,利用SSH协议可以有效防止远程管理过程中的信息泄露问题。 OpenSSH（OpenBSD Secure Shell\\) [#]_ 是使用SSH通过计算机网络加密通信的实现。它是取代由SSH Communications Security所提供的商用版本的开放源代码方案。目前OpenSSH是OpenBSD的子计划。"
+msgstr "SSH, short for Secure Shell [#]_, is a security protocol built on top of the application and transport layers, providing a secure transfer and usage environment for a computer's Shell. Using the SSH protocol can effectively prevent information leaks during remote management. OpenSSH (OpenBSD Secure Shell) [#]_ is an implementation that uses SSH to encrypt communication over a computer network. It's the open source alternative that replaces the commercial version provided by SSH Communications Security. OpenSSH is currently a sub-project of OpenBSD."
+
+#: ../../linux/openssh/index.rst:8
+msgid "安装"
+msgstr "Installation"
+
+#: ../../linux/openssh/index.rst:10
+msgid "``apt-get install openssh-server openssh-client``"
+msgstr "``apt-get install openssh-server openssh-client``"
+
+#: ../../linux/openssh/index.rst:13
+msgid "组件"
+msgstr "Components"
+
+#: ../../linux/openssh/index.rst:28
+msgid "参考文献"
+msgstr "References"
+
+#: ../../linux/openssh/index.rst:29
+msgid "`Secure Shell - 維基百科，自由的百科全書 <https://zh.wikipedia.org/wiki/Secure_Shell>`_"
+msgstr "`Secure Shell - Wikipedia <https://zh.wikipedia.org/wiki/Secure_Shell>`_"
+
+#: ../../linux/openssh/index.rst:30
+msgid "`OpenSSH - 維基百科，自由的百科全書 <https://zh.wikipedia.org/wiki/OpenSSH>`_"
+msgstr "`OpenSSH - Wikipedia <https://zh.wikipedia.org/wiki/OpenSSH>`_"
+
