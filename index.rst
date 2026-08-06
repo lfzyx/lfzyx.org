@@ -7,7 +7,7 @@ lfzyx
 =======
 
 
-:strong:`A place to learn about DevOps, Linux, Python, life, and much more.`
+:strong:`A place to learn about DevOps, Linux, Python, life, LLM and much more.`
 
 .. toctree::
    :maxdepth: 2
