@@ -64,4 +64,4 @@ jobs:
           external_repository: lfzyx/lfzyx.github.io
           publish_branch: master
           force_orphan: true
-          publish_dir: github-pages
+          publish_dir: ./
