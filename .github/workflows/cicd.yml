@@ -50,9 +50,10 @@ jobs:
           name: site
           path: _build/html
       - name: Deploy to GitHub Pages
-        uses: lfzyx/lfzyx.github.io@master
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: lfzyx/lfzyx.github.io
           publish_branch: master
           publish_dir: _build/html
           cname: lfzyx.org
