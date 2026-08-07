@@ -67,3 +67,4 @@ jobs:
           publish_branch: master
           force_orphan: true
           publish_dir: ./
+          cname: lfzyx.org
