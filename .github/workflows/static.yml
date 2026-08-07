@@ -54,11 +54,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages
-      - run: ls -R
+      
+      - run: ls
+      - run: pwd
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
